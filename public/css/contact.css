@@ -1,0 +1,91 @@
+/* contact部分 */
+
+.contact-bg {
+  background-image: url("../images/home-bg2.png");
+  padding: 30px;
+}
+
+.contact-form-table {
+  background-color: #fff;
+  border-radius: 10px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.contact-form-table tbody {
+  text-align: center;
+}
+
+.contact-form-title {
+  background-color: #393E46;
+  font-size: 30px;
+  color: #fff;
+  padding: 30px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.contact-form-title span {
+  font-size: 1rem;
+  padding: 1rem;
+  vertical-align: middle;
+}
+
+.contact-form-item-first {
+  padding: 40px 0px 15px 40px;
+  text-align: left;
+  font-size: 0.7rem;
+  width: 30%;
+}
+
+.contact-form-item {
+  padding: 15px 0px 15px 40px;
+  text-align: left;
+  font-size: 0.7rem;
+
+}
+
+.contact-form-item-last {
+  padding: 15px 0px 15px 40px;
+  text-align: left;
+  font-size: 0.7rem;
+  vertical-align: top;
+}
+
+.contact-form-item span,
+.contact-form-item-last span {
+  color: red;
+}
+
+.contact-form-area {
+  width: 70%;
+  padding: 5px 8px;
+  border-radius: 6px;
+  border: none;
+  background-color: #F5F5F5;
+  margin: 10px;
+  resize: none;
+}
+
+.contact-form-btn {
+  text-align: center;
+}
+
+.contact-form-btn button {
+  margin: 20px 0px 30px;
+  display: inline-block;
+  width: 200px;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  background-color: #393E46;
+  border: 1px solid #707070;
+}
+
+.contact-form-btn a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.7rem;
+}
+
+.contact-form-btn span {
+  padding-left: 20px;
+}

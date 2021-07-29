@@ -9,16 +9,15 @@
   <link rel="stylesheet" type="text/css" href="{{ asset('css/slick-theme.css') }}"/>
   <link rel="stylesheet" href="{{ asset('css/reset.css') }}">
   <link rel="stylesheet" href="{{ asset('css/top.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/user.css') }}">
   <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/contact.css') }}">
 </head>
 
 <body>
-  <header>
-    @include('includes.header')
-  </header>
-
   <main>
     @yield('content')
+    @include('includes.contact')
   </main>
 
   <footer>

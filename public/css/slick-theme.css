@@ -196,3 +196,87 @@
     opacity: .75;
     color: #00ADB5;
 }
+
+/* ドット用スタイル */
+.original-dots {
+    position: absolute;
+    bottom: -60px;
+
+    display: block;
+
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+
+    text-align: center;
+}
+
+.original-dots li {
+    position: relative;
+
+    display: inline-block;
+
+    width: 60px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+
+    cursor: pointer;
+}
+.original-dots li button {
+    font-size: 0;
+    line-height: 0;
+
+    display: block;
+
+    width: 10px;
+    height: 20px;
+    padding: 5px;
+
+    cursor: pointer;
+
+    color: #00ADB5;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+
+.original-dots li:hover,
+.original-dots li button:hover {
+    outline: none;
+}
+
+.original-dots li button:hover:before,
+.original-dots li button:focus:before
+{
+    opacity: 1;
+}
+.original-dots li button:before
+{
+    font-family: 'slick';
+    font-size: 70px;
+    line-height: 20px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+
+    content: '•';
+    text-align: center;
+
+    color: #fff;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.original-dots li.slick-active button:before
+{
+    opacity: .75;
+    color: #00ADB5;
+}
+/* ここまで */
