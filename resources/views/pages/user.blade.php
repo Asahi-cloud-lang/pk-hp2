@@ -4,7 +4,6 @@
 
 @section('content')
 
-  <!-- home -->
   <section class="user">
     <div class="user-bg">
       <div class="user-top">
@@ -86,4 +85,3 @@
       </div>
     </div>
   </section>
-  <!-- /.home -->

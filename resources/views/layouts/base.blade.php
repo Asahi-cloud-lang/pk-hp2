@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="{{ asset('css/reset.css') }}">
   <link rel="stylesheet" href="{{ asset('css/top.css') }}">
   <link rel="stylesheet" href="{{ asset('css/user.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/company.css') }}">
   <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
   <link rel="stylesheet" href="{{ asset('css/contact.css') }}">
 </head>
