@@ -3,7 +3,7 @@
     <div class="contact-bg">
       <table class="contact-form-table">
         <thead>
-          <th class="contact-form-title" colspan="2">CONTACT<span>問い合わせ</span></th>
+          <th class="contact-form-title" colspan="2">CONTACT<br><span>問い合わせ</span></th>
         </thead>
         <tbody>
           <tr>

@@ -197,7 +197,7 @@
     color: #00ADB5;
 }
 
-/* ドット用スタイル */
+/* Dotsカスタマイズ */
 .original-dots {
     position: absolute;
     bottom: -60px;
@@ -280,3 +280,25 @@
     color: #00ADB5;
 }
 /* ここまで */
+
+/* Dots レスポンシブ */
+@media screen and (max-width:376px){
+
+    .slick-dots li {
+        width: 40px;
+    }
+
+    .slick-dots li button:before {
+        font-size: 90px;
+    }
+
+    .original-dots li {
+        width: 40px;
+    }
+
+    .original-dots li button:before
+    {
+        color: black;
+        font-size: 90px;
+    }
+}

@@ -19,3 +19,15 @@ $('.result-content-item').slick({
   dots: true,
   dotsClass: 'original-dots',
 });
+
+$('.home-img-responsive').hide();
+$('.home-gnav-responsive').hide();
+
+$('.home-btn-trigger').on('click', function() {
+  $(this).toggleClass('active');
+  $('.home-logo').toggle();
+  $('.home-content-lead').toggle();
+  $('.home-img-responsive').slideToggle();
+  $('.home-gnav-responsive').slideToggle();
+  return false;
+});

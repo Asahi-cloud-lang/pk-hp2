@@ -5,7 +5,7 @@
 
 .footer__flex {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .footer-logo {
@@ -22,8 +22,7 @@
 
 .footer-item-list {
   padding: 15px 0px;
-  margin: 0 auto;
-  width: 50%;
+  width: 40%;
   color: #fff;
 }
 
@@ -31,6 +30,11 @@
   text-align: left;
   padding: 10px 0px;
   width: 50%;
+  font-weight: unset;
+}
+
+.footer-item span {
+  display: none;
 }
 
 .footer-bg2 {
@@ -41,4 +45,82 @@
   color: #fff;
   text-align: center;
   padding: 15px;
+}
+
+.footer-lead br {
+  display: none;
+}
+
+
+/* レスポンシブ対応 */
+
+@media screen and (max-width:376px){
+
+  .footer {
+    background-color: #00ADB5;
+  }
+
+  .footer-logo {
+    order: 2;
+  }
+
+  .footer-table {
+    font-size: 1.4rem;
+    font-weight: normal;
+    order: 1;
+    margin: 0 auto;
+  }
+
+  .footer__flex {
+    flex-direction: column;
+  }
+
+  .footer-item-list {
+    width: 100%;
+  }
+
+  .footer-item {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-item span {
+    display: inline;
+    padding-left: 20px;
+  }
+
+  .footer-item-name {
+    text-align: center;
+  }
+
+  .footer-item-responsive01 {
+    display: block;
+  }
+
+  .footer-item-responsive02 {
+    display: none;
+  }
+
+  .footer-table tbody tr:nth-child(1) {
+    display: block;
+    margin: 20px;
+  }
+
+  .footer-table tbody tr:nth-child(2) {
+    display: block;
+    margin: 20px;
+  }
+
+  .footer-lead {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+
+  .footer-lead br {
+    display: block;
+  }
+
+  .footer-bg2 {
+    background-color: #00ADB5;
+  }
 }

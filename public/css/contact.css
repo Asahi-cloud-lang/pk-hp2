@@ -24,6 +24,10 @@
   border-radius: 10px 10px 0px 0px;
 }
 
+.contact-form-title br {
+  display: none;
+}
+
 .contact-form-title span {
   font-size: 1rem;
   padding: 1rem;
@@ -89,3 +93,53 @@
 .contact-form-btn span {
   padding-left: 20px;
 }
+
+
+
+/* レスポンシブ対応 */
+
+@media screen and (max-width:376px){
+  .contact-bg {
+    padding: 30px 40px 60px;
+  }
+
+  .contact-form-table {
+    border-radius: 30px;
+    width: 100%;
+  }
+
+  .contact-form-title {
+    border-radius: 30px 30px 0px 0px;
+  }
+
+  .contact-form-title br {
+    display: block;
+  }
+
+  .contact-form-table tbody tr {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-form-item-first {
+    padding: 40px 0px 5px;
+    text-align: center;
+    font-size: 1.0rem;
+    width: 100%;
+  }
+
+  .contact-form-item {
+    padding: 20px 0px 5px;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .contact-form-item-last {
+    padding: 20px 0px 5px;
+    text-align: center;
+    font-size: 1.0rem;
+    width: 100%;
+  }
+
+}
+/* /.レスポンシブ対応 */

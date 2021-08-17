@@ -1,13 +1,42 @@
+body {
+  font-family: "MS P明朝";
+}
+
 /* home部分 */
+
+.home-responsive {
+  display: none;
+}
+
+.home-btn-trigger {
+  display: none;
+  pointer-events: none;
+}
+
+.home-btn-trigger span{
+  display: none;
+}
 
 .home-bg {
   width: 100%;
   height: 100vh;
-  background-image: url("../images/home-bg.png");
+  background-image: url(../images/home-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   position: relative;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2){
+  .home-bg {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/home-bg@2x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
 }
 
 .home-content-lead {
@@ -86,7 +115,11 @@
   border-radius: 10px 10px 0px 0px;
 }
 
-.recommend-user-content-title span{
+.recommend-user-content-title br {
+  display: none;
+}
+
+.recommend-user-content-title span {
   font-size: 1rem;
   padding: 1rem;
   vertical-align: middle;
@@ -142,6 +175,10 @@
   color: #fff;
   padding: 30px;
   border-radius: 10px 10px 0px 0px;
+}
+
+.recommend-company-content-title br {
+  display: none;
 }
 
 .recommend-company-content-title span{
@@ -213,6 +250,10 @@
   border-radius: 10px 10px 0px 0px;
 }
 
+.news-content-title br {
+  display: none;
+}
+
 .news-content-title span {
   font-size: 1rem;
   padding: 1rem;
@@ -253,6 +294,10 @@
   border-radius: 10px 10px 0px 0px;
 }
 
+.result-content-title br {
+  display: none;
+}
+
 .result-content-title span{
   font-size: 1rem;
   padding: 1rem;
@@ -268,3 +313,286 @@
 }
 
 /* /.info */
+
+/* レスポンシブ対応 */
+
+@media screen and (max-width:376px){
+
+  /* home部分 */
+
+  /* ハンバーガーメニュー */
+
+  .home-responsive {
+    display: block;
+    background-color: #00ADB5;
+    position: relative;
+    top: -47px;
+  }
+
+  .home-btn-trigger {
+    pointer-events: auto;
+    display: block;
+    position: relative;
+    width: 50px;
+    height: 44px;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    background-color: #00ADB5;
+    border: 1px solid #707070;
+    z-index: 1;
+  }
+
+  .home-btn-trigger span {
+  pointer-events: auto;
+  display: block;
+  position: absolute;
+  left: 12px;
+  width: 50%;
+  height: 5px;
+  background-color: #fff;
+  border-radius: 4px;
+  }
+
+  .home-img-responsive {
+    position: relative;
+  }
+
+  .home-img-responsive img {
+    position: absolute;
+    right: 70px;
+    top: 15px;
+    height: 50px;
+    width: 180px;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+
+  .home-btn-trigger, .btn-trigger span {
+  display: inline-block;
+  transition: all .5s;
+  box-sizing: border-box;
+  }
+  
+  .home-btn-trigger span:nth-of-type(1) {
+  top: 10px;
+  }
+
+  .home-btn-trigger span:nth-of-type(2) {
+  top: 20px;
+  }
+
+  .home-btn-trigger span:nth-of-type(3) {
+  bottom: 7px;
+  }
+
+  .home-btn-trigger.active span:nth-of-type(1) {
+  -webkit-transform: translateY(10px) rotate(-45deg);
+  transform: translateY(10px) rotate(-45deg);
+  }
+  
+  .home-btn-trigger.active span:nth-of-type(2) {
+  opacity: 0;
+  }
+  
+  .home-btn-trigger.active span:nth-of-type(3) {
+  -webkit-transform: translateY(-10px) rotate(45deg);
+  transform: translateY(-10px) rotate(45deg);
+  }
+
+  .home-gnav-responsive {
+    padding: 85px 0px 60px;
+  }
+
+  .home-gnav-responsive li {
+    list-style: none;
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    line-height: 2.5;
+  }
+
+  /* /.ハンバーガーメニュー */
+
+  .home-logo img {
+    right: 70px;
+    top: 15px;
+    height: 50px;
+    object-fit: cover;
+  }
+
+  .home-bg {
+  background-image: url(../images/home-bg-responsive.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 100%;
+  }
+
+  @media only screen and (-webkit-min-device-pixel-ratio: 2){
+    .home-bg {
+      background-image: url(../images/home-bg-responsive@2x.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      width: 100%;
+    }
+  }
+
+  .home-content-lead h1 {
+    margin: 0px;
+    line-height: 1.5;
+    font-size: 30px;
+  }
+
+  .home-gnav {
+    display: none;
+  }
+  
+  /* /.home */
+
+  /* recommend-user部分 */
+
+  .recommend-user-bg {
+    background-image: url(../images/home-bg2.png);
+  }
+
+  .recommend-user-content-title {
+    font-size: 40px;
+    text-align: center;
+    border-radius: 30px 30px 0px 0px;
+  }
+
+  .recommend-user-content-title span {
+    font-size: 1.5rem;
+  }
+
+  .recommend-user-content-title br {
+    display: block;
+  }
+
+  .recommend-user-content-item img {
+    height: 350px;
+  }
+
+  .recommend-user-content-link {
+    padding: 100px 0px 40px;
+    text-align: center;
+    border-radius: 0px 0px 30px 30px;
+  }
+
+  .recommend-user-content-link span {
+    padding-left: 20px;
+  }
+
+  .recommend-user-content-link a {
+    font-size: 1rem;
+    padding: 10px 10px 10px 30px;
+  }
+
+  /* /.recommend-user */
+
+  /* recommend-company部分 */
+
+  .recommend-company-content-title {
+    text-align: center;
+    font-size: 40px;
+  }
+
+  .recommend-company-content-title span {
+    font-size: 1.5rem;
+  }
+
+  .recommend-company-content-title br {
+    display: block;
+  }
+
+  .recommend-company-content-item img {
+    height: 350px;
+  }
+
+  .recommend-company-content-link {
+    padding: 100px 0px 40px;
+    text-align: center;
+    border-radius: 0px 0px 30px 30px;
+  }
+
+  .recommend-company-content-link a {
+    font-size: 1rem;
+    padding: 10px 10px 10px 80px;
+  }
+
+  .recommend-company-content-link span {
+    padding-left: 40px;
+  }
+
+  /* /.recommend-company */
+
+  /* info部分 */
+
+  .info-bg {
+    background-image: url(../images/home-bg2.png);
+  }
+
+  .info-content {
+    flex-direction: column;
+    justify-content: none;
+    padding: 30px 40px;
+  }
+
+  .info-content__width {
+    width: 100%;
+  }
+
+  .news-content {
+    border-radius: 30px;
+    order: 2;
+  }
+
+  .news-content-title {
+    text-align: center;
+    font-size: 40px;
+    border-radius: 30px 30px 0px 0px;
+  }
+
+  .news-content-title br {
+    display: block;
+  }
+
+  .news-content-title span {
+    font-size: 1rem;
+  }
+
+  .result-content {
+    margin-bottom: 60px;
+    background-color: #fff;
+    border-radius: 30px;
+    order: 1;
+  }
+
+  .result-content-title {
+    text-align: center;
+    font-size: 35px;
+    padding: 30px 0px;
+    border-radius: 30px 30px 0px 0px;
+  }
+
+  .result-content-title br {
+    display: block;
+  }
+
+  .result-content-title span {
+    font-size: 1rem;
+  }
+
+  .result-content img {
+    height: 350px;
+  }
+}
+
+@media screen and (min-width:600px){
+}
+
+/* /.レスポンシブ対応 */
