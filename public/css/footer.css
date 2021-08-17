@@ -82,6 +82,7 @@
   .footer-item {
     width: 100%;
     text-align: center;
+    color: #fff;
   }
 
   .footer-item span {
@@ -91,6 +92,7 @@
 
   .footer-item-name {
     text-align: center;
+    color: #fff;
   }
 
   .footer-item-responsive01 {

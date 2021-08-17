@@ -7,27 +7,7 @@
   <!-- home -->
   <section class="home">
     <div class="home-bg">
-      <div class="home-btn-trigger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <div class="home-responsive">
-        <div class="home-img-responsive">
-          <img src="{{ asset('images/logo.png') }}" alt="logo">
-        </div>
-        <div class="home-gnav-responsive">
-          <ul>
-            <li>ホーム</li>
-            <li>フリーランスの方へ</li>
-            <li>企業の方へ</li>
-            <li>制作実績</li>
-            <li>新着情報</li>
-            <li>問い合わせ</li>
-            <li>会社概要</li>
-          </ul>
-        </div>
-      </div>
+      @include('includes.hamburgermenu')
       <div class="home-content-lead">
         <h1>新人フリーランスが</h1>
         <h1><span>活きる</span>IT業界を</h1>

@@ -20,14 +20,15 @@ $('.result-content-item').slick({
   dotsClass: 'original-dots',
 });
 
-$('.home-img-responsive').hide();
-$('.home-gnav-responsive').hide();
+$('.logo-responsive').hide();
+$('.top-gnav-responsive').hide();
 
-$('.home-btn-trigger').on('click', function() {
+$('.btn-trigger').on('click', function() {
   $(this).toggleClass('active');
   $('.home-logo').toggle();
+  $('.user-top-img-responsive').toggle();
   $('.home-content-lead').toggle();
-  $('.home-img-responsive').slideToggle();
-  $('.home-gnav-responsive').slideToggle();
+  $('.logo-responsive').slideToggle();
+  $('.top-gnav-responsive').slideToggle();
   return false;
 });

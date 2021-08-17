@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="{{ asset('css/company.css') }}">
   <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
   <link rel="stylesheet" href="{{ asset('css/contact.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/hamburgermenu.css') }}">
 </head>
 
 <body>

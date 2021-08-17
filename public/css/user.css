@@ -7,8 +7,12 @@
   position: relative;
 }
 
-.user-top-image img {
+.user-top-img img {
   width: 100%;
+}
+
+.user-top-img-responsive {
+  display: none;
 }
 
 .user-top-logo img {
@@ -41,6 +45,14 @@
   width: 100%;
 }
 
+.users-lead-responsive-img {
+  display: none;
+}
+
+.user-lead-content p {
+  display: none;
+}
+
 .user-catch-lead {
   padding: 50px 0px;
 }
@@ -49,6 +61,10 @@
   text-align: center;
   font-size: 3rem;
   padding: 10px
+}
+
+.user-catch-lead br {
+  display: none;
 }
 
 .user-catch-content {
@@ -107,3 +123,120 @@
   line-height: 1.8;
 }
 
+.user-catch-detail__br {
+  display: none;
+}
+
+/* レスポンシブ対応 */
+
+@media screen and (max-width:376px){
+
+  .user-top-img img {
+    display: none;
+  }
+
+  .user-top-img-responsive {
+    display: block;
+  }
+
+  .user-top-img-responsive img {
+    width: 100%;
+    position: relative;
+    top: -47px;
+  }
+
+  .user-top-logo img {
+    right: 70px;
+    top: 12px;
+    width: 180px;
+    height: 50px;
+    object-fit: cover;
+  }
+
+  .user-lead {
+    display: block;
+  }
+
+  .users-lead-img {
+    display: none;
+  }
+
+  .users-lead-responsive-img {
+    display: block;
+  }
+
+  .users-lead-responsive-img img {
+    width: 100%;
+  }
+
+  .user-lead-content {
+    width: 90%;
+    margin: 0 auto 60px;
+  }
+
+  .user-lead-content h2 {
+    font-size: 24px;
+    padding: 30px 5px;
+  }
+
+  .user-lead-content p {
+    display: block;
+    background-color: #fff;
+    padding: 20px 0px;
+    text-align: center;
+    line-height: 1.5;
+    font-weight: bold;
+  }
+
+  .user-catch-lead h2 {
+    font-size: 1.8rem;
+  }
+
+  .user-catch-lead br {
+    display: block;
+  }
+
+  .user-catch-lead {
+    padding: 0px 0px 50px;
+  }
+
+  .user-catch-content {
+    display: none;
+  }
+  
+  .user-catch-detail {
+    padding: 0 0 100px;
+  }
+
+  .user-catch-detail-item h2 {
+    font-size: 1.3rem;
+    padding: 0px;
+    text-align: center;
+  }
+
+  .user-catch-detail-item span {
+    padding: 0px 10px 0px 10px;
+  }
+
+  .user-catch-detail__flex {
+    flex-flow: column;
+  }
+
+  .user-catch-detail-item img {
+    width: 75%;
+    padding: 30px 0px 10px;
+  }
+
+  .user-catch-detail-item p {
+    text-align: center;
+    font-size: 1rem;
+    width: 80%;
+    margin: 0 auto;
+    order: 2;
+  }
+
+  .user-catch-detail__br {
+    display: block;
+  }
+
+}
