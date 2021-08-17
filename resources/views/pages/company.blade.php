@@ -6,9 +6,13 @@
 
   <section class="company">
     <div class="company-bg">
+      @include('includes.hamburgermenu')
       <div class="company-top">
-        <div class="company-top-image">
+        <div class="company-top-img">
           <img src="{{ asset('images/company-top-img.png') }}" srcset="{{ asset('images/company-top-img@2x.png') }}" alt="#">
+        </div>
+        <div class="company-top-img-responsive">
+          <img src="{{ asset('images/company-top-responsive-img.png') }}" srcset="{{ asset('images/company-top-responsive-img@2x.png') }}" alt="#">
         </div>
         <div class="company-top-lead">
           <h1>新人フリーランスエンジニアに<br>お仕事を任せてみませんか？</h1>
@@ -17,16 +21,18 @@
       </div>
       <div class="company-lead">
         <div class="company-lead-title">
-          <h2>新人エンジニアにお仕事を任せる2つのメリット</h2>
+          <h2>新人エンジニアに<br>お仕事を任せる<br>2つのメリット</h2>
         </div>
         <div class="company-lead-content">
           <div class="company-lead-item">
             <h3>１　費用が抑えられる</h3>
             <img src="{{ asset('images/company-lead-img01.png') }}" srcset="{{ asset('images/company-lead-img01@2x.png') }}" alt="#">
+            <img class="company-lead-responsive-item" src="{{ asset('images/company-lead-responsive-img01.png') }}" srcset="{{ asset('images/company-lead-responsive-img01@2x.png') }}" alt="#">
           </div>
           <div class="company-lead-item">
             <h3>２　向上心の高い人材が多い</h3>
             <img src="{{ asset('images/company-lead-img02.png') }}" srcset="{{ asset('images/company-lead-img02@2x.png') }}" alt="#">
+            <img class="company-lead-responsive-item" src="{{ asset('images/company-lead-responsive-img02.png') }}" srcset="{{ asset('images/company-lead-responsive-img02@2x.png') }}" alt="#">
           </div>
         </div>
         <div class="company-lead-question">
@@ -36,18 +42,19 @@
       </div>
       <div class="company-detail">
         <div class="company-detail-title">
-          <h2>そんな不安を解消するために、<br>プログラム・キッチンでは、独自の取り組みをしています。</h2>
+          <h2 class="company-detail-responsive-title">いくら費用が<br>抑えられると言われても、<br>本当に良い人材なのか、<br>お仕事を任せられるのか不安…</h2>
+          <h2>そんな不安を解消するために、<br>プログラム・キッチンでは、<br class="company-detail-responsive-title">独自の取り組みをしています。</h2>
         </div>
         <div class="company-detail-content">
           <div class="company-detail-item">
-            <h3><span>1　ベテランエンジニアによるフォロー</span></h3>
+            <h3><span>1　ベテランエンジニア<br>によるフォロー</span></h3>
             <div class="company-detail-item__flex">
               <img src="{{ asset('images/company-detail-img01.png') }}" srcset="{{ asset('images/company-detail-img01@2x.png') }}" alt="#">
               <p>
-                疑問点が出た場合も、<br>
+                <span>疑問点が出た場合も、<br>
                 slackを使って、相談専用チャンネルで<br>
                 他のメンバーに質問をすることができます。<br>
-                また新人の成果物は<br>
+                また</span>新人の成果物は<br>
                 ベテランエンジニアがチェックし、<br>
                 品質を担保します。
               </p>
@@ -55,8 +62,8 @@
             <h3><span>２　月に1度のオンライン面談</span></h3>
             <div class="company-detail-item__flex">
               <p>
-                月に1度、オンラインの面談を行っています。<br>
-                不安点や案件の希望をヒアリングしています。
+                月に1度、<br class="company-detail-responsive-item">オンラインの面談を行っています。<br>
+                不安点や案件の希望を<br class="company-detail-responsive-item">ヒアリングしています。
               </p>
               <img src="{{ asset('images/company-detail-img02.png') }}" srcset="{{ asset('images/company-detail-img02@2x.png') }}" alt="#">
             </div>
@@ -64,8 +71,8 @@
             <div class="company-detail-item__flex">
               <img src="{{ asset('images/company-detail-img03.png') }}" srcset="{{ asset('images/company-detail-img03@2x.png') }}" alt="#">
               <p>
-                メンバーには日報を提出頂いています。<br>
-                その日に生じた問題点をすぐに共有頂いたり、<br>
+                メンバーには<br class="company-detail-responsive-item">日報を提出頂いています。<br>
+                その日に生じた問題点を<br class="company-detail-responsive-item">すぐに共有頂いたり、<br>
                 万が一進捗に遅れがあっても、<br>
                 すぐにカバーすることができます。
               </p>

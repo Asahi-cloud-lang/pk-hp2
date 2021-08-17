@@ -27,6 +27,7 @@ $('.btn-trigger').on('click', function() {
   $(this).toggleClass('active');
   $('.home-logo').toggle();
   $('.user-top-img-responsive').toggle();
+  $('.company-top').toggle();
   $('.home-content-lead').toggle();
   $('.logo-responsive').slideToggle();
   $('.top-gnav-responsive').slideToggle();

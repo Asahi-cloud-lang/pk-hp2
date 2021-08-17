@@ -7,12 +7,16 @@
   width: 100%;
 }
 
-.company-top-image {
+.company-top-img {
   width: 35%;
 }
 
-.company-top-image img {
+.company-top-img img {
   width: 100%;
+}
+
+.company-top-img-responsive {
+  display: none;
 }
 
 .company-top-lead {
@@ -41,9 +45,17 @@
   padding: 60px 0px;
 }
 
+.company-lead-title br {
+  display: none;
+}
+
 .company-lead-title h2 {
   text-align: center;
   font-size: 2rem;
+}
+
+.company-detail-responsive-title {
+  display: none;
 }
 
 .company-lead-content {
@@ -65,6 +77,10 @@
 
 .company-lead-item img {
   width: 100%;
+}
+
+.company-lead-responsive-item {
+  display: none;
 }
 
 .company-lead-question {
@@ -128,4 +144,122 @@
   width: 50%;
   font-size: 1.5rem;
   line-height: 1.8;
+}
+
+.company-detail-responsive-item {
+  display: none;
+}
+
+@media screen and (max-width:376px){
+
+  .company-top-img {
+    display: none;
+  }
+
+  .company-top-lead h1 {
+    display: none;
+  }
+
+  .company-top-img-responsive {
+    display: block;
+  }
+
+  .company-top-img-responsive img {
+    position: relative;
+    width: 100%;
+    top: -45px;
+  }
+
+  .company-top-lead img {
+    right: 70px;
+    top: -30px;
+    width: 180px;
+    height: 50px;
+    object-fit: cover;
+  }
+
+  .company-lead-title br {
+    display: block;
+  }
+
+  .company-lead-title h2 {
+    line-height: 1.5;
+  }
+
+  .company-lead-content {
+    flex-direction: column;
+  }
+
+  .company-lead-item {
+    width: 80%;
+    margin: 30px auto;
+  }
+
+  .company-lead-item h3 {
+    font-size: 20px;
+    padding: 30px 0px;
+    text-align: center;
+  }
+
+  .company-lead-item img {
+    display: none;
+  }
+
+  .company-lead-item .company-lead-responsive-item {
+    display: block;
+    width: 100%;
+  }
+
+  .company-lead-question {
+    display: none;
+  }
+
+  .company-detail-responsive-title {
+    display: block;
+  }
+
+  .company-detail-title h2 {
+    font-size: 1.5rem;
+  }
+
+  .company-detail-item h3 {
+    font-size: 1.3rem;
+    padding: 0 0 5px;
+    text-align: center;
+    border-bottom: 1px solid;
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .company-detail-item h3 span {
+    border-bottom: none;
+    padding: 0;
+  }
+
+  .company-detail-item img {
+    width: 90%;
+    margin: 15px auto;
+  }
+
+  .company-detail-item__flex {
+    flex-direction: column;
+  }
+
+  .company-detail-item p {
+    width: 100%;
+    font-size: 1rem;
+    padding: 30px 0 40px;
+    color: #707070;
+    text-align: center;
+    order: 1;
+  }
+
+  .company-detail-responsive-item {
+    display: block;
+  }
+
+  .company-detail-item p span {
+    display: none;
+  }
+
 }
