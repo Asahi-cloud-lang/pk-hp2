@@ -6,7 +6,7 @@
 
   <!-- home -->
   <section class="home">
-    <div class="home-bg">
+    <div class="home__bg">
       @include('includes.hamburgermenu')
       <div class="home-content-lead">
         <h1>新人フリーランスが</h1>

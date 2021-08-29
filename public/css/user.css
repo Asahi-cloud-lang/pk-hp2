@@ -60,7 +60,7 @@
 .user-catch-lead h2 {
   text-align: center;
   font-size: 3rem;
-  padding: 10px
+  padding: 10px;
 }
 
 .user-catch-lead br {
@@ -98,6 +98,7 @@
   font-size: 3rem;
   padding: 50px;
   color: #707070;
+  line-height: 1.5;
 }
 
 .user-catch-detail-item span {
@@ -129,6 +130,49 @@
 
 /* レスポンシブ対応 */
 
+@media screen and (max-width:1024px) {
+
+  .user-lead {
+    display: block;
+  }
+
+  .users-lead-img {
+    display: none;
+  }
+
+  .users-lead-responsive-img {
+    display: block;
+  }
+
+  .users-lead-responsive-img img {
+    width: 100%;
+  }
+
+  .user-lead-content {
+    width: 60%;
+    margin: 10px auto 60px;
+  }
+
+  .user-lead-content h2 {
+    font-size: 24px;
+    padding: 30px 5px;
+  }
+
+  .user-catch-detail-item h2 {
+    font-size: 2.2rem;
+    padding: 50px 0;
+  }
+
+  .user-catch-detail-item p {
+    font-size: 1rem;
+  }
+
+  .user-catch-item p {
+    font-size: 1.3rem;
+  }
+
+}
+
 @media screen and (max-width:376px){
 
   .user-top-img img {
@@ -153,30 +197,9 @@
     object-fit: cover;
   }
 
-  .user-lead {
-    display: block;
-  }
-
-  .users-lead-img {
-    display: none;
-  }
-
-  .users-lead-responsive-img {
-    display: block;
-  }
-
-  .users-lead-responsive-img img {
-    width: 100%;
-  }
-
   .user-lead-content {
     width: 90%;
     margin: 0 auto 60px;
-  }
-
-  .user-lead-content h2 {
-    font-size: 24px;
-    padding: 30px 5px;
   }
 
   .user-lead-content p {

@@ -1,10 +1,13 @@
+
+/* 全体のフォント */
+
 body {
   font-family: "MS P明朝";
 }
 
 /* home部分 */
 
-.home-bg {
+.home__bg {
   width: 100%;
   height: 100vh;
   background-image: url(../images/home-bg.png);
@@ -15,7 +18,7 @@ body {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2){
-  .home-bg {
+  .home__bg {
     width: 100%;
     height: 100vh;
     background-image: url(../images/home-bg@2x.png);
@@ -131,12 +134,14 @@ body {
   background-color: #393E46;
   color: #fff;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 5px;
   cursor: pointer;
   text-decoration: none;
   position:relative;
   z-index: 10;
   font-size: 0.5rem;
+  display: inline-block;
+  width: 180px;
 }
 
 .recommend-user-content-link span {
@@ -193,16 +198,18 @@ body {
   background-color: #393E46;
   color: #fff;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 5px;
   cursor: pointer;
   text-decoration: none;
   position:relative;
   font-size: 0.5rem;
   z-index: 10;
+  display: inline-block;
+  width: 180px;
 }
 
 .recommend-company-content-link span {
-  padding-left: 30px;
+  padding-left: 45px;
 }
 /* /.recommend-company */
 
@@ -303,6 +310,41 @@ body {
 
 /* レスポンシブ対応 */
 
+@media screen and (max-width:1024px) {
+
+  .recommend-user-content-link {
+    padding: 100px 0px 40px;
+    text-align: center;
+  }
+
+  .recommend-company-content-link {
+    padding: 100px 0px 40px;
+    text-align: center;
+  }
+
+  .info-content {
+    flex-direction: column;
+    justify-content: none;
+    padding: 30px 40px;
+  }
+
+  .info-content__width {
+    width: 100%;
+  }
+
+  .news-content {
+    order: 2;
+  }
+
+  .result-content {
+    margin-bottom: 60px;
+    order: 1;
+  }
+ 
+}
+
+
+
 @media screen and (max-width:376px){
 
   /* home部分 */
@@ -315,12 +357,12 @@ body {
   }
 
   .home-bg {
-  background-image: url(../images/home-bg-responsive.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  width: 100%;
+    background-image: url(../images/home-bg-responsive.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 100%;
   }
 
   @media only screen and (-webkit-min-device-pixel-ratio: 2){
@@ -356,6 +398,7 @@ body {
     font-size: 40px;
     text-align: center;
     border-radius: 30px 30px 0px 0px;
+    padding: 25px;
   }
 
   .recommend-user-content-title span {
@@ -371,18 +414,17 @@ body {
   }
 
   .recommend-user-content-link {
-    padding: 100px 0px 40px;
-    text-align: center;
     border-radius: 0px 0px 30px 30px;
   }
 
   .recommend-user-content-link span {
-    padding-left: 20px;
+    padding-left: 15px;
   }
 
   .recommend-user-content-link a {
     font-size: 1rem;
-    padding: 10px 10px 10px 30px;
+    padding: 10px 10px 10px 40px;
+    width: 220px;
   }
 
   /* /.recommend-user */
@@ -414,7 +456,7 @@ body {
 
   .recommend-company-content-link a {
     font-size: 1rem;
-    padding: 10px 10px 10px 80px;
+    padding: 10px 10px 10px 70px;
   }
 
   .recommend-company-content-link span {
@@ -429,19 +471,8 @@ body {
     background-image: url(../images/home-bg2.png);
   }
 
-  .info-content {
-    flex-direction: column;
-    justify-content: none;
-    padding: 30px 40px;
-  }
-
-  .info-content__width {
-    width: 100%;
-  }
-
   .news-content {
     border-radius: 30px;
-    order: 2;
   }
 
   .news-content-title {
@@ -462,7 +493,6 @@ body {
     margin-bottom: 60px;
     background-color: #fff;
     border-radius: 30px;
-    order: 1;
   }
 
   .result-content-title {

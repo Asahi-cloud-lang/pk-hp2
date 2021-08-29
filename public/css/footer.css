@@ -31,6 +31,11 @@
   padding: 10px 0px;
   width: 50%;
   font-weight: unset;
+  color: #fff;
+}
+
+.footer-item-name {
+  color: #fff;
 }
 
 .footer-item span {
@@ -51,6 +56,43 @@
   display: none;
 }
 
+
+@media screen and (max-width:1024px){
+  
+  .footer-item {
+    padding: 0;
+    display: block;
+    width: 100%;
+  }
+
+  .footer-item-responsive01 {
+    display: block;
+  }
+
+  .footer-item-responsive02 {
+    display: block;
+  }
+
+  .footer-item span {
+    display: none
+  }
+
+  .footer-table tbody tr:nth-child(1) {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .footer-table tbody tr:nth-child(2) {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .footer-table tbody tr:nth-child(3) {
+    display: block;
+    margin: 10px 0;
+  }
+
+  }
 
 /* レスポンシブ対応 */
 
