@@ -5,7 +5,12 @@ body {
   font-family: "MS P明朝";
 }
 
+/* /.全体のフォント */
+
+
 /* home部分 */
+
+/* 背景画像 */
 
 .home__bg {
   width: 100%;
@@ -29,24 +34,28 @@ body {
   }
 }
 
-.home-content-lead {
+/* /.背景画像 */
+
+.home__content-lead {
   font-size: 50px;
   padding: 30px;
 }
 
-.home-content-lead h1{
+.home__content-lead h1{
   margin: 10px;
+  font-weight: bold;
+  font-size: 4rem;
 }
 
-.home-content-lead span{
+.home__content-lead span{
   color: #A48B13;
 }
 
-.home-content-lead span{
+.home__content-lead span{
   color: #A48B13;
 }
 
-.home-logo img {
+.home__logo img {
   position: absolute;
   right: 30px;
   bottom: 30px;
@@ -54,24 +63,26 @@ body {
   width: 180px;
 }
 
-.home-gnav {
+/* ナビゲーションリンク */
+
+.home__gnav {
   background-color: #393E46;
 }
 
-.home-gnav-list {
+.home__gnav-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.home-gnav-item {
+.home__gnav-item {
   font-family: "Open sans", sans-serif;
   font-size: 16px;
   padding: 0 24px;
   letter-spacing: 0.05em;
 }
 
-.home-gnav-item a {
+.home__gnav-item a {
   display: inline-block;
   padding: 30px 0;
   text-align: center;
@@ -80,24 +91,31 @@ body {
   color: #fff;
 }
 
-.home-gnav-item span {
+.home__gnav-item span {
   font-size: 1rem;
 }
+
+/* /.ナビゲーションリンク */
+
 /* /.home */
 
 
 
 /* recommend-user部分 */
 
-.recommend-user-bg {
+/* 背景色 */
+
+.recommend-user__bg {
   background-color: #00ADB5;
 }
 
-.recommend-user-content {
+/* /.背景色 */
+
+.recommend-user__content {
   padding: 30px 40px;
 }
 
-.recommend-user-content-title {
+.recommend-user__content-title {
   background-color: #393E46;
   font-size: 30px;
   color: #fff;
@@ -105,32 +123,28 @@ body {
   border-radius: 10px 10px 0px 0px;
 }
 
-.recommend-user-content-title br {
+.recommend-user__content-title br {
   display: none;
 }
 
-.recommend-user-content-title span {
+.recommend-user__content-title span {
   font-size: 1rem;
   padding: 1rem;
   vertical-align: middle;
 }
 
-.recommend-user-content-item li {
-  list-style: none;
-}
-
-.recommend-user-content-item img {
+.recommend-user__content-item img {
   width: 100%;
 }
 
-.recommend-user-content-link {
+.recommend-user__content-link {
   background-color: #fff;
   padding: 40px;
   text-align: right;
   border-radius: 0px 0px 10px 10px;
 }
 
-.recommend-user-content-link a {
+.recommend-user__content-link a {
   background-color: #393E46;
   color: #fff;
   padding: 10px;
@@ -144,7 +158,7 @@ body {
   width: 180px;
 }
 
-.recommend-user-content-link span {
+.recommend-user__content-link span {
   padding-left: 30px;
 }
 /* /.recommend-user */
@@ -153,15 +167,19 @@ body {
 
 /* recommend-company部分 */
 
-.recommend-company-bg {
+/* 背景画像 */
+
+.recommend-company__bg {
   background-image: url("../images/home-bg2.png");
 }
 
-.recommend-company-content {
+/* /.背景画像 */
+
+.recommend-company__content {
   padding: 30px 40px;
 }
 
-.recommend-company-content-title {
+.recommend-company__content-title {
   background-color: #393E46;
   font-size: 30px;
   color: #fff;
@@ -169,32 +187,24 @@ body {
   border-radius: 10px 10px 0px 0px;
 }
 
-.recommend-company-content-title br {
-  display: none;
-}
-
-.recommend-company-content-title span{
+.recommend-company__content-title span{
   font-size: 1rem;
   padding: 1rem;
   vertical-align: middle;
 }
 
-.recommend-company-content-item li {
-  list-style: none;
-}
-
-.recommend-company-content-item img {
+.recommend-company__content-item img {
   width: 100%;
 }
 
-.recommend-company-content-link {
+.recommend-company__content-link {
   background-color: #fff;
   padding: 40px;
   text-align: right;
   border-radius: 0px 0px 10px 10px;
 }
 
-.recommend-company-content-link a {
+.recommend-company__content-link a {
   background-color: #393E46;
   color: #fff;
   padding: 10px;
@@ -208,35 +218,51 @@ body {
   width: 180px;
 }
 
-.recommend-company-content-link span {
+.recommend-company__content-link span {
   padding-left: 45px;
 }
+
+/* レスポンシブ用スタイル */
+
+.recommend-company__content-title br {
+  display: none;
+}
+
+/* /.レスポンシブ用スタイル */
+
 /* /.recommend-company */
+
 
 
 /* info部分 */
 
-.info-bg {
+/* 背景色 */
+
+.info__bg {
   background-color: #AAD8D3;
 }
 
-.info-content {
+/* /.背景色 */
+
+.info__content {
   display: flex;
   justify-content: space-evenly;
   padding: 40px 30px 40px;
 }
 
-.info-content__width {
+.info__content--width {
   width: 40%;
 }
 
-.news-content {
+/* 新着情報 */
+
+.news__content {
   background-color: #fff;
   border-radius: 10px;
   padding-bottom: 30px;
 }
 
-.news-content-title {
+.news__content-title {
   background-color: #393E46;
   font-size: 30px;
   color: #fff;
@@ -244,43 +270,52 @@ body {
   border-radius: 10px 10px 0px 0px;
 }
 
-.news-content-title br {
-  display: none;
-}
-
-.news-content-title span {
+.news__content-title span {
   font-size: 1rem;
   padding: 1rem;
   vertical-align: middle;
 }
 
-.news-content-item-list li {
+.news__content-item-list li {
   padding: 10px;
-  list-style: none;
   display: flex;
   margin: 0 auto;
   border-bottom: 1px solid #EEE;
   width: 90%;
 }
 
-.news-content-item {
+.news__content-item {
   padding: 10px;
   font-size: 0.8rem;
 }
 
-.news-content-date {
+.news__content-date {
   color: #C20095;
   font-family: Gabriola;
   font-size: 1.5rem;
 }
 
-.result-content {
+/* レスポンシブ用スタイル */
+
+.news__content-title br {
+  display: none;
+}
+
+/* /.レスポンシブ用スタイル */
+
+/* /.新着情報 */
+
+
+
+/* 制作実績 */
+
+.result__content {
   background-color: black;
   padding-bottom: 100px;
   border-radius: 10px;
 }
 
-.result-content-title {
+.result__content-title {
   background-color: #393E46;
   font-size: 30px;
   color: #fff;
@@ -288,75 +323,82 @@ body {
   border-radius: 10px 10px 0px 0px;
 }
 
-.result-content-title br {
-  display: none;
-}
-
-.result-content-title span{
+.result__content-title span{
   font-size: 1rem;
   padding: 1rem;
   vertical-align: middle;
 }
 
-.result-content-item li {
-  list-style: none;
-}
-
-.result-content-item img {
+.result__content-item img {
   width: 100%;
 }
 
+/* レスポンシブ用スタイル */
+
+.result__content-title br {
+  display: none;
+}
+
+/* /.レスポンシブ用スタイル */
+
+/* /.制作実績 */
+
 /* /.info */
 
-/* レスポンシブ対応 */
+
+
+/* レスポンシブ（ipad用） */
 
 @media screen and (max-width:1024px) {
 
-  .recommend-user-content-link {
+  .recommend-user__content-link {
     padding: 100px 0px 40px;
     text-align: center;
   }
 
-  .recommend-company-content-link {
+  .recommend-company__content-link {
     padding: 100px 0px 40px;
     text-align: center;
   }
 
-  .info-content {
+  .info__content {
     flex-direction: column;
     justify-content: none;
     padding: 30px 40px;
   }
 
-  .info-content__width {
+  .info__content--width {
     width: 100%;
   }
 
-  .news-content {
+  .news__content {
     order: 2;
   }
 
-  .result-content {
+  .result__content {
     margin-bottom: 60px;
     order: 1;
   }
  
 }
 
+/* /.レスポンシブ（ipad用） */
 
+
+/* レスポンシブ（スマホ用） */
 
 @media screen and (max-width:376px){
 
   /* home部分 */
 
-  .home-logo img {
+  .home__logo img {
     right: 70px;
     top: 15px;
     height: 50px;
     object-fit: cover;
   }
 
-  .home-bg {
+  .home__bg {
     background-image: url(../images/home-bg-responsive.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -366,7 +408,7 @@ body {
   }
 
   @media only screen and (-webkit-min-device-pixel-ratio: 2){
-    .home-bg {
+    .home__bg {
       background-image: url(../images/home-bg-responsive@2x.png);
       background-repeat: no-repeat;
       background-size: cover;
@@ -376,13 +418,13 @@ body {
     }
   }
 
-  .home-content-lead h1 {
+  .home__content-lead h1 {
     margin: 0px;
     line-height: 1.5;
     font-size: 30px;
   }
 
-  .home-gnav {
+  .home__gnav {
     display: none;
   }
   
@@ -390,38 +432,38 @@ body {
 
   /* recommend-user部分 */
 
-  .recommend-user-bg {
+  .recommend-user__bg {
     background-image: url(../images/home-bg2.png);
   }
 
-  .recommend-user-content-title {
+  .recommend-user__content-title {
     font-size: 40px;
     text-align: center;
     border-radius: 30px 30px 0px 0px;
     padding: 25px;
   }
 
-  .recommend-user-content-title span {
+  .recommend-user__content-title span {
     font-size: 1.5rem;
   }
 
-  .recommend-user-content-title br {
+  .recommend-user__content-title br {
     display: block;
   }
 
-  .recommend-user-content-item img {
+  .recommend-user__content-item img {
     height: 350px;
   }
 
-  .recommend-user-content-link {
+  .recommend-user__content-link {
     border-radius: 0px 0px 30px 30px;
   }
 
-  .recommend-user-content-link span {
+  .recommend-user__content-link span {
     padding-left: 15px;
   }
 
-  .recommend-user-content-link a {
+  .recommend-user__content-link a {
     font-size: 1rem;
     padding: 10px 10px 10px 40px;
     width: 220px;
@@ -431,35 +473,35 @@ body {
 
   /* recommend-company部分 */
 
-  .recommend-company-content-title {
+  .recommend-company__content-title {
     text-align: center;
     font-size: 40px;
   }
 
-  .recommend-company-content-title span {
+  .recommend-company__content-title span {
     font-size: 1.5rem;
   }
 
-  .recommend-company-content-title br {
+  .recommend-company__content-title br {
     display: block;
   }
 
-  .recommend-company-content-item img {
+  .recommend-company__content-item img {
     height: 350px;
   }
 
-  .recommend-company-content-link {
+  .recommend-company__content-link {
     padding: 100px 0px 40px;
     text-align: center;
     border-radius: 0px 0px 30px 30px;
   }
 
-  .recommend-company-content-link a {
+  .recommend-company__content-link a {
     font-size: 1rem;
     padding: 10px 10px 10px 70px;
   }
 
-  .recommend-company-content-link span {
+  .recommend-company__content-link span {
     padding-left: 40px;
   }
 
@@ -467,55 +509,58 @@ body {
 
   /* info部分 */
 
-  .info-bg {
+  .info__bg {
     background-image: url(../images/home-bg2.png);
   }
 
-  .news-content {
+  /* 新着情報 */
+
+  .news__content {
     border-radius: 30px;
   }
 
-  .news-content-title {
+  .news__content-title {
     text-align: center;
     font-size: 40px;
     border-radius: 30px 30px 0px 0px;
   }
 
-  .news-content-title br {
+  .news__content-title br {
     display: block;
   }
 
-  .news-content-title span {
+  .news__content-title span {
     font-size: 1rem;
   }
 
-  .result-content {
+  /* /.新着情報 */
+
+  /* 制作実績 */
+
+  .result__content {
     margin-bottom: 60px;
     background-color: #fff;
     border-radius: 30px;
   }
 
-  .result-content-title {
+  .result__content-title {
     text-align: center;
     font-size: 35px;
     padding: 30px 0px;
     border-radius: 30px 30px 0px 0px;
   }
 
-  .result-content-title br {
+  .result__content-title br {
     display: block;
   }
 
-  .result-content-title span {
+  .result__content-title span {
     font-size: 1rem;
   }
 
-  .result-content img {
+  .result__content img {
     height: 350px;
   }
 }
 
-@media screen and (min-width:600px){
-}
-
-/* /.レスポンシブ対応 */
+/* /.レスポンシブ（スマホ用） */

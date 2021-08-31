@@ -1,26 +1,31 @@
-.company-bg {
+
+/* 背景画像 */
+
+.company__bg {
   background-image: url("../images/home-bg2.png");
 }
 
-.company-top {
+/* /.背景画像 */
+
+.company__top {
   display: flex;
   width: 100%;
 }
 
-.company-top-img {
+.company__top-img {
   width: 35%;
 }
 
-.company-top-img img {
+.company__top-img img {
   width: 100%;
   height: 350px;
 }
 
-.company-top-img-responsive {
+.company__top-img-responsive {
   display: none;
 }
 
-.company-top-lead {
+.company__top-lead {
   position: relative;
   display: flex;
   justify-content: center;
@@ -29,12 +34,13 @@
   margin: 0 auto;
 }
 
-.company-top-lead h1 {
+.company__top-lead h1 {
   font-size: 3rem;
   line-height: 1.3;
+  font-weight: bold;
 }
 
-.company-top-lead img {
+.company__top-lead img {
   position: absolute;
   width: 200px;
   border-radius: 20px;
@@ -42,49 +48,51 @@
   bottom: 20px
 }
 
-.company-lead-title {
+.company__lead-title {
   padding: 90px 0px 60px;
 }
 
-.company-lead-title br {
+.company__lead-title br {
   display: none;
 }
 
-.company-lead-title h2 {
+.company__lead-title h2 {
   text-align: center;
   font-size: 2rem;
+  font-weight: bold;
 }
 
-.company-detail-responsive-title {
+.company__detail-responsive-title {
   display: none;
 }
 
-.company-lead-content {
+.company__lead-content {
   display: flex;
   justify-content: space-around;
   width: 100%;
 }
 
-.company-lead-item {
+.company__lead-item {
   width: 40%;
 }
 
-.company-lead-item h3 {
+.company__lead-item h3 {
   background-color: #393E46;
   font-size: 30px;
   color: #fff;
   padding: 30px;
+  font-weight: bold;
 }
 
-.company-lead-item img {
+.company__lead-item img {
   width: 100%;
 }
 
-.company-lead-responsive-item {
+.company__lead-responsive-item {
   display: none;
 }
 
-.company-lead-question {
+.company__lead-question {
   width: 80%;
   display: flex;
   justify-content: center;
@@ -92,68 +100,70 @@
   margin: 0 auto;
 }
 
-.company-lead-question img:nth-last-child(1) {
+.company__lead-question img:nth-last-child(1) {
   width: 60%;
   margin: 0 auto;
 }
 
-.company-lead-question img:nth-last-child(2) {
+.company__lead-question img:nth-last-child(2) {
   width: 35%;
   margin: 0 auto;
 }
 
-.company-detail-title {
+.company__detail-title {
   padding: 50px 0px 0px;
 }
 
-.company-detail-title h2 {
+.company__detail-title h2 {
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.8rem;
   line-height: 1.5;
+  font-weight: bold;
 }
 
-.company-detail-item {
+.company__detail-item {
   margin: 0 auto;
   width: 90%;
   padding: 50px 0px;
 }
 
-.company-detail-item h3 {
-  font-size: 3rem;
+.company__detail-item h3 {
+  font-size: 2.8rem;
   padding: 50px;
   color: #707070;
   line-height: 1.5;
+  font-weight: bold;
 }
 
-.company-detail-item h3 br {
+.company__detail-item h3 br {
   display: none;
 }
 
-.company-detail-item__flex {
+.company__detail-item--flex {
   display: flex;
   width: 100%;
 }
 
-.company-detail-item h3 span {
+.company__detail-item h3 span {
   border-bottom: 1px solid;
   padding: 0px 50px 0px 0px;
 }
 
-.company-detail-item img {
+.company__detail-item img {
   display: block;
   width: 30%;
   max-height: 280px;
   margin-left: 50px;
 }
 
-.company-detail-item p {
-  width: 40%;
-  font-size: 1.8rem;
+.company__detail-item p {
+  width: 50%;
+  font-size: 1.5rem;
   line-height: 1.8;
   padding-left: 50px;
 }
 
-.company-detail-responsive-item {
+.company__detail-responsive-item {
   display: none;
 }
 
@@ -161,8 +171,16 @@
 
 @media screen and (max-width:1024px) {
 
-  .company-top-lead h1 {
-    font-size: 2.5rem;
+  .company__top-img img {
+    height: 280px;
+  }
+
+  .company__top-lead h1 {
+    font-size: 2rem;
+  }
+
+  .company__top-lead img {
+    width: 150px;
   }
 
 }
@@ -170,25 +188,25 @@
 
 @media screen and (max-width:376px){
 
-  .company-top-img {
+  .company__top-img {
     display: none;
   }
 
-  .company-top-lead h1 {
+  .company__top-lead h1 {
     display: none;
   }
 
-  .company-top-img-responsive {
+  .company__top-img-responsive {
     display: block;
   }
 
-  .company-top-img-responsive img {
+  .company__top-img-responsive img {
     position: relative;
     width: 100%;
     top: -45px;
   }
 
-  .company-top-lead img {
+  .company__top-lead img {
     right: 70px;
     top: -30px;
     width: 180px;
@@ -196,51 +214,51 @@
     object-fit: cover;
   }
 
-  .company-lead-title br {
+  .company__lead-title br {
     display: block;
   }
 
-  .company-lead-title h2 {
+  .company__lead-title h2 {
     line-height: 1.5;
   }
 
-  .company-lead-content {
+  .company__lead-content {
     flex-direction: column;
   }
 
-  .company-lead-item {
+  .company__lead-item {
     width: 80%;
     margin: 30px auto;
   }
 
-  .company-lead-item h3 {
+  .company__lead-item h3 {
     font-size: 20px;
     padding: 30px 0px;
     text-align: center;
   }
 
-  .company-lead-item img {
+  .company__lead-item img {
     display: none;
   }
 
-  .company-lead-item .company-lead-responsive-item {
+  .company__lead-item .company__lead-responsive-item {
     display: block;
     width: 100%;
   }
 
-  .company-lead-question {
+  .company__lead-question {
     display: none;
   }
 
-  .company-detail-responsive-title {
+  .company__detail-responsive-title {
     display: block;
   }
 
-  .company-detail-title h2 {
+  .company__detail-title h2 {
     font-size: 1.5rem;
   }
 
-  .company-detail-item h3 {
+  .company__detail-item h3 {
     font-size: 1.3rem;
     padding: 0 0 5px;
     text-align: center;
@@ -249,21 +267,21 @@
     margin: 0 auto;
   }
 
-  .company-detail-item h3 span {
+  .company__detail-item h3 span {
     border-bottom: none;
     padding: 0;
   }
 
-  .company-detail-item img {
+  .company__detail-item img {
     width: 90%;
     margin: 15px auto;
   }
 
-  .company-detail-item__flex {
+  .company__detail-item--flex {
     flex-direction: column;
   }
 
-  .company-detail-item p {
+  .company__detail-item p {
     width: 100%;
     font-size: 1rem;
     padding: 30px 0 40px;
@@ -272,11 +290,11 @@
     order: 1;
   }
 
-  .company-detail-responsive-item {
+  .company__detail-responsive-item {
     display: block;
   }
 
-  .company-detail-item p span {
+  .company__detail-item p span {
     display: none;
   }
 

@@ -1,22 +1,22 @@
 /* contact部分 */
 
-.contact-bg {
+.contact__bg {
   background-image: url("../images/home-bg2.png");
   padding: 30px;
 }
 
-.contact-form-table {
+.contact__form-table {
   background-color: #fff;
   border-radius: 10px;
   width: 60%;
   margin: 0 auto;
 }
 
-.contact-form-table tbody {
+.contact__form-table tbody {
   text-align: center;
 }
 
-.contact-form-title {
+.contact__form-title {
   background-color: #393E46;
   font-size: 30px;
   color: #fff;
@@ -24,43 +24,40 @@
   border-radius: 10px 10px 0px 0px;
 }
 
-.contact-form-title br {
-  display: none;
-}
-
-.contact-form-title span {
+.contact__form-title span {
   font-size: 1rem;
   padding: 1rem;
   vertical-align: middle;
 }
 
-.contact-form-item-first {
-  padding: 40px 0px 15px 40px;
+.contact__form-item {
+  padding: 15px 0px 15px 70px;
   text-align: left;
-  font-size: 0.7rem;
+  font-size: 1rem;
+}
+
+/* 最初の項目へのCSS */
+.contact__form-item-first {
+  padding: 40px 0px 15px 70px;
+  text-align: left;
+  font-size: 1rem;
   width: 30%;
 }
 
-.contact-form-item {
-  padding: 15px 0px 15px 40px;
+/* 最後の項目へのCSS */
+.contact__form-item-last {
+  padding: 15px 0px 15px 70px;
   text-align: left;
-  font-size: 0.7rem;
-
-}
-
-.contact-form-item-last {
-  padding: 15px 0px 15px 40px;
-  text-align: left;
-  font-size: 0.7rem;
+  font-size: 1rem;
   vertical-align: top;
 }
 
-.contact-form-item span,
-.contact-form-item-last span {
+.contact__form-item span,
+.contact__form-item-last span {
   color: red;
 }
 
-.contact-form-area {
+.contact__form-area {
   width: 70%;
   padding: 5px 8px;
   border-radius: 6px;
@@ -68,13 +65,25 @@
   background-color: #F5F5F5;
   margin: 10px;
   resize: none;
+  text-align: left;
 }
 
-.contact-form-btn {
+.contact__form-area-first {
+  width: 70%;
+  padding: 5px 8px;
+  border-radius: 6px;
+  border: none;
+  background-color: #F5F5F5;
+  margin: 35px 0 10px;
+  resize: none;
+  text-align: left;
+}
+
+.contact__form-btn {
   text-align: center;
 }
 
-.contact-form-btn button {
+.contact__form-btn button {
   margin: 20px 0px 30px;
   display: inline-block;
   width: 200px;
@@ -84,61 +93,74 @@
   border: 1px solid #707070;
 }
 
-.contact-form-btn a {
+.contact__form-btn a {
   text-decoration: none;
   color: #fff;
   font-size: 0.7rem;
 }
 
-.contact-form-btn span {
+.contact__form-btn span {
   padding-left: 20px;
 }
 
+/* レスポンシブ用スタイル */
+
+.contact__form-title br {
+  display: none;
+}
+
+/* /.レスポンシブ用スタイル */
 
 
-/* レスポンシブ対応 */
+
+/* レスポンシブ対応(ipad用) */
 
 @media screen and (max-width:1024px){
-  .contact-bg {
+  .contact__bg {
     padding: 30px 40px 60px;
   }
 
-  .contact-form-table {
+  .contact__form-table {
     border-radius: 30px;
     width: 100%;
   }
 
-  .contact-form-title {
+  .contact__form-title {
     border-radius: 30px 30px 0px 0px;
+    text-align: center;
   }
 
-  .contact-form-title br {
+  .contact__form-title br {
     display: block;
   }
 
-  .contact-form-table tbody tr {
+  .contact__form-table tbody tr {
     display: flex;
     flex-direction: column;
   }
 
-  .contact-form-item-first {
+  .contact__form-item {
+    padding: 20px 0px 5px;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .contact__form-item-first {
     padding: 40px 0px 5px;
     text-align: center;
     font-size: 1.0rem;
     width: 100%;
   }
 
-  .contact-form-item {
-    padding: 20px 0px 5px;
-    text-align: center;
-    font-size: 1rem;
-  }
-
-  .contact-form-item-last {
+  .contact__form-item-last {
     padding: 20px 0px 5px;
     text-align: center;
     font-size: 1.0rem;
     width: 100%;
+  }
+
+  .contact__form-area-first {
+    margin: 10px;
   }
 
 }

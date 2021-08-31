@@ -1,4 +1,4 @@
-$('.recommend-user-content-item,.recommend-company-content-item').slick({
+$('.recommend-user__content-item,.recommend-company__content-item').slick({
 　autoplay: true,
 　autoplaySpeed: 4000,
 　fade: true,
@@ -9,7 +9,7 @@ $('.recommend-user-content-item,.recommend-company-content-item').slick({
 });
 
 
-$('.result-content-item').slick({
+$('.result__content-item').slick({
 　autoplay: true,
 　autoplaySpeed: 4000,
 　fade: true,
@@ -20,16 +20,16 @@ $('.result-content-item').slick({
   dotsClass: 'original-dots',
 });
 
-$('.logo-responsive').hide();
-$('.top-gnav-responsive').hide();
+$('.logo__responsive').hide();
+$('.top__gnav-responsive').hide();
 
 $('.btn-trigger').on('click', function() {
   $(this).toggleClass('active');
-  $('.home-logo').toggle();
+  $('.home__logo').toggle();
   $('.user-top-img-responsive').toggle();
   $('.company-top').toggle();
-  $('.home-content-lead').toggle();
-  $('.logo-responsive').slideToggle();
-  $('.top-gnav-responsive').slideToggle();
+  $('.home__content-lead').toggle();
+  $('.logo__responsive').slideToggle();
+  $('.top__gnav-responsive').slideToggle();
   return false;
 });

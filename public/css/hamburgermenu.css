@@ -2,7 +2,7 @@
 
   /* ハンバーガーメニュー */
 
-.top-responsive {
+.top__responsive {
   display: none;
 }
 
@@ -18,7 +18,7 @@
 
 @media screen and (max-width:376px){
 
-  .top-responsive {
+  .top__responsive {
     display: block;
     background-color: #00ADB5;
     position: relative;
@@ -40,21 +40,21 @@
   }
 
   .btn-trigger span {
-  pointer-events: auto;
-  display: block;
-  position: absolute;
-  left: 12px;
-  width: 50%;
-  height: 5px;
-  background-color: #fff;
-  border-radius: 4px;
+    pointer-events: auto;
+    display: block;
+    position: absolute;
+    left: 12px;
+    width: 50%;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 4px;
   }
 
-  .logo-responsive {
+  .logo__responsive {
     position: relative;
   }
 
-  .logo-responsive img {
+  .logo__responsive img {
     position: absolute;
     right: 70px;
     top: 15px;
@@ -96,11 +96,11 @@
   transform: translateY(-10px) rotate(45deg);
   }
 
-  .top-gnav-responsive {
+  .top__gnav-responsive {
     padding: 85px 0px 60px;
   }
 
-  .top-gnav-responsive li {
+  .top__gnav-responsive li {
     list-style: none;
     color: #fff;
     text-align: center;

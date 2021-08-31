@@ -3,11 +3,11 @@
   <span></span>
   <span></span>
 </div>
-<div class="top-responsive">
-  <div class="logo-responsive">
+<div class="top__responsive">
+  <div class="logo__responsive">
     <img src="{{ asset('images/logo.png') }}" alt="logo">
   </div>
-  <div class="top-gnav-responsive">
+  <div class="top__gnav-responsive">
     <ul>
       <li>ホーム</li>
       <li>フリーランスの方へ</li>

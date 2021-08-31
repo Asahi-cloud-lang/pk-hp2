@@ -1,32 +1,40 @@
 
-.footer-bg1 {
+/* 背景色 */
+
+.footer__bg1 {
   background-color: #00ADB5;
 }
 
-.footer__flex {
+.footer__bg2 {
+  background-color: #393E46;
+}
+
+/* /.背景色 */
+
+.footer--flex {
   display: flex;
   justify-content: center;
 }
 
-.footer-logo {
+.footer__logo {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.footer-logo img {
+.footer__logo img {
   width: 70%;
   border-radius: 30px;
   padding: 15px;
 }
 
-.footer-item-list {
+.footer__item-list {
   padding: 15px 0px;
   width: 40%;
   color: #fff;
 }
 
-.footer-item {
+.footer__item {
   text-align: left;
   padding: 10px 0px;
   width: 50%;
@@ -34,67 +42,74 @@
   color: #fff;
 }
 
-.footer-item-name {
+.footer__item-name {
   color: #fff;
+  padding: 10px 0;
 }
 
-.footer-item span {
+.footer__item span {
   display: none;
 }
 
-.footer-bg2 {
-  background-color: #393E46;
-}
-
-.footer-lead {
+.footer__lead {
   color: #fff;
   text-align: center;
   padding: 15px;
 }
 
-.footer-lead br {
+/* レスポンシブ用スタイル */
+
+.footer__lead br {
   display: none;
 }
+
+/* /.レスポンシブ用スタイル */
+
+/* レスポンシブ対応(ipad用) */
+
 
 
 @media screen and (max-width:1024px){
   
-  .footer-item {
+  .footer__item {
     padding: 0;
     display: block;
     width: 100%;
   }
 
-  .footer-item-responsive01 {
+  .footer__item-responsive01 {
     display: block;
   }
 
-  .footer-item-responsive02 {
+  .footer__item-responsive02 {
     display: block;
   }
 
-  .footer-item span {
+  .footer__item span {
     display: none
   }
 
-  .footer-table tbody tr:nth-child(1) {
+  .footer__table tbody tr:nth-child(1) {
     display: block;
     margin: 10px 0;
   }
 
-  .footer-table tbody tr:nth-child(2) {
+  .footer__table tbody tr:nth-child(2) {
     display: block;
     margin: 10px 0;
   }
 
-  .footer-table tbody tr:nth-child(3) {
+  .footer__table tbody tr:nth-child(3) {
     display: block;
     margin: 10px 0;
   }
 
   }
 
-/* レスポンシブ対応 */
+/* /.レスポンシブ対応(ipad用) */
+
+
+/* レスポンシブ（スマホ用） */
 
 @media screen and (max-width:376px){
 
@@ -102,69 +117,71 @@
     background-color: #00ADB5;
   }
 
-  .footer-logo {
+  .footer__logo {
     order: 2;
   }
 
-  .footer-table {
+  .footer__table {
     font-size: 1.4rem;
     font-weight: normal;
     order: 1;
     margin: 0 auto;
   }
 
-  .footer__flex {
+  .footer--flex {
     flex-direction: column;
   }
 
-  .footer-item-list {
+  .footer__item-list {
     width: 100%;
   }
 
-  .footer-item {
+  .footer__item {
     width: 100%;
     text-align: center;
     color: #fff;
   }
 
-  .footer-item span {
+  .footer__item span {
     display: inline;
     padding-left: 20px;
   }
 
-  .footer-item-name {
+  .footer__item-name {
     text-align: center;
     color: #fff;
   }
 
-  .footer-item-responsive01 {
+  .footer__item-responsive01 {
     display: block;
   }
 
-  .footer-item-responsive02 {
+  .footer__item-responsive02 {
     display: none;
   }
 
-  .footer-table tbody tr:nth-child(1) {
+  .footer__table tbody tr:nth-child(1) {
     display: block;
     margin: 20px;
   }
 
-  .footer-table tbody tr:nth-child(2) {
+  .footer__table tbody tr:nth-child(2) {
     display: block;
     margin: 20px;
   }
 
-  .footer-lead {
+  .footer__lead {
     font-size: 20px;
     line-height: 1.6;
   }
 
-  .footer-lead br {
+  .footer__lead br {
     display: block;
   }
 
-  .footer-bg2 {
+  .footer__bg2 {
     background-color: #00ADB5;
   }
 }
+
+/* /.レスポンシブ（スマホ用） */

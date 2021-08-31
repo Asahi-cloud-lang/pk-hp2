@@ -28,10 +28,12 @@
     margin: 0;
     padding: 0;
 }
+
 .slick-list:focus
 {
     outline: none;
 }
+
 .slick-list.dragging
 {
     cursor: pointer;
@@ -48,32 +50,6 @@
             transform: translate3d(0, 0, 0);
 }
 
-.slick-track
-{
-    position: relative;
-    top: 0;
-    left: 0;
-
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-.slick-track:before,
-.slick-track:after
-{
-    display: table;
-
-    content: '';
-}
-.slick-track:after
-{
-    clear: both;
-}
-.slick-loading .slick-track
-{
-    visibility: hidden;
-}
-
 .slick-slide
 {
     display: none;
@@ -82,30 +58,37 @@
     height: 100%;
     min-height: 1px;
 }
+
 [dir='rtl'] .slick-slide
 {
     float: right;
 }
+
 .slick-slide img
 {
     display: block;
 }
+
 .slick-slide.slick-loading img
 {
     display: none;
 }
+
 .slick-slide.dragging img
 {
     pointer-events: none;
 }
+
 .slick-initialized .slick-slide
 {
     display: block;
 }
+
 .slick-loading .slick-slide
 {
     visibility: hidden;
 }
+
 .slick-vertical .slick-slide
 {
     display: block;
@@ -114,6 +97,215 @@
 
     border: 1px solid transparent;
 }
+
 .slick-arrow.slick-hidden {
     display: none;
 }
+
+/* 標準Dotsスタイル */
+.slick-dots
+{
+    position: absolute;
+    bottom: -60px;
+
+    display: block;
+
+    width: 100%;
+    padding: 0;
+    margin-left: 10px;
+
+    list-style: none;
+
+    text-align: center;
+}
+
+.slick-dots li
+{
+    position: relative;
+
+    display: inline-block;
+
+    width: 60px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+
+    cursor: pointer;
+}
+
+.slick-dots li button
+{
+    font-size: 0;
+    line-height: 0;
+
+    display: block;
+
+    width: 10px;
+    height: 20px;
+    padding: 5px;
+
+    cursor: pointer;
+
+    color: #00ADB5;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+
+.slick-dots li button:hover,
+.slick-dots li button:focus
+{
+    outline: none;
+}
+
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before
+{
+    opacity: 1;
+}
+
+.slick-dots li button:before
+{
+    font-family: 'slick';
+    font-size: 70px;
+    line-height: 20px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+
+    content: '•';
+    text-align: center;
+
+    color: black;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-dots li.slick-active button:before
+{
+    opacity: .75;
+    color: #00ADB5;
+}
+/* /.標準Dotsスタイル */
+
+/* Dotsカスタマイズ */
+.original-dots {
+    position: absolute;
+    bottom: -60px;
+
+    display: block;
+
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+
+    text-align: center;
+}
+
+.original-dots li {
+    position: relative;
+
+    display: inline-block;
+
+    width: 60px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+
+    cursor: pointer;
+}
+
+.original-dots li button {
+    font-size: 0;
+    line-height: 0;
+
+    display: block;
+
+    width: 10px;
+    height: 20px;
+    padding: 5px;
+
+    cursor: pointer;
+
+    color: #00ADB5;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+
+.original-dots li:hover,
+.original-dots li button:hover {
+    outline: none;
+}
+
+.original-dots li button:hover:before,
+.original-dots li button:focus:before
+{
+    opacity: 1;
+}
+
+.original-dots li button:before
+{
+    font-family: 'slick';
+    font-size: 70px;
+    line-height: 20px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+
+    content: '•';
+    text-align: center;
+
+    color: #fff;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.original-dots li.slick-active button:before
+{
+    opacity: .75;
+    color: #00ADB5;
+}
+/* /.Dotsカスタマイズ */
+
+/* Dots レスポンシブ */
+@media screen and (max-width:376px){
+
+    .slick-dots {
+        margin-left: 0;
+    }
+
+    .slick-dots li {
+        width: 40px;
+    }
+
+    .slick-dots li button:before {
+        font-size: 90px;
+        left: -5px;
+    }
+
+    .original-dots li {
+        width: 40px;
+    }
+
+    .original-dots li button:before
+    {
+        color: black;
+        font-size: 90px;
+        left: -5px;
+    }
+}
+
+/* /.Dots レスポンシブ */

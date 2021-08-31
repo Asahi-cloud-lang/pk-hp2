@@ -8,30 +8,30 @@
   <section class="home">
     <div class="home__bg">
       @include('includes.hamburgermenu')
-      <div class="home-content-lead">
+      <div class="home__content-lead">
         <h1>新人フリーランスが</h1>
         <h1><span>活きる</span>IT業界を</h1>
         <h1>目指して</h1>
       </div>
-      <div class="home-logo">
+      <div class="home__logo">
         <img src="{{ asset('images/logo.png') }}" alt="logo">
       </div>
     </div>
-    <nav class="home-gnav" class="fixed">
-      <ul class="home-gnav-list">
-        <li class="home-gnav-item">
+    <nav class="home__gnav" class="fixed">
+      <ul class="home__gnav-list">
+        <li class="home__gnav-item">
           <a href="#">HOME<br><span>ホーム</span></a>
         </li>
-        <li class="home-gnav-item">
+        <li class="home__gnav-item">
           <a href="#">FREELANCE<br><span>フリーランス様へ</span></a>
         </li>
-        <li class="home-gnav-item">
+        <li class="home__gnav-item">
           <a href="#">COMPANY<br><span>企業様へ</span></a>
         </li>
-        <li class="home-gnav-item">
+        <li class="home__gnav-item">
           <a href="#">NEWS<br><span>新着情報</span></a>
         </li>
-        <li class="home-gnav-item">
+        <li class="home__gnav-item">
           <a href="#">PRODUCTION<br><span>制作実績</span></a>
         </li>
       </ul>
@@ -41,19 +41,19 @@
 
   <!-- recommend-user -->
   <section class="recommend-user">
-    <div class="recommend-user-bg">
-      <div class="recommend-user-content">
-        <h1 class="recommend-user-content-title">
+    <div class="recommend-user__bg">
+      <div class="recommend-user__content">
+        <h1 class="recommend-user__content-title">
           FREELANCE<br><span>フリーランス様へ</span>
         </h1>
-        <ul class="recommend-user-content-item">
+        <ul class="recommend-user__content-item">
           <li><img src="{{ asset('images/home-bg.png') }}" alt="#"></li>
           <li><img src="{{ asset('images/home-bg.png') }}" alt="#"></li>
           <li><img src="{{ asset('images/home-bg.png') }}" alt="#"></li>
           <li><img src="{{ asset('images/home-bg.png') }}" alt="#"></li>
           <li><img src="{{ asset('images/home-bg.png') }}" alt="#"></li>
         </ul>
-        <div class="recommend-user-content-link">
+        <div class="recommend-user__content-link">
           <a href="#">フリーランス様ページへ<span>→</span></a>
         </div>
       </div>
@@ -63,19 +63,19 @@
 
   <!-- recommend-company -->
   <section class="recommend-company">
-    <div class="recommend-company-bg">
-      <div class="recommend-company-content">
-        <h1 class="recommend-company-content-title">
+    <div class="recommend-company__bg">
+      <div class="recommend-company__content">
+        <h1 class="recommend-company__content-title">
           COMPANY<br><span>企業様へ</span>
         </h1>
-        <ul class="recommend-company-content-item">
+        <ul class="recommend-company__content-item">
           <li><img src="{{ asset('images/home-bg.png') }}" alt="#"></li>
           <li><img src="{{ asset('images/home-bg.png') }}" alt="#"></li>
           <li><img src="{{ asset('images/home-bg.png') }}" alt="#"></li>
           <li><img src="{{ asset('images/home-bg.png') }}" alt="#"></li>
           <li><img src="{{ asset('images/home-bg.png') }}" alt="#"></li>
         </ul>
-        <div class="recommend-company-content-link">
+        <div class="recommend-company__content-link">
           <a href="#">企業様ページへ<span>→</span></a>
         </div>
       </div>
@@ -85,34 +85,34 @@
 
   <!-- info -->
   <section class="info">
-    <div class="info-bg">
-      <div class="info-content">
-        <div class="news-content info-content__width">
-          <h1 class="news-content-title" colspan="2">NEWS<br><span>新着情報</span></h1>
-          <ul class="news-content-item-list">
+    <div class="info__bg">
+      <div class="info__content">
+        <div class="news__content info__content--width">
+          <h1 class="news__content-title" colspan="2">NEWS<br><span>新着情報</span></h1>
+          <ul class="news__content-item-list">
             <li>
-              <div class="news-content-date"><span>2021</span><br>06.01</div>
-              <div class="news-content-item">合同会社プログラム・キッチン設立</div>
+              <div class="news__content-date"><span>2021</span><br>06.01</div>
+              <div class="news__content-item">合同会社プログラム・キッチン設立</div>
             </li>
             <li>
-              <div class="news-content-date"><span>2021</span><br>06.01</div>
-              <div class="news-content-item">合同会社プログラム・キッチン設立</div>
+              <div class="news__content-date"><span>2021</span><br>06.01</div>
+              <div class="news__content-item">合同会社プログラム・キッチン設立</div>
             </li>
             <li>
-              <div class="news-content-date"><span>2021</span><br>06.01</div>
-              <div class="news-content-item">合同会社プログラム・キッチン設立</div>
+              <div class="news__content-date"><span>2021</span><br>06.01</div>
+              <div class="news__content-item">合同会社プログラム・キッチン設立</div>
             </li>
             <li>
-              <div class="news-content-date"><span>2021</span><br>06.01</div>
-              <div class="news-content-item">合同会社プログラム・キッチン設立</div>
+              <div class="news__content-date"><span>2021</span><br>06.01</div>
+              <div class="news__content-item">合同会社プログラム・キッチン設立</div>
             </li>
           </ul>
         </div>
-        <div class="result-content info-content__width">
-          <h1 class="result-content-title">
+        <div class="result__content info__content--width">
+          <h1 class="result__content-title">
             PRODUCTION<br><span>制作実績</span>
           </h1>
-          <ul class="result-content-item">
+          <ul class="result__content-item">
             <li><img src="{{ asset('images/home-bg.png') }}" alt="#"></li>
             <li><img src="{{ asset('images/home-bg.png') }}" alt="#"></li>
             <li><img src="{{ asset('images/home-bg.png') }}" alt="#"></li>
