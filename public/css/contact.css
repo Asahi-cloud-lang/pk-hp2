@@ -1,167 +1,252 @@
-/* contact部分 */
-
+/* 背景色 */
 .contact__bg {
-  background-image: url("../images/home-bg2.png");
-  padding: 30px;
+    background-color: #47927B;
+    padding: 30px;
+}
+
+.contact__form-frame {
+	border: 5px solid #d38864;
+	border-radius: 30px;
+	width: 60%;
+	margin: 30px auto;
 }
 
 .contact__form-table {
-  background-color: #fff;
-  border-radius: 10px;
-  width: 60%;
-  margin: 0 auto;
+	border-collapse: separate;
+    border-radius: 30px;
+    margin: 10px auto;
+    border: 5px solid #d3ca64;
+	width: 97%;
 }
 
-.contact__form-table tbody {
-  text-align: center;
+.contact__form-table th {
+    width: 30%;
 }
 
-.contact__form-title {
-  background-color: #393E46;
-  font-size: 30px;
-  color: #fff;
-  padding: 30px;
-  border-radius: 10px 10px 0px 0px;
-}
-
-.contact__form-title span {
-  font-size: 1rem;
-  padding: 1rem;
-  vertical-align: middle;
+.contact__form-table td {
+    width: 60%;
 }
 
 .contact__form-item {
-  padding: 15px 0px 15px 70px;
-  text-align: left;
-  font-size: 1rem;
+    line-height: 1.5;
+    padding: 15px 0px 15px 30px;
+    font-size: 0.8rem;
 }
 
 /* 最初の項目へのCSS */
 .contact__form-item-first {
-  padding: 40px 0px 15px 70px;
-  text-align: left;
-  font-size: 1rem;
-  width: 30%;
+    line-height: 1.5;
+    padding: 40px 0px 15px 30px;
+    font-size: 0.8rem;
+    width: 30%;
+}
+
+.contact__form-item-first span {
+    color: #fff;
+    padding: 5px;
+    background-color: #d3ca64;
+    margin-right: 5px;
 }
 
 /* 最後の項目へのCSS */
 .contact__form-item-last {
-  padding: 15px 0px 15px 70px;
-  text-align: left;
-  font-size: 1rem;
-  vertical-align: top;
+    line-height: 1.5;
+    padding: 15px 0px 15px 30px;
+    font-size: 0.8rem;
+    vertical-align: top;
 }
 
 .contact__form-item span,
 .contact__form-item-last span {
-  color: red;
+    color: #fff;
+    padding: 5px;
+    background-color: #d38864;
+    margin-right: 5px;
+}
+
+.contact__form-table ::placeholder {
+    color: rgb(209, 209, 209);
 }
 
 .contact__form-area {
-  width: 70%;
-  padding: 5px 8px;
-  border-radius: 6px;
-  border: none;
-  background-color: #F5F5F5;
-  margin: 10px;
-  resize: none;
-  text-align: left;
+    width: 90%;
+    padding: 5px 8px;
+    border-radius: 6px;
+    border: none;
+    background-color: #F5F5F5;
+    margin: 10px;
+    resize: none;
+    text-align: left;
 }
 
 .contact__form-area-first {
-  width: 70%;
-  padding: 5px 8px;
-  border-radius: 6px;
-  border: none;
-  background-color: #F5F5F5;
-  margin: 35px 0 10px;
-  resize: none;
-  text-align: left;
+    width: 90%;
+    padding: 5px 8px;
+    border-radius: 6px;
+    border: none;
+    background-color: #F5F5F5;
+    margin: 35px 10px 10px;
+    resize: none;
+    text-align: left;
+}
+
+.contact__form-select {
+    width: 45%;
+    padding: 5px 8px;
+    border-radius: 6px;
+    border: none;
+    background-color: #F5F5F5;
+    margin: 10px;
+    resize: none;
+    text-align: left;
+}
+
+select {
+    -moz-appearance: menulist;
+    -webkit-appearance: menulist;
 }
 
 .contact__form-btn {
-  text-align: center;
+    padding: 30px;
+    text-align: center;
 }
 
 .contact__form-btn button {
-  margin: 20px 0px 30px;
-  display: inline-block;
-  width: 200px;
-  padding: 0.5em 1em;
-  border-radius: 5px;
-  background-color: #393E46;
-  border: 1px solid #707070;
+    background-color: #d36464;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    position:relative;
+    z-index: 10;
+    font-size: 1rem;
+    display: inline-block;
+    width: 300px;
 }
 
-.contact__form-btn a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 0.7rem;
+.contact__form-btn button:hover {
+		background-color: #d53636;
 }
 
-.contact__form-btn span {
-  padding-left: 20px;
+.contact__img {
+    display: none;
 }
 
-/* レスポンシブ用スタイル */
+@media screen and (max-width:1024px) {
 
-.contact__form-title br {
-  display: none;
+
+    .contact__form-frame {
+        width: 60%;
+        margin: 30px auto;
+    }
+
+    .contact__form-table tbody tr {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact__form-table th {
+        width: unset;
+    }
+
+    .contact__form-item-first {
+        padding: 40px 0 0 30px;
+    }
+
+    .contact__form-table td {
+        width: unset;
+        text-align: center;
+    }
+
+    .contact__form-select {
+        width: 90%;
+        margin: 10px;
+        height: 35px;
+    }
+
 }
 
-/* /.レスポンシブ用スタイル */
 
+@media screen and (max-width:376px){
+
+    .contact__bg {
+        padding: 30px 30px 0;
+    }
+
+    .contact__form-frame {
+        border: unset;
+        width: unset;
+        margin: 0 auto;
+    }
+
+    .contact__form-table {
+        border: unset;
+    }
+
+    .contact__form-item {
+        padding: 20px 0px 5px;
+        font-size: 1rem;
+        color: #fff;
+        font-weight: normal;
+    }
+
+    .contact__form-item-first {
+        padding: 40px 0px 5px;
+        font-size: 1.0rem;
+        color: #fff;
+        font-weight: normal;
+    }
+
+    .contact__form-item span {
+        margin-right: 20px;
+    }
+
+    .contact__form-item-first span {
+        margin-right: 20px;
+    }
+
+    .contact__form-area-first {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .contact__form-area {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .contact__form-select {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .contact__form-btn {
+        padding: 30px 0 0;
+    }
+
+	.contact__form-btn button {
+		width: 230px;
+	}
+
+    .contact__img {
+        display: block;
+        width: 60%;
+        padding: 50px 0 20px;
+        margin: 0 auto;
+    }
+
+    .contact__img img {
+        width: 100%;
+    }
+}
 
 
 /* レスポンシブ対応(ipad用) */
 
 @media screen and (max-width:1024px){
-  .contact__bg {
-    padding: 30px 40px 60px;
-  }
 
-  .contact__form-table {
-    border-radius: 30px;
-    width: 100%;
-  }
 
-  .contact__form-title {
-    border-radius: 30px 30px 0px 0px;
-    text-align: center;
-  }
-
-  .contact__form-title br {
-    display: block;
-  }
-
-  .contact__form-table tbody tr {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .contact__form-item {
-    padding: 20px 0px 5px;
-    text-align: center;
-    font-size: 1rem;
-  }
-
-  .contact__form-item-first {
-    padding: 40px 0px 5px;
-    text-align: center;
-    font-size: 1.0rem;
-    width: 100%;
-  }
-
-  .contact__form-item-last {
-    padding: 20px 0px 5px;
-    text-align: center;
-    font-size: 1.0rem;
-    width: 100%;
-  }
-
-  .contact__form-area-first {
-    margin: 10px;
-  }
 
 }
 /* /.レスポンシブ対応 */

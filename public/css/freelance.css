@@ -1,0 +1,249 @@
+/* 背景色 */
+.freelance__bg--color {
+    background-color: #d3ca64;
+}
+
+.freelance__top-message {
+    padding: 100px;
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+    line-height: 1.8;
+    font-weight: bold;
+}
+
+.freelance__top-lead {
+    display: flex;
+    justify-content: center;
+}
+
+.freelance__top-box {
+    width: 40%;
+    background-color: #fff;
+    padding: 0px 50px;
+    border-radius: 40px;
+    margin: 20px;
+    color: #828282;
+}
+
+.freelance__top-box span {
+    background-color: #D38864;
+    padding: 15px;
+    border: 1px solid #D38864;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.freelance__top-box h2 {
+    font-size: 1.6rem;
+    padding: 10px;
+    line-height: 1.5;
+}
+
+.freelance__top-img {
+    text-align: center;
+}
+
+.freelance__top-img .man {
+    width: 70%;
+    margin: 30px auto;
+}
+
+.freelance__top-img .woman {
+    width: 54%;
+    margin: 20px 0 30px;
+}
+
+.freelance__top-box p {
+    padding-bottom: 30px;
+    line-height: 1.5;
+}
+
+.freelance__catch-lead {
+    text-align: center;
+    padding: 40px;
+}
+
+.freelance__catch-content {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.freelance__catch-box {
+    background-color: #47927b;
+    padding: 30px;
+    width: 25%;
+    text-align: center;
+    color: #fff;
+    margin: 20px;
+}
+
+.freelance__catch-number {
+    position: relative;
+    top: -40px;
+    background-color: #47927b;
+    padding: 25px 20px;
+    display: inline-block;
+    border-radius: 50px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.freelance__catch-box p {
+    position: relative;
+    top: -40px;
+    font-size: 1rem;
+}
+
+.freelance__catch-detail {
+    color: #47927b;
+    padding-bottom: 30px;
+}
+
+.freelance__catch-detail--flex {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 60px auto;
+}
+
+.freelance__catch-detail-item {
+    padding: 30px;
+}
+
+.freelance__catch-detail-item h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-bottom: 1px solid;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.freelance__catch-detail--flex:nth-child(2) .freelance__catch-detail-item {
+    padding: 30px 120px 30px 0px;
+}
+
+/* レスポンシブ用のデザイン */
+.freelance__catch-title__responsive {
+    display: none;
+}
+
+
+/* レスポンシブ（ipad用） */
+
+@media screen and (max-width:1024px) {
+
+}
+
+/* /.レスポンシブ（ipad用） */
+
+
+/* レスポンシブ（スマホ用） */
+
+@media screen and (max-width:376px){
+
+
+    .freelance__top-message {
+        padding: 50px 0 40px;
+        font-size: 1.1rem;
+    }
+
+    .freelance__top-lead {
+        display: block;
+    }
+
+    .freelance__top-box {
+        width: unset;
+        padding: 0px 20px;
+        border-radius: 30px;
+    }
+
+    .freelance__top-box h2 {
+        font-size: 1rem;
+    }
+
+    .freelance__top-box h2 span {
+        padding: 13px;
+    }
+
+    .freelance__catch-lead {
+        padding: 50px 10px 20px;
+    }
+
+    .freelance__catch-lead img {
+        width: 100%;
+    }
+
+    .freelance__catch-content {
+        display: block;
+    }
+
+    .freelance__catch-box {
+        width: unset;
+        margin: 80px 20px;
+        border-radius: 40px;
+        padding: 0;
+    }
+
+    .freelance__catch-number {
+        top: -30px;
+        font-size: 1rem;
+    }
+
+    .freelance__catch-number span {
+        display: inline-block;
+        position: relative;
+        top: -10px;
+    }
+
+    .freelance__catch-box p {
+        top: -35px
+    }
+
+    .freelance__catch-title__responsive {
+        display: inline-block;
+        font-size: 1.3rem;
+        font-weight: bold;
+        border-bottom: 1px solid;
+        padding-bottom: 5px;
+        margin-left: 20px;
+    }
+
+    .freelance__catch-detail-item h2 {
+        display: none;
+    }
+
+    .freelance__catch-detail--flex {
+        width: unset;
+        margin: 0px 20px;
+    }
+
+    .freelance__catch-detail--flex:nth-child(2) .freelance__catch-detail-item {
+        padding: 30px 10px;
+    }
+
+    .freelance__catch-detail--flex:last-child() .freelance__catch-detail-item {
+        padding: 0 10px;
+    }
+
+    .freelance__catch-detail--flex img {
+        width: 100px;
+        height: fit-content;
+        padding: 30px 0;
+    }
+
+    .freelance__catch-detail-item {
+        padding: 30px 10px;
+        text-align: left;
+    }
+
+    .freelance__catch-detail-item p {
+        line-height: 1.5;
+    }
+
+    .freelance__catch-detail-item br {
+        display: none;
+    }
+}

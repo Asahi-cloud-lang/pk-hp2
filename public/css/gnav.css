@@ -1,0 +1,138 @@
+/* =============== */
+/* ===共通スタイル=== */
+/* =============== */
+
+.gnav {
+    display: flex;
+	justify-content: space-around;
+}
+
+/* ロゴ */
+.gnav__logo {
+    text-align: center;
+    width: 30%;
+}
+
+.gnav__logo img {
+    width: 60%;
+    height: 50px;
+    margin: 15px;
+}
+/* /.ロゴ */
+
+.gnav__menu {
+    width: 60%;
+}
+
+.gnav-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.gnav-item {
+    font-family: "Open sans", sans-serif;
+    padding: 25px 20px;
+    letter-spacing: 0.05em;
+}
+
+.gnav-item a {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.gnav-item span{
+    font-size: 12px;
+}
+/* /.ナビゲーションリンク */
+
+/* ========================= */
+/* ===home,companyのスタイル=== */
+/* ========================= */
+
+.home__top-responsive .gnav {
+    display: none;
+}
+
+.home .gnav {
+    background-color: #47927B;
+}
+
+.home .gnav-item a {
+    color: #fff;
+}
+
+.company .gnav-item a {
+    color: #fff;
+}
+
+
+/* ============== */
+/* ==レスポンシブ===
+/* ====ipad用==== */
+/* ============== */
+
+@media screen and (max-width:1024px) {
+
+    .gnav-item {
+        padding: 25px 5px;
+    }
+
+}
+
+
+/* ============== */
+/* ==レスポンシブ===
+/* ====スマホ用==== */
+/* ============== */
+
+@media screen and (max-width:768px){
+    .gnav {
+        flex-direction: column;
+    }
+
+    .gnav__logo {
+        width: 50%;
+        margin: 0 auto;
+        padding: 5px;
+    }
+
+    .gnav__menu {
+        width: 100%;
+    }
+
+}
+
+/* ============== */
+/* ==レスポンシブ===
+/* ====スマホ用==== */
+/* ============== */
+
+@media screen and (max-width:376px){
+
+    .gnav {
+        display: block;
+        background-color: #fff;
+        height: 100px;
+    }
+
+    .gnav__menu {
+        display: none;
+    }
+
+    .gnav__logo img {
+        width: 150px;
+        height: fit-content;
+        margin: 36px 20px;
+    }
+
+    .home .gnav {
+        display: none;
+    }
+
+    .home__top-responsive .gnav {
+        display: block;
+        background-color: #fff;
+        height: 100px;
+    }
+}

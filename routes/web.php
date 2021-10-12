@@ -17,10 +17,10 @@ Route::get('/', function () {
     return view('./pages/top');
 });
 
-Route::get('/users', function () {
-    return view('./pages/user');
+Route::get('/freelance', function () {
+    return view('./pages/freelance');
 });
 
-Route::get('/companys', function () {
+Route::get('/company', function () {
     return view('./pages/company');
 });

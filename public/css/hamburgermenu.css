@@ -1,113 +1,130 @@
 
 
   /* ハンバーガーメニュー */
+.hamburger-menu {
+    display: none;
+}
 
-.top__responsive {
-  display: none;
+.hamburger-menu__item {
+    display: none;
 }
 
 .btn-trigger {
-  display: none;
-  pointer-events: none;
+    display: none;
+    pointer-events: none;
 }
 
 .btn-trigger span{
-  display: none;
+    display: none;
 }
 
+.hamburger-menu__list {
+    padding: 70px 0 0;
+}
+
+
+.hamburger-menu__item {
+    position: relative;
+    background-color: #fff;
+    top: -100px;
+    right: 0px;
+    width: 375px;
+    z-index: 1;
+}
 
 @media screen and (max-width:376px){
 
-  .top__responsive {
-    display: block;
-    background-color: #00ADB5;
-    position: relative;
-    top: -47px;
-  }
+    .hamburger-menu {
+        display: block;
+        float: right;
+    }
 
-  .btn-trigger {
-    pointer-events: auto;
-    display: block;
-    position: relative;
-    width: 50px;
-    height: 44px;
-    top: 20px;
-    left: 20px;
-    cursor: pointer;
-    background-color: #00ADB5;
-    border: 1px solid #707070;
-    z-index: 1;
-  }
+    .hamburger-menu__item {
+        display: block;
+        position: relative;
+        background-color: #fff;
+        top: -100px;
+        right: 0px;
+        width: 375px;
+        z-index: 1;
+    }
 
-  .btn-trigger span {
-    pointer-events: auto;
-    display: block;
-    position: absolute;
-    left: 12px;
-    width: 50%;
-    height: 5px;
-    background-color: #fff;
-    border-radius: 4px;
-  }
+    .btn-trigger {
+        pointer-events: auto;
+        display: block;
+        position: relative;
+        width: 50px;
+        height: 44px;
+        top: -75px;
+        right: 30px;
+        float: right;
+        cursor: pointer;
+        z-index: 2;
+    }
 
-  .logo__responsive {
-    position: relative;
-  }
+    .btn-trigger span {
+        pointer-events: auto;
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: black;
+        border-radius: 4px;
+    }
 
-  .logo__responsive img {
-    position: absolute;
-    right: 70px;
-    top: 15px;
-    height: 50px;
-    width: 180px;
-    border-radius: 20px;
-    object-fit: cover;
-  }
+    .hamburger-menu__logo {
+        position: relative;
+    }
 
-  .btn-trigger, .btn-trigger span {
-  display: inline-block;
-  transition: all .5s;
-  box-sizing: border-box;
-  }
-  
-  .btn-trigger span:nth-of-type(1) {
-  top: 10px;
-  }
+    .hamburger-menu__logo img {
+        position: absolute;
+        left: 20px;
+        top: 35px;
+        height: fit-content;
+        width: 150px;
+        object-fit: cover;
+    }
 
-  .btn-trigger span:nth-of-type(2) {
-  top: 20px;
-  }
+    .btn-trigger, .btn-trigger span {
+        display: inline-block;
+        transition: all 5.5ms;
+        box-sizing: border-box;
+    }
 
-  .btn-trigger span:nth-of-type(3) {
-  bottom: 7px;
-  }
+    .btn-trigger span:nth-of-type(1) {
+        top: 5px;
+    }
 
-  .btn-trigger.active span:nth-of-type(1) {
-  -webkit-transform: translateY(10px) rotate(-45deg);
-  transform: translateY(10px) rotate(-45deg);
-  }
-  
-  .btn-trigger.active span:nth-of-type(2) {
-  opacity: 0;
-  }
-  
-  .btn-trigger.active span:nth-of-type(3) {
-  -webkit-transform: translateY(-10px) rotate(45deg);
-  transform: translateY(-10px) rotate(45deg);
-  }
+    .btn-trigger span:nth-of-type(2) {
+        top: 20px;
+    }
 
-  .top__gnav-responsive {
-    padding: 85px 0px 60px;
-  }
+    .btn-trigger span:nth-of-type(3) {
+        bottom: 7px;
+    }
 
-  .top__gnav-responsive li {
-    list-style: none;
-    color: #fff;
-    text-align: center;
-    font-size: 30px;
-    line-height: 2.5;
-  }
+    .btn-trigger.active span:nth-of-type(1) {
+        -webkit-transform: translateY(10px) rotate(-45deg);
+        transform: translateY(20px) rotate(-45deg);
+    }
 
+    .btn-trigger.active span:nth-of-type(2) {
+        opacity: 0;
+    }
+
+    .btn-trigger.active span:nth-of-type(3) {
+        -webkit-transform: translateY(-10px) rotate(45deg);
+        transform: translateY(-10px) rotate(45deg);
+    }
+
+    .hamburger-menu__list {
+        padding: 70px 0 0;
+    }
+
+    .hamburger-menu__list li {
+        list-style: none;
+        text-align: center;
+        font-size: 30px;
+        line-height: 2.5;
+    }
 }
-
-  /* /.ハンバーガーメニュー */

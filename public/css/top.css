@@ -1,566 +1,632 @@
 
-/* 全体のフォント */
+/* ============== */
+/* =====全体====== */
+/* ============== */
 
+/* 全体のフォントを指定 */
 body {
-  font-family: "MS P明朝";
+	font-family: "MS P明朝";
 }
 
-/* /.全体のフォント */
 
+/* ============== */
+/* =====home===== */
+/* ============== */
 
-/* home部分 */
-
-/* 背景画像 */
-
+/* 背景画像と背景色 */
 .home__bg {
-  width: 100%;
-  height: 100vh;
-  background-image: url(../images/home-bg.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2){
-  .home__bg {
     width: 100%;
-    height: 100vh;
-    background-image: url(../images/home-bg@2x.png);
+    /* 背景色 */
+    background-color: #47927B;
+    /* 背景画像 */
+    background-image: url(../images/top/home-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     position: relative;
-  }
 }
-
 /* /.背景画像 */
 
 .home__content-lead {
-  font-size: 50px;
-  padding: 30px;
+    padding: 300px 200px 300px 0;
+    text-align: center;
 }
 
-.home__content-lead h1{
-  margin: 10px;
-  font-weight: bold;
-  font-size: 4rem;
+.home__content-lead h1 {
+    color: #D3CA64;
+    padding: 20px 0;
+    font-size: 30px;
 }
 
-.home__content-lead span{
-  color: #A48B13;
+.home__content-lead p {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #fff;
 }
 
-.home__content-lead span{
-  color: #A48B13;
+/* ================================ */
+/* ==fleelance,companyの共通デザイン== */
+/* ================================ */
+
+/* ================ */
+/* ====title部分==== */
+/* ================ */
+
+.knife {
+    width: 15px;
 }
 
-.home__logo img {
-  position: absolute;
-  right: 30px;
-  bottom: 30px;
-  border-radius: 20px;
-  width: 180px;
+.fork {
+    width: 25px;
 }
 
-/* ナビゲーションリンク */
-
-.home__gnav {
-  background-color: #393E46;
+.content--padding {
+    padding: 200px 0;
 }
 
-.home__gnav-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.content-title {
+    text-align: center;
 }
 
-.home__gnav-item {
-  font-family: "Open sans", sans-serif;
-  font-size: 16px;
-  padding: 0 24px;
-  letter-spacing: 0.05em;
+.content-title h1 {
+    font-size: 30px;
+    color: #fff;
+    padding: 20px;
+    display: inline-block;
 }
 
-.home__gnav-item a {
-  display: inline-block;
-  padding: 30px 0;
-  text-align: center;
-  text-decoration: none;
-  font-size: 2rem;
-  color: #fff;
+.content-title span {
+    font-size: 1rem;
+    padding: 1rem;
+    vertical-align: middle;
 }
 
-.home__gnav-item span {
-  font-size: 1rem;
+/* ============== */
+/* ==slider-box== */
+/* ============== */
+
+/* content-boxの枠画像 */
+.content-box {
+    width: 60%;
+    text-align: center;
+    margin: 50px auto;
+    background-repeat: round;
 }
 
-/* /.ナビゲーションリンク */
+/* cotent-boxの中の横並び配置 */
+.content-box--flex {
+    display: flex;
+    justify-content: space-around;
+    padding: 125px 0 100px;
+}
 
-/* /.home */
+.content-box--width01 {
+    width: 50%;
+}
+
+.content-box--width02 {
+    width: 50%;
+}
+
+.content-box__title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding-bottom: 25px;
+}
+
+.content-box__item {
+    font-size: 1rem;
+    padding: 25px 0px;
+    text-align: left;
+    color: #505050;
+}
+
+.content-box__detail {
+    font-size: 1rem;
+    line-height: 2;
+    color: #505050;
+}
+
+.content-box__img {
+    padding: 20px 0;
+    margin: 0 auto;
+    width: 80%;
+}
+
+/* ============== */
+/* ====button==== */
+/* ============== */
+
+.content-link {
+    padding: 80px;
+    text-align: center;
+}
+
+.content-link a {
+    background-color: #d38864;
+    color: #fff;
+    padding: 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    position:relative;
+    z-index: 10;
+    font-size: 1rem;
+    display: inline-block;
+    width: 300px;
+}
+
+.content-link a:hover {
+		background-color: #c9683b;
+}
 
 
+/* ============== */
+/* ==freelance=== */
+/* ============== */
 
-/* recommend-user部分 */
+/* 背景色と背景画像 */
+.freelance__bg {
+    width: 100%;
+    height: 180vh;
+    /* 背景色 */
+    background-color: #47927B;
+    /* 背景画像 */
+    background-image: url(../images/top/freelance-bg.png);
+    background-repeat: round;
+    position: relative;
+}
+
+.freelance .content-box {
+		background-image: url(../images/top/fleelance-box-bg.png);
+}
+
+
+.freelance .content-box__img {
+    width: 50%;
+}
+
+/* ============== */
+/* ===company==== */
+/* ============== */
+
+.company .content--padding {
+    padding: 100px 0 0;
+}
 
 /* 背景色 */
-
-.recommend-user__bg {
-  background-color: #00ADB5;
+.company__bg {
+    background-color: #47927B;
 }
 
-/* /.背景色 */
-
-.recommend-user__content {
-  padding: 30px 40px;
+.company .content-box {
+	background-image: url(../images/top/company-box-bg.png);
 }
 
-.recommend-user__content-title {
-  background-color: #393E46;
-  font-size: 30px;
-  color: #fff;
-  padding: 30px;
-  border-radius: 10px 10px 0px 0px;
+.company .content-box__item {
+    padding: 20px 30px;
+    line-height: 2;
 }
 
-.recommend-user__content-title br {
-  display: none;
+.company .content-link {
+    padding: 80px 0 0;
+    text-align: center;
 }
 
-.recommend-user__content-title span {
-  font-size: 1rem;
-  padding: 1rem;
-  vertical-align: middle;
+.company__content-img {
+    display: flex;
+    justify-content: space-between;
 }
 
-.recommend-user__content-item img {
-  width: 100%;
+.pc {
+    padding: 5% 0 0 5%;
 }
 
-.recommend-user__content-link {
-  background-color: #fff;
-  padding: 40px;
-  text-align: right;
-  border-radius: 0px 0px 10px 10px;
+.pasta {
+    position: relative;
+    top: -50px;
+    right: 5%;
 }
 
-.recommend-user__content-link a {
-  background-color: #393E46;
-  color: #fff;
-  padding: 10px;
-  border-radius: 5px;
-  cursor: pointer;
-  text-decoration: none;
-  position:relative;
-  z-index: 10;
-  font-size: 0.5rem;
-  display: inline-block;
-  width: 180px;
-}
-
-.recommend-user__content-link span {
-  padding-left: 30px;
-}
-/* /.recommend-user */
 
 
+/* infoコンテンツの中には、「news」と「production」の2つのコンテンツがあります。 */
 
-/* recommend-company部分 */
-
-/* 背景画像 */
-
-.recommend-company__bg {
-  background-image: url("../images/home-bg2.png");
-}
-
-/* /.背景画像 */
-
-.recommend-company__content {
-  padding: 30px 40px;
-}
-
-.recommend-company__content-title {
-  background-color: #393E46;
-  font-size: 30px;
-  color: #fff;
-  padding: 30px;
-  border-radius: 10px 10px 0px 0px;
-}
-
-.recommend-company__content-title span{
-  font-size: 1rem;
-  padding: 1rem;
-  vertical-align: middle;
-}
-
-.recommend-company__content-item img {
-  width: 100%;
-}
-
-.recommend-company__content-link {
-  background-color: #fff;
-  padding: 40px;
-  text-align: right;
-  border-radius: 0px 0px 10px 10px;
-}
-
-.recommend-company__content-link a {
-  background-color: #393E46;
-  color: #fff;
-  padding: 10px;
-  border-radius: 5px;
-  cursor: pointer;
-  text-decoration: none;
-  position:relative;
-  font-size: 0.5rem;
-  z-index: 10;
-  display: inline-block;
-  width: 180px;
-}
-
-.recommend-company__content-link span {
-  padding-left: 45px;
-}
-
-/* レスポンシブ用スタイル */
-
-.recommend-company__content-title br {
-  display: none;
-}
-
-/* /.レスポンシブ用スタイル */
-
-/* /.recommend-company */
-
-
-
-/* info部分 */
+/* 「news」と「production」の共通デザイン */
+/* ============== */
+/* =====info===== */
+/* ============== */
 
 /* 背景色 */
-
 .info__bg {
-  background-color: #AAD8D3;
+    background-color: #47927B;
 }
 
-/* /.背景色 */
-
+/* 「news」と「production」を横並びに設定 */
 .info__content {
-  display: flex;
-  justify-content: space-evenly;
-  padding: 40px 30px 40px;
+    display: flex;
+    justify-content: center;
 }
 
-.info__content--width {
-  width: 40%;
+.info__content-title {
+    text-align: center;
+    padding-bottom: 30px;
 }
 
-/* 新着情報 */
+.info__content-title h1 {
+    font-size: 30px;
+    color: #fff;
+    padding: 20px;
+    display: inline-block;
+}
+
+.info__content-title span {
+    font-size: 1rem;
+    padding: 1rem;
+    vertical-align: middle;
+}
+
+.info__bg-images {
+    position: relative;
+    padding-bottom: 150px;
+}
+
+.carrots {
+    position: absolute;
+    top: -50px;
+    left: 20px;
+}
+
+.glass {
+    position: absolute;
+    top: -350px;
+    right: 20px;
+}
+
+
+/* ============== */
+/* =====news===== */
+/* ============== */
+
+/* 「news」のコンテンツ幅を指定 */
+.news__content--width {
+    width: 37%;
+    margin-right: 10px;
+}
 
 .news__content {
-  background-color: #fff;
-  border-radius: 10px;
-  padding-bottom: 30px;
+    background-color:#d3ca64;
+    border-radius: 20px;
+    padding-bottom: 30px;
+    font-size: 0.8rem;
+    color: #505050;
+    padding: 20px 10px;
+    height: 80%;
 }
 
-.news__content-title {
-  background-color: #393E46;
-  font-size: 30px;
-  color: #fff;
-  padding: 30px;
-  border-radius: 10px 10px 0px 0px;
-}
-
-.news__content-title span {
-  font-size: 1rem;
-  padding: 1rem;
-  vertical-align: middle;
-}
 
 .news__content-item-list li {
-  padding: 10px;
-  display: flex;
-  margin: 0 auto;
-  border-bottom: 1px solid #EEE;
-  width: 90%;
+    padding: 10px;
+    display: flex;
+    margin: 0 auto;
+    border-bottom: 1px solid #505050;
+    width: 90%;
 }
 
 .news__content-item {
-  padding: 10px;
-  font-size: 0.8rem;
+    padding: 10px;
+}
+
+.news__content-date span {
+    padding: 5px 10px;
+    border: 1px solid;
+    margin: 10px 10px 10px 0;
 }
 
 .news__content-date {
-  color: #C20095;
-  font-family: Gabriola;
-  font-size: 1.5rem;
+    font-size: 0.9rem;
+    padding: 10px;
 }
 
-/* レスポンシブ用スタイル */
 
-.news__content-title br {
-  display: none;
+/* ============== */
+/* ==production== */
+/* ============== */
+
+/* 「production」のコンテンツ幅を指定 */
+.production__content--width {
+    width: 37%;
+    margin-left: 10px;
 }
 
-/* /.レスポンシブ用スタイル */
-
-/* /.新着情報 */
-
-
-
-/* 制作実績 */
-
-.result__content {
-  background-color: black;
-  padding-bottom: 100px;
-  border-radius: 10px;
+.production__content {
+    background-color: #d38864;
+    border-radius: 20px;
+    padding: 30px 30px 150px 30px;
+    height: 80%;
 }
 
-.result__content-title {
-  background-color: #393E46;
-  font-size: 30px;
-  color: #fff;
-  padding: 30px;
-  border-radius: 10px 10px 0px 0px;
+.production__content-list img {
+    width: 100%;
+    height: 500px;
 }
 
-.result__content-title span{
-  font-size: 1rem;
-  padding: 1rem;
-  vertical-align: middle;
+/* ============== */
+/* ==responsive== */
+/* ============== */
+
+.home__responsive-bg01 {
+	display: none;
 }
 
-.result__content-item img {
-  width: 100%;
+.home__responsive-bg02 {
+	display: none;
 }
 
-/* レスポンシブ用スタイル */
 
-.result__content-title br {
-  display: none;
-}
-
-/* /.レスポンシブ用スタイル */
-
-/* /.制作実績 */
-
-/* /.info */
-
-
-
-/* レスポンシブ（ipad用） */
+/* ============== */
+/* ==レスポンシブ===
+/* ====ipad用==== */
+/* ============== */
 
 @media screen and (max-width:1024px) {
 
-  .recommend-user__content-link {
-    padding: 100px 0px 40px;
-    text-align: center;
-  }
 
-  .recommend-company__content-link {
-    padding: 100px 0px 40px;
-    text-align: center;
-  }
+    /* ================================ */
+    /* ==fleelance,companyの共通デザイン== */
+    /* ================================ */
 
-  .info__content {
-    flex-direction: column;
-    justify-content: none;
-    padding: 30px 40px;
-  }
+    .content-box--flex {
+        padding: 70px 0;
+    }
 
-  .info__content--width {
-    width: 100%;
-  }
+    .content-box__detail {
+        font-size: 0.8rem;
+    }
 
-  .news__content {
-    order: 2;
-  }
+    .content-box__item {
+        font-size: 0.8rem;
+    }
 
-  .result__content {
-    margin-bottom: 60px;
-    order: 1;
-  }
- 
+    /* =========== */
+    /* ==company== */
+    /* =========== */
+
+    .company .content-box__item {
+        padding: 0 10px;
+    }
+
+    /* ============== */
+    /* =====info===== */
+    /* ============== */
+
+    .info__content {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+
+    .news__content--width {
+        width: 60%;
+        margin: 20px auto;
+    }
+
+    .production__content--width {
+        width: 60%;
+        margin: 20px auto;
+    }
 }
 
-/* /.レスポンシブ（ipad用） */
+
+/* ============== */
+/* ==レスポンシブ===
+/* ====スマホ用==== */
+/* ============== */
+
+@media screen and (max-width:768px) {
+
+    .content-box {
+        width: 70%;
+    }
 
 
-/* レスポンシブ（スマホ用） */
+}
+
+
+/* ============== */
+/* ==レスポンシブ===
+/* ====スマホ用==== */
+/* ============== */
 
 @media screen and (max-width:376px){
 
-  /* home部分 */
+    /* ============== */
+    /* =====home===== */
+    /* ============== */
 
-  .home__logo img {
-    right: 70px;
-    top: 15px;
-    height: 50px;
-    object-fit: cover;
-  }
-
-  .home__bg {
-    background-image: url(../images/home-bg-responsive.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    width: 100%;
-  }
-
-  @media only screen and (-webkit-min-device-pixel-ratio: 2){
     .home__bg {
-      background-image: url(../images/home-bg-responsive@2x.png);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      position: relative;
-      width: 100%;
+        width: 100%;
+        background-image: unset;
     }
-  }
 
-  .home__content-lead h1 {
-    margin: 0px;
-    line-height: 1.5;
-    font-size: 30px;
-  }
+    .home__content-lead {
+        padding: 140px 0 0;
+    }
 
-  .home__gnav {
-    display: none;
-  }
-  
-  /* /.home */
+    .home__responsive-bg {
+        position: relative;
+		}
 
-  /* recommend-user部分 */
+    .home__responsive-bg01 {
+		display: block;
+        width: 100%;
+        position: absolute;
+    }
 
-  .recommend-user__bg {
-    background-image: url(../images/home-bg2.png);
-  }
+    .home__responsive-bg02 {
+		display: block;
+        width: 100%;
+    }
 
-  .recommend-user__content-title {
-    font-size: 40px;
-    text-align: center;
-    border-radius: 30px 30px 0px 0px;
-    padding: 25px;
-  }
+    .home__content-lead h1 {
+        padding: 20px 0 10px;
+        font-size: 1.3rem;
+    }
 
-  .recommend-user__content-title span {
-    font-size: 1.5rem;
-  }
+    .home__content-lead p {
+        font-size: 1rem;
+    }
 
-  .recommend-user__content-title br {
-    display: block;
-  }
+    .content--padding {
+        padding: 200px 0 0;
+    }
 
-  .recommend-user__content-item img {
-    height: 350px;
-  }
+    .content-box {
+        width: 90%;
+    }
 
-  .recommend-user__content-link {
-    border-radius: 0px 0px 30px 30px;
-  }
+    /* cotent-boxの中の横並び配置 */
+    .content-box--flex {
+        display: flex;
+        justify-content: space-around;
+        padding: 40px 10px 20px;
+    }
 
-  .recommend-user__content-link span {
-    padding-left: 15px;
-  }
+    .content-box--width01 {
+        width: 40%;
+    }
 
-  .recommend-user__content-link a {
-    font-size: 1rem;
-    padding: 10px 10px 10px 40px;
-    width: 220px;
-  }
+    .content-box--width02 {
+        width: 40%;
+    }
 
-  /* /.recommend-user */
+    .content-box__title {
+        font-size: 1rem;
+        padding-bottom: 20px;
+    }
 
-  /* recommend-company部分 */
+    .content-box__item {
+        font-size: 0.8rem;
+        padding: 20px 0px;
+    }
 
-  .recommend-company__content-title {
-    text-align: center;
-    font-size: 40px;
-  }
+    .content-box__detail {
+        font-size: 0.7rem;
+    }
 
-  .recommend-company__content-title span {
-    font-size: 1.5rem;
-  }
+    .content-box__img {
+        padding: 10px 0;
+        margin: 0 auto;
+    }
 
-  .recommend-company__content-title br {
-    display: block;
-  }
+    .content-link {
+        padding: 40px 0;
+    }
 
-  .recommend-company__content-item img {
-    height: 350px;
-  }
+    /* =================== */
+    /* =====freelance===== */
+    /* =================== */
 
-  .recommend-company__content-link {
-    padding: 100px 0px 40px;
-    text-align: center;
-    border-radius: 0px 0px 30px 30px;
-  }
+    .freelance__bg {
+        width: 100%;
+        height: 160vh;
+    }
 
-  .recommend-company__content-link a {
-    font-size: 1rem;
-    padding: 10px 10px 10px 70px;
-  }
+    .freelance .content-box__img {
+        width: 50%;
+    }
 
-  .recommend-company__content-link span {
-    padding-left: 40px;
-  }
+    /* =================== */
+    /* =====company======= */
+    /* =================== */
 
-  /* /.recommend-company */
+    .company .content--padding {
+        padding: 0;
+    }
 
-  /* info部分 */
+    .company .content-box--width01 {
+        width: 50%;
+    }
 
-  .info__bg {
-    background-image: url(../images/home-bg2.png);
-  }
+    .company .content-box--width02 {
+        width: 45%;
+    }
 
-  /* 新着情報 */
+    .company .content-box__item {
+        padding: unset;
+        line-height: 1.5;
+    }
 
-  .news__content {
-    border-radius: 30px;
-  }
+    .company .content-box__item br {
+        display: none;
+    }
 
-  .news__content-title {
-    text-align: center;
-    font-size: 40px;
-    border-radius: 30px 30px 0px 0px;
-  }
+    .company .content-box__detail {
+        font-size: 0.8rem;
+    }
 
-  .news__content-title br {
-    display: block;
-  }
+    .company__content-img {
+        display: none;
+    }
 
-  .news__content-title span {
-    font-size: 1rem;
-  }
+    .company .content-link {
+        padding: 40px 0 4px;
+    }
 
-  /* /.新着情報 */
+    /* ============== */
+    /* =====info===== */
+    /* ============== */
 
-  /* 制作実績 */
+    .info {
+        margin: -1px;;
+    }
 
-  .result__content {
-    margin-bottom: 60px;
-    background-color: #fff;
-    border-radius: 30px;
-  }
+    .info__content-title {
+        padding: 100px 0 20px;
+    }
 
-  .result__content-title {
-    text-align: center;
-    font-size: 35px;
-    padding: 30px 0px;
-    border-radius: 30px 30px 0px 0px;
-  }
+    .info__content-title h1 {
+        font-size: 20px;
+    }
 
-  .result__content-title br {
-    display: block;
-  }
+    .info__bg-images {
+        display: none;
+    }
 
-  .result__content-title span {
-    font-size: 1rem;
-  }
+    .info__content {
+        flex-direction: column;
+        padding: 0 20px;
+    }
 
-  .result__content img {
-    height: 350px;
-  }
+
+    /* ============== */
+    /* =====news===== */
+    /* ============== */
+
+    .news__content--width {
+        width: unset;
+        margin: 0;
+    }
+
+    .news__content-item-list li {
+        flex-direction: column;
+        border-bottom: 1px dotted #505050;
+    }
+
+    /* ===================== */
+    /* =====.production===== */
+    /* ===================== */
+
+    .production__content {
+        padding: 20px 15px 80px 15px;
+    }
+
+    .production__content--width {
+        width: unset;
+        margin: 0;
+    }
+
+    .production__content-list img {
+        height: 400px;
+    }
 }
-
-/* /.レスポンシブ（スマホ用） */

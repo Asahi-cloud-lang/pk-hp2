@@ -1,35 +1,48 @@
-$('.recommend-user__content-item,.recommend-company__content-item').slick({
-　autoplay: true,
-　autoplaySpeed: 4000,
-　fade: true,
-　speed: 900,
-　infinite: true,
-  dots: true,
-  arrows: false,
+$('.content-list').slick({
+    autoplay: true,
+    autoplaySpeed: 4000,
+    fade: true,
+    speed: 900,
+    infinite: true,
+    dots: true,
+    arrows: true,
+    slidesToShow: 1,
+    centerMode: true,
+    centerPadding: '10%',
+    focusOnSelect: true,
+    responsive: [{
+        breakpoint: 368,
+            settings: {
+                arrows: false,
+                focusOnSelect: false,
+        }
+    }]
 });
 
-
-$('.result__content-item').slick({
-　autoplay: true,
-　autoplaySpeed: 4000,
-　fade: true,
-　speed: 900,
-　infinite: true,
-  arrows: false,
-  dots: true,
-  dotsClass: 'original-dots',
+$('.production__content-list').slick({
+    autoplay: true,
+    autoplaySpeed: 4000,
+    fade: true,
+    speed: 900,
+    infinite: true,
+    arrows: false,
+    dots: true,
+    dotsClass: 'original-dots',
+    responsive: [{
+        breakpoint: 368,
+            settings: {
+                arrows: false,
+        }
+    }
+    ]
 });
 
-$('.logo__responsive').hide();
-$('.top__gnav-responsive').hide();
+$('.hamburger-menu__logo').hide();
+$('.hamburger-menu__list').hide();
 
 $('.btn-trigger').on('click', function() {
-  $(this).toggleClass('active');
-  $('.home__logo').toggle();
-  $('.user-top-img-responsive').toggle();
-  $('.company-top').toggle();
-  $('.home__content-lead').toggle();
-  $('.logo__responsive').slideToggle();
-  $('.top__gnav-responsive').slideToggle();
-  return false;
+    $(this).toggleClass('active');
+    $('.hamburger-menu__logo').slideToggle();
+    $('.hamburger-menu__list').slideToggle();
+    return false;
 });

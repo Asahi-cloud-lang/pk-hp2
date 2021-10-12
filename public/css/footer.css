@@ -1,110 +1,66 @@
 
 /* 背景色 */
-
-.footer__bg1 {
-  background-color: #00ADB5;
+.footer__bg01 {
+    background-color: #387261;
 }
 
-.footer__bg2 {
-  background-color: #393E46;
+.footer__bg02 {
+    background-color: #393E46;
 }
-
 /* /.背景色 */
 
+/* footerの幅を指定 */
+.footer__content {
+    width: 50%;
+    margin: 0 auto;
+}
+
 .footer--flex {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .footer__logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 50%;
 }
 
 .footer__logo img {
-  width: 70%;
-  border-radius: 30px;
-  padding: 15px;
+    width: 60%;
+    border-radius: 30px;
+    padding: 15px;
+    margin: 0 auto;
 }
 
 .footer__item-list {
-  padding: 15px 0px;
-  width: 40%;
-  color: #fff;
+    padding: 15px 0px;
+    width: 50%;
+    color: #fff;
 }
 
-.footer__item {
-  text-align: left;
-  padding: 10px 0px;
-  width: 50%;
-  font-weight: unset;
-  color: #fff;
+.footer__item-body {
+    display: flex;
+    justify-content: space-around;
 }
 
-.footer__item-name {
-  color: #fff;
-  padding: 10px 0;
-}
-
-.footer__item span {
-  display: none;
+.footer__item-detail div {
+    padding: 5px;
+    font-size: 0.8rem;
 }
 
 .footer__lead {
-  color: #fff;
-  text-align: center;
-  padding: 15px;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.8rem;
 }
 
-/* レスポンシブ用スタイル */
-
-.footer__lead br {
-  display: none;
-}
-
-/* /.レスポンシブ用スタイル */
 
 /* レスポンシブ対応(ipad用) */
-
-
-
 @media screen and (max-width:1024px){
-  
-  .footer__item {
-    padding: 0;
-    display: block;
-    width: 100%;
-  }
-
-  .footer__item-responsive01 {
-    display: block;
-  }
-
-  .footer__item-responsive02 {
-    display: block;
-  }
-
-  .footer__item span {
-    display: none
-  }
-
-  .footer__table tbody tr:nth-child(1) {
-    display: block;
-    margin: 10px 0;
-  }
-
-  .footer__table tbody tr:nth-child(2) {
-    display: block;
-    margin: 10px 0;
-  }
-
-  .footer__table tbody tr:nth-child(3) {
-    display: block;
-    margin: 10px 0;
-  }
-
-  }
+}
 
 /* /.レスポンシブ対応(ipad用) */
 
@@ -113,75 +69,33 @@
 
 @media screen and (max-width:376px){
 
-  .footer {
-    background-color: #00ADB5;
-  }
+    .footer__content {
+        width: 80%;
+    }
 
-  .footer__logo {
-    order: 2;
-  }
+    .footer--flex {
+        display: block;
+    }
 
-  .footer__table {
-    font-size: 1.4rem;
-    font-weight: normal;
-    order: 1;
-    margin: 0 auto;
-  }
+    .footer__item-list {
+        width: 100%;
+        padding: 15px 0 30px;
+    }
 
-  .footer--flex {
-    flex-direction: column;
-  }
+    .footer__logo {
+        width: 80%;
+        margin: 0 auto;
+    }
 
-  .footer__item-list {
-    width: 100%;
-  }
+    .footer__logo img {
+        width: 100%;
+        border-radius: unset;
+        padding: 40px 0 0;
+    }
 
-  .footer__item {
-    width: 100%;
-    text-align: center;
-    color: #fff;
-  }
-
-  .footer__item span {
-    display: inline;
-    padding-left: 20px;
-  }
-
-  .footer__item-name {
-    text-align: center;
-    color: #fff;
-  }
-
-  .footer__item-responsive01 {
-    display: block;
-  }
-
-  .footer__item-responsive02 {
-    display: none;
-  }
-
-  .footer__table tbody tr:nth-child(1) {
-    display: block;
-    margin: 20px;
-  }
-
-  .footer__table tbody tr:nth-child(2) {
-    display: block;
-    margin: 20px;
-  }
-
-  .footer__lead {
-    font-size: 20px;
-    line-height: 1.6;
-  }
-
-  .footer__lead br {
-    display: block;
-  }
-
-  .footer__bg2 {
-    background-color: #00ADB5;
-  }
+    .footer__lead {
+        font-size: 0.5rem;
+    }
 }
 
 /* /.レスポンシブ（スマホ用） */

@@ -4,124 +4,379 @@
 
 @section('content')
 
-  <!-- home -->
-  <section class="home">
-    <div class="home__bg">
-      @include('includes.hamburgermenu')
-      <div class="home__content-lead">
-        <h1>新人フリーランスが</h1>
-        <h1><span>活きる</span>IT業界を</h1>
-        <h1>目指して</h1>
-      </div>
-      <div class="home__logo">
-        <img src="{{ asset('images/logo.png') }}" alt="logo">
-      </div>
+<!-- home -->
+<section class="home">
+    <div class="home__top-responsive">
+        @include('includes.gnav')
     </div>
-    <nav class="home__gnav" class="fixed">
-      <ul class="home__gnav-list">
-        <li class="home__gnav-item">
-          <a href="#">HOME<br><span>ホーム</span></a>
-        </li>
-        <li class="home__gnav-item">
-          <a href="#">FREELANCE<br><span>フリーランス様へ</span></a>
-        </li>
-        <li class="home__gnav-item">
-          <a href="#">COMPANY<br><span>企業様へ</span></a>
-        </li>
-        <li class="home__gnav-item">
-          <a href="#">NEWS<br><span>新着情報</span></a>
-        </li>
-        <li class="home__gnav-item">
-          <a href="#">PRODUCTION<br><span>制作実績</span></a>
-        </li>
-      </ul>
-    </nav>
-  </section>
-  <!-- /.home -->
-
-  <!-- recommend-user -->
-  <section class="recommend-user">
-    <div class="recommend-user__bg">
-      <div class="recommend-user__content">
-        <h1 class="recommend-user__content-title">
-          FREELANCE<br><span>フリーランス様へ</span>
-        </h1>
-        <ul class="recommend-user__content-item">
-          <li><img src="{{ asset('images/home-bg.png') }}" alt="#"></li>
-          <li><img src="{{ asset('images/home-bg.png') }}" alt="#"></li>
-          <li><img src="{{ asset('images/home-bg.png') }}" alt="#"></li>
-          <li><img src="{{ asset('images/home-bg.png') }}" alt="#"></li>
-          <li><img src="{{ asset('images/home-bg.png') }}" alt="#"></li>
-        </ul>
-        <div class="recommend-user__content-link">
-          <a href="#">フリーランス様ページへ<span>→</span></a>
+	<div class="home__bg">
+        <div class="home__responsive-bg">
+            <img src="{{ asset('images/top/responsive-home-bg01.png') }}" alt="#" class="home__responsive-bg01">
         </div>
-      </div>
-    </div>
-  </section>
-  <!-- /.recommend-user -->
-
-  <!-- recommend-company -->
-  <section class="recommend-company">
-    <div class="recommend-company__bg">
-      <div class="recommend-company__content">
-        <h1 class="recommend-company__content-title">
-          COMPANY<br><span>企業様へ</span>
-        </h1>
-        <ul class="recommend-company__content-item">
-          <li><img src="{{ asset('images/home-bg.png') }}" alt="#"></li>
-          <li><img src="{{ asset('images/home-bg.png') }}" alt="#"></li>
-          <li><img src="{{ asset('images/home-bg.png') }}" alt="#"></li>
-          <li><img src="{{ asset('images/home-bg.png') }}" alt="#"></li>
-          <li><img src="{{ asset('images/home-bg.png') }}" alt="#"></li>
-        </ul>
-        <div class="recommend-company__content-link">
-          <a href="#">企業様ページへ<span>→</span></a>
+        <div class="home__content-lead">
+            <h1>新人フリーランスが活躍できる未来へ</h1>
+            <p>新人フリーランスをしっかりサポート</p>
+            <p>企業様も安心してお仕事をまかせられます！</p>
         </div>
-      </div>
+        <div class="home__responsive-bg">
+            <img src="{{ asset('images/top/responsive-home-bg02.png') }}" alt="#" class="home__responsive-bg02">
+        </div>
     </div>
-  </section>
-  <!-- /.recommend-company -->
+    @include('includes.gnav')
+</section>
+<!-- /.home -->
 
-  <!-- info -->
-  <section class="info">
+<!-- freelance -->
+<section class="freelance">
+    <div class="freelance__bg">
+        <div class="content--padding">
+            <div class="content-title">
+                <img src="{{ asset('images/top/knife-red.png') }}" alt="#" class="knife">
+                <h1>
+                    FREELANCE<br>
+                    <span>フリーランス様へ</span>
+                </h1>
+                <img src="{{ asset('images/top/fork-red.png') }}" alt="#" class="fork">
+            </div>
+            <ul class="content-list">
+                <li>
+                    <div class="content-box">
+                        <div class="content-box--flex">
+                            <div>
+                                <h2 class="content-box__title">実績</h2>
+                                <p class="content-box__item">○○株式会社</p>
+                                <p class="content-box__item">業務内容：コーダー</p>
+                                <p class="content-box__item">収入：○円</p>
+                            </div>
+                            <div>
+                                <p class="content-box__detail">
+                                    不安もありましたが<br>
+                                    プログラム・キッチンの<br>
+                                    サポートのおかげで<br>
+                                    スキルアップすることができました！
+                                </p>
+                                <img src="{{ asset('images/top/woman.png') }}" alt="#" class="content-box__img">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="content-box">
+                        <div class="content-box--flex">
+                            <div>
+                                <h2 class="content-box__title">実績</h2>
+                                <p class="content-box__item">○○株式会社</p>
+                                <p class="content-box__item">業務内容：コーダー</p>
+                                <p class="content-box__item">収入：○円</p>
+                            </div>
+                            <div>
+                                <p class="content-box__detail">
+                                    不安もありましたが<br>
+                                    プログラム・キッチンの<br>
+                                    サポートのおかげで<br>
+                                    スキルアップすることができました！
+                                </p>
+                                <img src="{{ asset('images/top/woman.png') }}" alt="#" class="content-box__img">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="content-box">
+                        <div class="content-box--flex">
+                            <div>
+                                <h2 class="content-box__title">実績</h2>
+                                <p class="content-box__item">○○株式会社</p>
+                                <p class="content-box__item">業務内容：コーダー</p>
+                                <p class="content-box__item">収入：○円</p>
+                            </div>
+                            <div>
+                                <p class="content-box__detail">
+                                    不安もありましたが<br>
+                                    プログラム・キッチンの<br>
+                                    サポートのおかげで<br>
+                                    スキルアップすることができました！
+                                </p>
+                                <img src="{{ asset('images/top/woman.png') }}" alt="#" class="content-box__img">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="content-box">
+                        <div class="content-box--flex">
+                            <div>
+                                <h2 class="content-box__title">実績</h2>
+                                <p class="content-box__item">○○株式会社</p>
+                                <p class="content-box__item">業務内容：コーダー</p>
+                                <p class="content-box__item">収入：○円</p>
+                            </div>
+                            <div>
+                                <p class="content-box__detail">
+                                    不安もありましたが<br>
+                                    プログラム・キッチンの<br>
+                                    サポートのおかげで<br>
+                                    スキルアップすることができました！
+                                </p>
+                                <img src="{{ asset('images/top/woman.png') }}" alt="#" class="content-box__img">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="content-box">
+                        <div class="content-box--flex">
+                            <div>
+                                <h2 class="content-box__title">実績</h2>
+                                <p class="content-box__item">○○株式会社</p>
+                                <p class="content-box__item">業務内容：コーダー</p>
+                                <p class="content-box__item">収入：○円</p>
+                            </div>
+                            <div>
+                                <p class="content-box__detail">
+                                    不安もありましたが<br>
+                                    プログラム・キッチンの<br>
+                                    サポートのおかげで<br>
+                                    スキルアップすることができました！
+                                </p>
+                                <img src="{{ asset('images/top/woman.png') }}" alt="#" class="content-box__img">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="content-link">
+                <a href="#">フリーランス様ページへ</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /.freelance -->
+
+<!-- company -->
+<section class="company">
+    <div class="company__bg">
+        <div class="content--padding">
+            <div class="content-title">
+                <img src="{{ asset('images/top/knife-yellow.png') }}" alt="#" class="knife">
+                <h1>
+                    COMPANY<br>
+                    <span>企業様へ</span>
+                </h1>
+                <img src="{{ asset('images/top/fork-yellow.png') }}" alt="#" class="fork">
+            </div>
+            <ul class="content-list">
+                <li>
+                    <div class="content-box">
+                        <div class="content-box--flex">
+                            <div class="content-box--width01">
+                                <h2 class="content-box__title">実績</h2>
+                                <p class="content-box__item">
+                                    A社は受諾開発にリソースを取られ、<br>
+                                    自社プロダクトに専念出来ていない状態でした。<br>
+                                    かといって、ベテランの人材を雇うほどの余裕はありませんでした。<br>
+                                    A社はプログラム・キッチン所属の新人フリーランスすることで、<br>
+                                    自社プロダクトにリソースを割くことができ、<br>
+                                    更に費用面でも安くする事が出来ました。
+                                </p>
+                            </div>
+                            <div class="content-box--width02">
+                                <p class="content-box__detail">
+                                    成果物の質は<br>
+                                    ベテランエンジニアが<br>
+                                    担保してくれるから<br>
+                                    安心して任せられる！
+                                </p>
+                                <img src="{{ asset('images/top/high-five.png') }}" alt="#" class="content-box__img">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="content-box">
+                        <div class="content-box--flex">
+                            <div class="content-box--width01">
+                                <h2 class="content-box__title">実績</h2>
+                                <p class="content-box__item">
+                                    A社は受諾開発にリソースを取られ、<br>
+                                    自社プロダクトに専念出来ていない状態でした。<br>
+                                    かといって、ベテランの人材を雇うほどの余裕はありませんでした。<br>
+                                    A社はプログラム・キッチン所属の新人フリーランスすることで、<br>
+                                    自社プロダクトにリソースを割くことができ、<br>
+                                    更に費用面でも安くする事が出来ました。
+                                </p>
+                            </div>
+                            <div class="content-box--width02">
+                                <p class="content-box__detail">
+                                    成果物の質は<br>
+                                    ベテランエンジニアが<br>
+                                    担保してくれるから<br>
+                                    安心して任せられる！
+                                </p>
+                                <img src="{{ asset('images/top/high-five.png') }}" alt="#" class="content-box__img">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="content-box">
+                        <div class="content-box--flex">
+                            <div class="content-box--width01">
+                                <h2 class="content-box__title">実績</h2>
+                                <p class="content-box__item">
+                                    A社は受諾開発にリソースを取られ、<br>
+                                    自社プロダクトに専念出来ていない状態でした。<br>
+                                    かといって、ベテランの人材を雇うほどの余裕はありませんでした。<br>
+                                    A社はプログラム・キッチン所属の新人フリーランスすることで、<br>
+                                    自社プロダクトにリソースを割くことができ、<br>
+                                    更に費用面でも安くする事が出来ました。
+                                </p>
+                            </div>
+                            <div class="content-box--width02">
+                                <p class="content-box__detail">
+                                    成果物の質は<br>
+                                    ベテランエンジニアが<br>
+                                    担保してくれるから<br>
+                                    安心して任せられる！
+                                </p>
+                                <img src="{{ asset('images/top/high-five.png') }}" alt="#" class="content-box__img">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="content-box">
+                        <div class="content-box--flex">
+                            <div class="content-box--width01">
+                                <h2 class="content-box__title">実績</h2>
+                                <p class="content-box__item">
+                                    A社は受諾開発にリソースを取られ、<br>
+                                    自社プロダクトに専念出来ていない状態でした。<br>
+                                    かといって、ベテランの人材を雇うほどの余裕はありませんでした。<br>
+                                    A社はプログラム・キッチン所属の新人フリーランスすることで、<br>
+                                    自社プロダクトにリソースを割くことができ、<br>
+                                    更に費用面でも安くする事が出来ました。
+                                </p>
+                            </div>
+                            <div class="content-box--width02">
+                                <p class="content-box__detail">
+                                    成果物の質は<br>
+                                    ベテランエンジニアが<br>
+                                    担保してくれるから<br>
+                                    安心して任せられる！
+                                </p>
+                                <img src="{{ asset('images/top/high-five.png') }}" alt="#" class="content-box__img">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="content-box">
+                        <div class="content-box--flex">
+                            <div class="content-box--width01">
+                                <h2 class="content-box__title">実績</h2>
+                                <p class="content-box__item">
+                                    A社は受諾開発にリソースを取られ、<br>
+                                    自社プロダクトに専念出来ていない状態でした。<br>
+                                    かといって、ベテランの人材を雇うほどの余裕はありませんでした。<br>
+                                    A社はプログラム・キッチン所属の新人フリーランスすることで、<br>
+                                    自社プロダクトにリソースを割くことができ、<br>
+                                    更に費用面でも安くする事が出来ました。
+                                </p>
+                            </div>
+                            <div class="content-box--width02">
+                                <p class="content-box__detail">
+                                    成果物の質は<br>
+                                    ベテランエンジニアが<br>
+                                    担保してくれるから<br>
+                                    安心して任せられる！
+                                </p>
+                                <img src="{{ asset('images/top/high-five.png') }}" alt="#" class="content-box__img">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="content-link">
+                <a href="#">企業様ページへ</a>
+            </div>
+            <div class="company__content-img">
+                <img src="{{ asset('images/top/pc.png') }}" alt="#" class="pc">
+                <img src="{{ asset('images/top/pasta.png') }}" alt="#" class="pasta">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /.company -->
+
+<!-- info -->
+<section class="info">
     <div class="info__bg">
-      <div class="info__content">
-        <div class="news__content info__content--width">
-          <h1 class="news__content-title" colspan="2">NEWS<br><span>新着情報</span></h1>
-          <ul class="news__content-item-list">
-            <li>
-              <div class="news__content-date"><span>2021</span><br>06.01</div>
-              <div class="news__content-item">合同会社プログラム・キッチン設立</div>
-            </li>
-            <li>
-              <div class="news__content-date"><span>2021</span><br>06.01</div>
-              <div class="news__content-item">合同会社プログラム・キッチン設立</div>
-            </li>
-            <li>
-              <div class="news__content-date"><span>2021</span><br>06.01</div>
-              <div class="news__content-item">合同会社プログラム・キッチン設立</div>
-            </li>
-            <li>
-              <div class="news__content-date"><span>2021</span><br>06.01</div>
-              <div class="news__content-item">合同会社プログラム・キッチン設立</div>
-            </li>
-          </ul>
+        <div class="info__content">
+            <!-- news -->
+            <div class="news__content--width">
+                <div class="info__content-title">
+                    <img src="{{ asset('images/top/knife-red.png') }}" alt="#" class="knife">
+                    <h1 colspan="2">NEWS<br>
+                        <span>新着情報</span>
+                    </h1>
+                    <img src="{{ asset('images/top/fork-red.png') }}" alt="#" class="fork">
+                </div>
+                <ul class="news__content news__content-item-list">
+                    <li>
+                        <div class="news__content-date"><span>NEW</span>2021.01.01</div>
+                        <div class="news__content-item">この文章はダミーです。この文章はダミーです。</div>
+                    </li>
+                    <li>
+                        <div class="news__content-date"><span>NEW</span>2021.01.01</div>
+                        <div class="news__content-item">この文章はダミーです。この文章はダミーです。</div>
+                    </li>
+                    <li>
+                        <div class="news__content-date">2021.01.01</div>
+                        <div class="news__content-item">この文章はダミーです。この文章はダミーです。</div>
+                    </li>
+                    <li>
+                        <div class="news__content-date">2021.01.01</div>
+                        <div class="news__content-item">この文章はダミーです。この文章はダミーです。</div>
+                    </li>
+                    <li>
+                        <div class="news__content-date">2021.01.01</div>
+                        <div class="news__content-item">この文章はダミーです。この文章はダミーです。</div>
+                    </li>
+                    <li>
+                        <div class="news__content-date">2021.01.01</div>
+                        <div class="news__content-item">この文章はダミーです。この文章はダミーです。</div>
+                    </li>
+                    <li>
+                        <div class="news__content-date">2021.01.01</div>
+                        <div class="news__content-item">この文章はダミーです。この文章はダミーです。</div>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.news -->
+            <!-- production -->
+            <div class="production__content--width">
+                <div class="info__content-title">
+                    <img src="{{ asset('images/top/knife-red.png') }}" alt="#" class="knife">
+                    <h1 colspan="2">PRODUCTION<br>
+                        <span>製作実績</span>
+                    </h1>
+                    <img src="{{ asset('images/top/fork-red.png') }}" alt="#" class="fork">
+                </div>
+                <ul class="production__content production__content-list">
+                    <li><img src="{{ asset('images/top/company-box-bg.png') }}" alt="#"></li>
+                    <li><img src="{{ asset('images/top/company-box-bg.png') }}" alt="#"></li>
+                    <li><img src="{{ asset('images/top/company-box-bg.png') }}" alt="#"></li>
+                    <li><img src="{{ asset('images/top/company-box-bg.png') }}" alt="#"></li>
+                    <li><img src="{{ asset('images/top/company-box-bg.png') }}" alt="#"></li>
+                </ul>
+            </div>
         </div>
-        <div class="result__content info__content--width">
-          <h1 class="result__content-title">
-            PRODUCTION<br><span>制作実績</span>
-          </h1>
-          <ul class="result__content-item">
-            <li><img src="{{ asset('images/home-bg.png') }}" alt="#"></li>
-            <li><img src="{{ asset('images/home-bg.png') }}" alt="#"></li>
-            <li><img src="{{ asset('images/home-bg.png') }}" alt="#"></li>
-            <li><img src="{{ asset('images/home-bg.png') }}" alt="#"></li>
-            <li><img src="{{ asset('images/home-bg.png') }}" alt="#"></li>
-          </ul>
+        <div class="info__bg-images">
+            <img src="{{ asset('images/top/glass.png') }}" alt="#" class="glass">
+            <img src="{{ asset('images/top/carrots.png') }}" alt="#" class="carrots">
         </div>
-      </div>
     </div>
-  </section>
-  <!-- /.info -->
+</section>
+<!-- /.info -->
 @endsection
