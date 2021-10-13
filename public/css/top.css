@@ -87,7 +87,7 @@ body {
 
 /* content-boxの枠画像 */
 .content__box {
-    width: 60%;
+    width: 90%;
     text-align: center;
     margin: 50px auto;
     background-repeat: round;

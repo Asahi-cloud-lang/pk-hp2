@@ -294,6 +294,7 @@
 
     position: absolute;
     top: 50%;
+    z-index: 1;
 
     display: block;
 
@@ -347,6 +348,12 @@
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+.company .slick-prev:before,
+.company .slick-next:before
+{
+    color: #D3CA64;
 }
 
 .slick-prev

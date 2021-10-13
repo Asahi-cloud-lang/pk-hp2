@@ -1,14 +1,14 @@
 $('.content__list').slick({
     autoplay: true,
     autoplaySpeed: 4000,
-    fade: true,
     speed: 900,
     infinite: true,
     dots: true,
     arrows: true,
     slidesToShow: 1,
+		cssEase: 'ease-in-out',
     centerMode: true,
-    centerPadding: '10%',
+    centerPadding: '20%',
     focusOnSelect: true,
     responsive: [{
         breakpoint: 368,
@@ -22,7 +22,6 @@ $('.content__list').slick({
 $('.production__content-list').slick({
     autoplay: true,
     autoplaySpeed: 4000,
-    fade: true,
     speed: 900,
     infinite: true,
     arrows: false,
