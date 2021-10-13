@@ -25,7 +25,8 @@
     <footer>
         @include('includes.footer')
     </footer>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
     <script type="text/javascript" src="{{ asset('../../js/slick.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('../../js/common.js') }}"></script>
 </body>

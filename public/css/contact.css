@@ -188,7 +188,7 @@ select {
 @media screen and (max-width:376px){
 
 
-    .contact .content-title {
+    .contact .content__title {
         padding: 100px 0 0;
     }
 
