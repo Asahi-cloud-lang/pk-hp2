@@ -213,7 +213,7 @@
 
     display: inline-block;
 
-    width: 60px;
+    width: 40px;
     height: 20px;
     padding: 0;
     top: 30px;
@@ -279,34 +279,6 @@
     color: #00ADB5;
 }
 /* /.Dotsカスタマイズ */
-
-/* Dots レスポンシブ */
-@media screen and (max-width:376px){
-
-    .slick-dots {
-        margin-left: 0;
-    }
-
-    .slick-dots li {
-        width: 40px;
-    }
-
-    .slick-dots li button:before {
-        font-size: 90px;
-        left: 0px;
-    }
-
-    .original-dots li {
-        width: 40px;
-        top: 15px;
-        right: 5%;
-    }
-
-    .original-dots li button:before {
-        font-size: 90px;
-        left: 0px;
-    }
-}
 
 /* /.Dots レスポンシブ */
 
@@ -424,7 +396,28 @@
 
 @media screen and (max-width:376px){
 
+    .slick-dots {
+        margin-left: 0;
+    }
+
     .slick-dots li {
+        width: 30px;
         right: 0;
+    }
+
+    .slick-dots li button:before {
+        font-size: 90px;
+        left: 0px;
+    }
+
+    .original-dots li {
+        width: 30px;
+        top: 15px;
+        right: 5%;
+    }
+
+    .original-dots li button:before {
+        font-size: 90px;
+        left: 0px;
     }
 }

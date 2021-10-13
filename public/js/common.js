@@ -1,4 +1,4 @@
-$('.content-list').slick({
+$('.content__list').slick({
     autoplay: true,
     autoplaySpeed: 4000,
     fade: true,

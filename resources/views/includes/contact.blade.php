@@ -1,7 +1,7 @@
 <!-- .contact -->
 <section class="contact">
     <div class="contact__bg">
-        <div class="content-title">
+        <div class="content__title">
             <img src="{{ asset('images/contact/knife-yellow.png') }}" alt="#" class="knife">
             <h1>
                 お問い合わせ

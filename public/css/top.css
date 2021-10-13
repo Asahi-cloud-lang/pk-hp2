@@ -60,22 +60,22 @@ body {
     width: 25px;
 }
 
-.content--padding {
+.content__body {
     padding: 200px 0;
 }
 
-.content-title {
+.content__title {
     text-align: center;
 }
 
-.content-title h1 {
+.content__title h1 {
     font-size: 30px;
     color: #fff;
     padding: 20px;
     display: inline-block;
 }
 
-.content-title span {
+.content__title span {
     font-size: 1rem;
     padding: 1rem;
     vertical-align: middle;
@@ -86,7 +86,7 @@ body {
 /* ============== */
 
 /* content-boxの枠画像 */
-.content-box {
+.content__box {
     width: 60%;
     text-align: center;
     margin: 50px auto;
@@ -94,40 +94,40 @@ body {
 }
 
 /* cotent-boxの中の横並び配置 */
-.content-box--flex {
+.content__box--flex {
     display: flex;
     justify-content: space-around;
     padding: 125px 0 100px;
 }
 
-.content-box--width01 {
+.content__box--width01 {
     width: 50%;
 }
 
-.content-box--width02 {
+.content__box--width02 {
     width: 50%;
 }
 
-.content-box__title {
+.content__box-title {
     font-size: 1.3rem;
     font-weight: bold;
     padding-bottom: 25px;
 }
 
-.content-box__item {
+.content__box-item {
     font-size: 1rem;
     padding: 25px 0px;
     text-align: left;
     color: #505050;
 }
 
-.content-box__detail {
+.content__box-detail {
     font-size: 1rem;
     line-height: 2;
     color: #505050;
 }
 
-.content-box__img {
+.content__box-img {
     padding: 20px 0;
     margin: 0 auto;
     width: 80%;
@@ -137,12 +137,12 @@ body {
 /* ====button==== */
 /* ============== */
 
-.content-link {
+.content__link {
     padding: 80px;
     text-align: center;
 }
 
-.content-link a {
+.content__link a {
     background-color: #d38864;
     color: #fff;
     padding: 20px;
@@ -156,8 +156,8 @@ body {
     width: 300px;
 }
 
-.content-link a:hover {
-		background-color: #c9683b;
+.content__link a:hover {
+		background-color: #ff8349;
 }
 
 
@@ -168,7 +168,7 @@ body {
 /* 背景色と背景画像 */
 .freelance__bg {
     width: 100%;
-    height: 180vh;
+    height: 160vh;
     /* 背景色 */
     background-color: #47927B;
     /* 背景画像 */
@@ -177,12 +177,12 @@ body {
     position: relative;
 }
 
-.freelance .content-box {
+.freelance .content__box {
 		background-image: url(../images/top/fleelance-box-bg.png);
 }
 
 
-.freelance .content-box__img {
+.freelance .content__box-img {
     width: 50%;
 }
 
@@ -190,7 +190,7 @@ body {
 /* ===company==== */
 /* ============== */
 
-.company .content--padding {
+.company .content__body {
     padding: 100px 0 0;
 }
 
@@ -199,21 +199,21 @@ body {
     background-color: #47927B;
 }
 
-.company .content-box {
+.company .content__box {
 	background-image: url(../images/top/company-box-bg.png);
 }
 
-.company .content-box__item {
+.company .content__box-item {
     padding: 20px 30px;
     line-height: 2;
 }
 
-.company .content-link {
+.company .content__link {
     padding: 80px 0 0;
     text-align: center;
 }
 
-.company__content-img {
+.company .content__bg-imgs {
     display: flex;
     justify-content: space-between;
 }
@@ -231,7 +231,6 @@ body {
 
 
 /* infoコンテンツの中には、「news」と「production」の2つのコンテンツがあります。 */
-
 /* 「news」と「production」の共通デザイン */
 /* ============== */
 /* =====info===== */
@@ -376,23 +375,40 @@ body {
     /* ==fleelance,companyの共通デザイン== */
     /* ================================ */
 
-    .content-box--flex {
+    .content__box--flex {
         padding: 70px 0;
     }
 
-    .content-box__detail {
+    .content__box-detail {
         font-size: 0.8rem;
     }
 
-    .content-box__item {
+    .content__box-item {
         font-size: 0.8rem;
     }
+
+    .content__link {
+        padding: 80px 0 0;
+    }
+
+    /* ============== */
+    /* ==freelance=== */
+    /* ============== */
+
+    .freelance__bg {
+        height: 140vh;
+    }
+
+    .freelance .content__body {
+        padding: 200px 0 0;
+    }
+
 
     /* =========== */
     /* ==company== */
     /* =========== */
 
-    .company .content-box__item {
+    .company .content__box-item {
         padding: 0 10px;
     }
 
@@ -405,40 +421,32 @@ body {
         padding: 0 20px;
     }
 
+    /* ============== */
+    /* =====news===== */
+    /* ============== */
 
     .news__content--width {
-        width: 60%;
+        width: 75%;
         margin: 20px auto;
     }
 
+    /* ============== */
+    /* ==production== */
+    /* ============== */
+
     .production__content--width {
-        width: 60%;
+        width: 75%;
         margin: 20px auto;
     }
 }
 
 
 /* ============== */
-/* ==レスポンシブ===
+/* ==レスポンシブ=== */
 /* ====スマホ用==== */
 /* ============== */
 
 @media screen and (max-width:768px) {
-
-    .content-box {
-        width: 70%;
-    }
-
-
-}
-
-
-/* ============== */
-/* ==レスポンシブ===
-/* ====スマホ用==== */
-/* ============== */
-
-@media screen and (max-width:376px){
 
     /* ============== */
     /* =====home===== */
@@ -450,7 +458,7 @@ body {
     }
 
     .home__content-lead {
-        padding: 140px 0 0;
+        padding: 250px 0 0;
     }
 
     .home__responsive-bg {
@@ -468,6 +476,63 @@ body {
         width: 100%;
     }
 
+
+    /* ================================ */
+    /* ==fleelance,companyの共通デザイン== */
+    /* ================================ */
+
+    .content__box {
+        width: 70%;
+    }
+
+    /* =========== */
+    /* ==company== */
+    /* =========== */
+
+    .company .content__box-item br {
+        display: none;
+    }
+
+    .pc {
+        width: 20%;
+        height: fit-content;
+    }
+
+    .pasta {
+        top: 0;
+        width: 20%;
+        height: fit-content;
+    }
+
+    /* ============== */
+    /* ==production== */
+    /* ============== */
+
+    .glass {
+        width: 10%;
+    }
+
+    .carrots {
+        width: 10%;
+    }
+}
+
+/* ============== */
+/* ==レスポンシブ=== */
+/* ====スマホ用==== */
+/* ============== */
+
+@media screen and (max-width:376px){
+
+    /* ============== */
+    /* =====home===== */
+    /* ============== */
+
+
+    .home__content-lead {
+        padding: 140px 0 0;
+    }
+
     .home__content-lead h1 {
         padding: 20px 0 10px;
         font-size: 1.3rem;
@@ -477,49 +542,53 @@ body {
         font-size: 1rem;
     }
 
-    .content--padding {
+    /* ================================ */
+    /* ==fleelance,companyの共通デザイン== */
+    /* ================================ */
+
+    .content__body {
         padding: 200px 0 0;
     }
 
-    .content-box {
+    .content__box {
         width: 90%;
     }
 
     /* cotent-boxの中の横並び配置 */
-    .content-box--flex {
+    .content__box--flex {
         display: flex;
         justify-content: space-around;
         padding: 40px 10px 20px;
     }
 
-    .content-box--width01 {
+    .content__box--width01 {
         width: 40%;
     }
 
-    .content-box--width02 {
+    .content__box--width02 {
         width: 40%;
     }
 
-    .content-box__title {
+    .content__box-title {
         font-size: 1rem;
         padding-bottom: 20px;
     }
 
-    .content-box__item {
+    .content__box-item {
         font-size: 0.8rem;
         padding: 20px 0px;
     }
 
-    .content-box__detail {
+    .content__box-detail {
         font-size: 0.7rem;
     }
 
-    .content-box__img {
+    .content__box-img {
         padding: 10px 0;
         margin: 0 auto;
     }
 
-    .content-link {
+    .content__link {
         padding: 40px 0;
     }
 
@@ -532,7 +601,7 @@ body {
         height: 160vh;
     }
 
-    .freelance .content-box__img {
+    .freelance .content__box-img {
         width: 50%;
     }
 
@@ -540,36 +609,32 @@ body {
     /* =====company======= */
     /* =================== */
 
-    .company .content--padding {
+    .company .content__body {
         padding: 0;
     }
 
-    .company .content-box--width01 {
+    .company .content__box--width01 {
         width: 50%;
     }
 
-    .company .content-box--width02 {
+    .company .content__box--width02 {
         width: 45%;
     }
 
-    .company .content-box__item {
+    .company .content__box-item {
         padding: unset;
         line-height: 1.5;
     }
 
-    .company .content-box__item br {
-        display: none;
-    }
-
-    .company .content-box__detail {
+    .company .content__box-detail {
         font-size: 0.8rem;
     }
 
-    .company__content-img {
+    .company .content__bg-imgs{
         display: none;
     }
 
-    .company .content-link {
+    .company .content__link {
         padding: 40px 0 4px;
     }
 

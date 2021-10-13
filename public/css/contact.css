@@ -21,6 +21,7 @@
 
 .contact__form-table th {
     width: 30%;
+    color: #fff;
 }
 
 .contact__form-table td {
@@ -42,7 +43,6 @@
 }
 
 .contact__form-item-first span {
-    color: #fff;
     padding: 5px;
     background-color: #d3ca64;
     margin-right: 5px;
@@ -58,7 +58,6 @@
 
 .contact__form-item span,
 .contact__form-item-last span {
-    color: #fff;
     padding: 5px;
     background-color: #d38864;
     margin-right: 5px;
@@ -167,21 +166,39 @@ select {
 
 }
 
+@media screen and (max-width:768px){
+
+    .contact__bg {
+        padding: 30px 0;
+    }
+
+    .contact__form-frame {
+        border: none;
+        width: 75%;
+    }
+
+    .contact__form-table {
+        border: none;
+        width: 100%;
+    }
+
+}
+
 
 @media screen and (max-width:376px){
+
+
+    .contact .content-title {
+        padding: 100px 0 0;
+    }
 
     .contact__bg {
         padding: 30px 30px 0;
     }
 
     .contact__form-frame {
-        border: unset;
         width: unset;
         margin: 0 auto;
-    }
-
-    .contact__form-table {
-        border: unset;
     }
 
     .contact__form-item {

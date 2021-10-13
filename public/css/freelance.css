@@ -4,7 +4,7 @@
 }
 
 .freelance__top-message {
-    padding: 100px;
+    padding: 100px 0;
     text-align: center;
     color: #fff;
     font-size: 2rem;
@@ -61,7 +61,11 @@
 
 .freelance__catch-lead {
     text-align: center;
-    padding: 40px;
+    padding: 40px 0 80px;
+}
+
+.freelance__catch-lead img {
+    width: 50%;
 }
 
 .freelance__catch-content {
@@ -72,11 +76,12 @@
 
 .freelance__catch-box {
     background-color: #47927b;
-    padding: 30px;
+    padding: 0;
     width: 25%;
     text-align: center;
     color: #fff;
     margin: 20px;
+    border-radius: 30px;
 }
 
 .freelance__catch-number {
@@ -104,8 +109,13 @@
 .freelance__catch-detail--flex {
     display: flex;
     justify-content: center;
-    width: 80%;
+    width: 90%;
     margin: 60px auto;
+}
+
+.freelance__catch-detail img {
+    width: fit-content;
+    height: fit-content;
 }
 
 .freelance__catch-detail-item {
@@ -121,26 +131,53 @@
     margin-bottom: 20px;
 }
 
-.freelance__catch-detail--flex:nth-child(2) .freelance__catch-detail-item {
-    padding: 30px 120px 30px 0px;
+.freelance__catch-detail-item p {
+    line-height: 1.5;
 }
 
-/* レスポンシブ用のデザイン */
+/* ============== */
+/* ==responsive== */
+/* ============== */
+
 .freelance__catch-title__responsive {
     display: none;
 }
 
 
-/* レスポンシブ（ipad用） */
 
-@media screen and (max-width:1024px) {
+/* ============== */
+/* ==レスポンシブ=== */
+/* ====スマホ用==== */
+/* ============== */
+
+@media screen and (max-width:768px) {
+
+    .freelance__top-lead {
+        display: block;
+    }
+
+    .freelance__top-box {
+        width: 60%;
+        margin: 30px auto;
+        padding: 0px 20px;
+        border-radius: 30px;
+    }
+
+    .freelance__top-box h2 {
+        font-size: 1.3rem;
+    }
+
+    .freelance__catch-box p {
+        font-size: 0.8rem;
+    }
 
 }
 
-/* /.レスポンシブ（ipad用） */
 
-
-/* レスポンシブ（スマホ用） */
+/* ============== */
+/* ==レスポンシブ=== */
+/* ====スマホ用==== */
+/* ============== */
 
 @media screen and (max-width:376px){
 
@@ -156,6 +193,7 @@
 
     .freelance__top-box {
         width: unset;
+        margin: 30px;
         padding: 0px 20px;
         border-radius: 30px;
     }
@@ -218,10 +256,6 @@
     .freelance__catch-detail--flex {
         width: unset;
         margin: 0px 20px;
-    }
-
-    .freelance__catch-detail--flex:nth-child(2) .freelance__catch-detail-item {
-        padding: 30px 10px;
     }
 
     .freelance__catch-detail--flex:last-child() .freelance__catch-detail-item {

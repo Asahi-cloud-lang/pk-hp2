@@ -95,6 +95,15 @@
     color: #fff;
 }
 
+.company__detail-title__img {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.company__detail-title__img img {
+    width: 100%;
+}
+
 .company__detail--flex {
     display: flex;
     width: 80%;
@@ -150,27 +159,83 @@
 
 @media screen and (max-width:1024px) {
 
+    .company__top-lead h1 {
+        font-size: 1.6rem;
+    }
+
+    .company__detail--flex {
+        justify-content: space-around;
+    }
+
+    .company__detail-content__img img {
+        width: 100%;
+    }
+
 }
 
-
-@media screen and (max-width:376px){
+@media screen and (max-width:768px) {
 
     .company__top {
         flex-direction: column;
     }
 
     .company__top-lead h1 {
+        line-height: 2;
+        font-size: 1.4rem;
+    }
+
+    .company__top-img {
+        margin: 0 auto;
+        width: 60%;
+        padding: 0 0 30px;
+        text-align: center;
+    }
+
+    .company__body-flame h2 {
+        font-size: 0.9rem;
+    }
+
+    .company__body-flame h2 span {
+        font-size: 1.8rem;
+    }
+
+    .company__body--flex {
+		flex-direction: column;
+	}
+
+    .company__body-item p {
+        padding-bottom: 80px;
+    }
+
+    .company__body-item img {
+        width: 50%;
+    }
+
+    .company__indention-responsive {
+        display: block;
+    }
+
+    .company__detail--flex {
+        width: 100%;
+    }
+
+    .company__detail-title h2 {
+        font-size: 1.7rem;
+    }
+
+}
+
+@media screen and (max-width:376px){
+
+    .company__top-lead h1 {
         order: 1;
         font-size: 1.2rem;
-        line-height: 2;
     }
 
     .company__top-img {
         order: 2;
-        margin: 0 auto;
         width: 100%;
         padding: 10px 0 0;
-        text-align: center;
     }
 
     .company__top-img img {
@@ -203,10 +268,6 @@
         padding-bottom: 20;
     }
 
-    .company__body-item img {
-        width: 50%;
-    }
-
     .company__body-item p {
         padding: 10px 0 30px;
         font-size: 0.9rem;
@@ -229,10 +290,6 @@
         display: block;
         margin: 0px 20px 0 auto;
         padding-bottom: 30px;
-    }
-
-    .company__responsive-indention {
-        display: block;
     }
 
     .company__detail-title h2 {
@@ -296,11 +353,4 @@
     .company__detail-item p br {
         display: none;
     }
-
-
-
-  .company__detail-responsive-item {
-    display: block;
-  }
-
 }

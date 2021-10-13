@@ -29,8 +29,8 @@
 <!-- freelance -->
 <section class="freelance">
     <div class="freelance__bg">
-        <div class="content--padding">
-            <div class="content-title">
+        <div class="content__body">
+            <div class="content__title">
                 <img src="{{ asset('images/top/knife-red.png') }}" alt="#" class="knife">
                 <h1>
                     FREELANCE<br>
@@ -38,114 +38,114 @@
                 </h1>
                 <img src="{{ asset('images/top/fork-red.png') }}" alt="#" class="fork">
             </div>
-            <ul class="content-list">
+            <ul class="content__list">
                 <li>
-                    <div class="content-box">
-                        <div class="content-box--flex">
+                    <div class="content__box">
+                        <div class="content__box--flex">
                             <div>
-                                <h2 class="content-box__title">実績</h2>
-                                <p class="content-box__item">○○株式会社</p>
-                                <p class="content-box__item">業務内容：コーダー</p>
-                                <p class="content-box__item">収入：○円</p>
+                                <h2 class="content__box-title">実績</h2>
+                                <p class="content__box-item">○○株式会社</p>
+                                <p class="content__box-item">業務内容：コーダー</p>
+                                <p class="content__box-item">収入：○円</p>
                             </div>
                             <div>
-                                <p class="content-box__detail">
+                                <p class="content__box-detail">
                                     不安もありましたが<br>
                                     プログラム・キッチンの<br>
                                     サポートのおかげで<br>
                                     スキルアップすることができました！
                                 </p>
-                                <img src="{{ asset('images/top/woman.png') }}" alt="#" class="content-box__img">
+                                <img src="{{ asset('images/top/woman.png') }}" alt="#" class="content__box-img">
                             </div>
                         </div>
                     </div>
                 </li>
                 <li>
-                    <div class="content-box">
-                        <div class="content-box--flex">
+                    <div class="content__box">
+                        <div class="content__box--flex">
                             <div>
-                                <h2 class="content-box__title">実績</h2>
-                                <p class="content-box__item">○○株式会社</p>
-                                <p class="content-box__item">業務内容：コーダー</p>
-                                <p class="content-box__item">収入：○円</p>
+                                <h2 class="content__box-title">実績</h2>
+                                <p class="content__box-item">○○株式会社</p>
+                                <p class="content__box-item">業務内容：コーダー</p>
+                                <p class="content__box-item">収入：○円</p>
                             </div>
                             <div>
-                                <p class="content-box__detail">
+                                <p class="content__box-detail">
                                     不安もありましたが<br>
                                     プログラム・キッチンの<br>
                                     サポートのおかげで<br>
                                     スキルアップすることができました！
                                 </p>
-                                <img src="{{ asset('images/top/woman.png') }}" alt="#" class="content-box__img">
+                                <img src="{{ asset('images/top/woman.png') }}" alt="#" class="content__box-img">
                             </div>
                         </div>
                     </div>
                 </li>
                 <li>
-                    <div class="content-box">
-                        <div class="content-box--flex">
+                    <div class="content__box">
+                        <div class="content__box--flex">
                             <div>
-                                <h2 class="content-box__title">実績</h2>
-                                <p class="content-box__item">○○株式会社</p>
-                                <p class="content-box__item">業務内容：コーダー</p>
-                                <p class="content-box__item">収入：○円</p>
+                                <h2 class="content__box-title">実績</h2>
+                                <p class="content__box-item">○○株式会社</p>
+                                <p class="content__box-item">業務内容：コーダー</p>
+                                <p class="content__box-item">収入：○円</p>
                             </div>
                             <div>
-                                <p class="content-box__detail">
+                                <p class="content__box-detail">
                                     不安もありましたが<br>
                                     プログラム・キッチンの<br>
                                     サポートのおかげで<br>
                                     スキルアップすることができました！
                                 </p>
-                                <img src="{{ asset('images/top/woman.png') }}" alt="#" class="content-box__img">
+                                <img src="{{ asset('images/top/woman.png') }}" alt="#" class="content__box-img">
                             </div>
                         </div>
                     </div>
                 </li>
                 <li>
-                    <div class="content-box">
-                        <div class="content-box--flex">
+                    <div class="content__box">
+                        <div class="content__box--flex">
                             <div>
-                                <h2 class="content-box__title">実績</h2>
-                                <p class="content-box__item">○○株式会社</p>
-                                <p class="content-box__item">業務内容：コーダー</p>
-                                <p class="content-box__item">収入：○円</p>
+                                <h2 class="content__box-title">実績</h2>
+                                <p class="content__box-item">○○株式会社</p>
+                                <p class="content__box-item">業務内容：コーダー</p>
+                                <p class="content__box-item">収入：○円</p>
                             </div>
                             <div>
-                                <p class="content-box__detail">
+                                <p class="content__box-detail">
                                     不安もありましたが<br>
                                     プログラム・キッチンの<br>
                                     サポートのおかげで<br>
                                     スキルアップすることができました！
                                 </p>
-                                <img src="{{ asset('images/top/woman.png') }}" alt="#" class="content-box__img">
+                                <img src="{{ asset('images/top/woman.png') }}" alt="#" class="content__box-img">
                             </div>
                         </div>
                     </div>
                 </li>
                 <li>
-                    <div class="content-box">
-                        <div class="content-box--flex">
+                    <div class="content__box">
+                        <div class="content__box--flex">
                             <div>
-                                <h2 class="content-box__title">実績</h2>
-                                <p class="content-box__item">○○株式会社</p>
-                                <p class="content-box__item">業務内容：コーダー</p>
-                                <p class="content-box__item">収入：○円</p>
+                                <h2 class="content__box-title">実績</h2>
+                                <p class="content__box-item">○○株式会社</p>
+                                <p class="content__box-item">業務内容：コーダー</p>
+                                <p class="content__box-item">収入：○円</p>
                             </div>
                             <div>
-                                <p class="content-box__detail">
+                                <p class="content__box-detail">
                                     不安もありましたが<br>
                                     プログラム・キッチンの<br>
                                     サポートのおかげで<br>
                                     スキルアップすることができました！
                                 </p>
-                                <img src="{{ asset('images/top/woman.png') }}" alt="#" class="content-box__img">
+                                <img src="{{ asset('images/top/woman.png') }}" alt="#" class="content__box-img">
                             </div>
                         </div>
                     </div>
                 </li>
             </ul>
-            <div class="content-link">
+            <div class="content__link">
                 <a href="#">フリーランス様ページへ</a>
             </div>
         </div>
@@ -156,8 +156,8 @@
 <!-- company -->
 <section class="company">
     <div class="company__bg">
-        <div class="content--padding">
-            <div class="content-title">
+        <div class="content__body">
+            <div class="content__title">
                 <img src="{{ asset('images/top/knife-yellow.png') }}" alt="#" class="knife">
                 <h1>
                     COMPANY<br>
@@ -165,142 +165,127 @@
                 </h1>
                 <img src="{{ asset('images/top/fork-yellow.png') }}" alt="#" class="fork">
             </div>
-            <ul class="content-list">
+            <ul class="content__list">
                 <li>
-                    <div class="content-box">
-                        <div class="content-box--flex">
-                            <div class="content-box--width01">
-                                <h2 class="content-box__title">実績</h2>
-                                <p class="content-box__item">
-                                    A社は受諾開発にリソースを取られ、<br>
-                                    自社プロダクトに専念出来ていない状態でした。<br>
+                    <div class="content__box">
+                        <div class="content__box--flex">
+                            <div class="content__box--width01">
+                                <h2 class="content__box-title">実績</h2>
+                                <p class="content__box-item">
+                                    A社は受諾開発にリソースを取られ、自社プロダクトに専念出来ていない状態でした。<br>
                                     かといって、ベテランの人材を雇うほどの余裕はありませんでした。<br>
-                                    A社はプログラム・キッチン所属の新人フリーランスすることで、<br>
-                                    自社プロダクトにリソースを割くことができ、<br>
-                                    更に費用面でも安くする事が出来ました。
+                                    A社はプログラム・キッチン所属の新人フリーランスすることで、自社プロダクトにリソースを割くことができ、更に費用面でも安くする事が出来ました。
                                 </p>
                             </div>
-                            <div class="content-box--width02">
-                                <p class="content-box__detail">
+                            <div class="content__box--width02">
+                                <p class="content__box-detail">
                                     成果物の質は<br>
                                     ベテランエンジニアが<br>
                                     担保してくれるから<br>
                                     安心して任せられる！
                                 </p>
-                                <img src="{{ asset('images/top/high-five.png') }}" alt="#" class="content-box__img">
+                                <img src="{{ asset('images/top/high-five.png') }}" alt="#" class="content__box-img">
                             </div>
                         </div>
                     </div>
                 </li>
                 <li>
-                    <div class="content-box">
-                        <div class="content-box--flex">
-                            <div class="content-box--width01">
-                                <h2 class="content-box__title">実績</h2>
-                                <p class="content-box__item">
-                                    A社は受諾開発にリソースを取られ、<br>
-                                    自社プロダクトに専念出来ていない状態でした。<br>
+                    <div class="content__box">
+                        <div class="content__box--flex">
+                            <div class="content__box--width01">
+                                <h2 class="content__box-title">実績</h2>
+                                <p class="content__box-item">
+                                    A社は受諾開発にリソースを取られ、自社プロダクトに専念出来ていない状態でした。<br>
                                     かといって、ベテランの人材を雇うほどの余裕はありませんでした。<br>
-                                    A社はプログラム・キッチン所属の新人フリーランスすることで、<br>
-                                    自社プロダクトにリソースを割くことができ、<br>
-                                    更に費用面でも安くする事が出来ました。
+                                    A社はプログラム・キッチン所属の新人フリーランスすることで、自社プロダクトにリソースを割くことができ、更に費用面でも安くする事が出来ました。
                                 </p>
                             </div>
-                            <div class="content-box--width02">
-                                <p class="content-box__detail">
+                            <div class="content__box--width02">
+                                <p class="content__box-detail">
                                     成果物の質は<br>
                                     ベテランエンジニアが<br>
                                     担保してくれるから<br>
                                     安心して任せられる！
                                 </p>
-                                <img src="{{ asset('images/top/high-five.png') }}" alt="#" class="content-box__img">
+                                <img src="{{ asset('images/top/high-five.png') }}" alt="#" class="content__box-img">
                             </div>
                         </div>
                     </div>
                 </li>
                 <li>
-                    <div class="content-box">
-                        <div class="content-box--flex">
-                            <div class="content-box--width01">
-                                <h2 class="content-box__title">実績</h2>
-                                <p class="content-box__item">
-                                    A社は受諾開発にリソースを取られ、<br>
-                                    自社プロダクトに専念出来ていない状態でした。<br>
+                    <div class="content__box">
+                        <div class="content__box--flex">
+                            <div class="content__box--width01">
+                                <h2 class="content__box-title">実績</h2>
+                                <p class="content__box-item">
+                                    A社は受諾開発にリソースを取られ、自社プロダクトに専念出来ていない状態でした。<br>
                                     かといって、ベテランの人材を雇うほどの余裕はありませんでした。<br>
-                                    A社はプログラム・キッチン所属の新人フリーランスすることで、<br>
-                                    自社プロダクトにリソースを割くことができ、<br>
-                                    更に費用面でも安くする事が出来ました。
+                                    A社はプログラム・キッチン所属の新人フリーランスすることで、自社プロダクトにリソースを割くことができ、更に費用面でも安くする事が出来ました。
                                 </p>
                             </div>
-                            <div class="content-box--width02">
-                                <p class="content-box__detail">
+                            <div class="content__box--width02">
+                                <p class="content__box-detail">
                                     成果物の質は<br>
                                     ベテランエンジニアが<br>
                                     担保してくれるから<br>
                                     安心して任せられる！
                                 </p>
-                                <img src="{{ asset('images/top/high-five.png') }}" alt="#" class="content-box__img">
+                                <img src="{{ asset('images/top/high-five.png') }}" alt="#" class="content__box-img">
                             </div>
                         </div>
                     </div>
                 </li>
                 <li>
-                    <div class="content-box">
-                        <div class="content-box--flex">
-                            <div class="content-box--width01">
-                                <h2 class="content-box__title">実績</h2>
-                                <p class="content-box__item">
-                                    A社は受諾開発にリソースを取られ、<br>
-                                    自社プロダクトに専念出来ていない状態でした。<br>
+                    <div class="content__box">
+                        <div class="content__box--flex">
+                            <div class="content__box--width01">
+                                <h2 class="content__box-title">実績</h2>
+                                <p class="content__box-item">
+                                    A社は受諾開発にリソースを取られ、自社プロダクトに専念出来ていない状態でした。<br>
                                     かといって、ベテランの人材を雇うほどの余裕はありませんでした。<br>
-                                    A社はプログラム・キッチン所属の新人フリーランスすることで、<br>
-                                    自社プロダクトにリソースを割くことができ、<br>
-                                    更に費用面でも安くする事が出来ました。
+                                    A社はプログラム・キッチン所属の新人フリーランスすることで、自社プロダクトにリソースを割くことができ、更に費用面でも安くする事が出来ました。
                                 </p>
                             </div>
-                            <div class="content-box--width02">
-                                <p class="content-box__detail">
+                            <div class="content__box--width02">
+                                <p class="content__box-detail">
                                     成果物の質は<br>
                                     ベテランエンジニアが<br>
                                     担保してくれるから<br>
                                     安心して任せられる！
                                 </p>
-                                <img src="{{ asset('images/top/high-five.png') }}" alt="#" class="content-box__img">
+                                <img src="{{ asset('images/top/high-five.png') }}" alt="#" class="content__box-img">
                             </div>
                         </div>
                     </div>
                 </li>
                 <li>
-                    <div class="content-box">
-                        <div class="content-box--flex">
-                            <div class="content-box--width01">
-                                <h2 class="content-box__title">実績</h2>
-                                <p class="content-box__item">
-                                    A社は受諾開発にリソースを取られ、<br>
-                                    自社プロダクトに専念出来ていない状態でした。<br>
+                    <div class="content__box">
+                        <div class="content__box--flex">
+                            <div class="content__box--width01">
+                                <h2 class="content__box-title">実績</h2>
+                                <p class="content__box-item">
+                                    A社は受諾開発にリソースを取られ、自社プロダクトに専念出来ていない状態でした。<br>
                                     かといって、ベテランの人材を雇うほどの余裕はありませんでした。<br>
-                                    A社はプログラム・キッチン所属の新人フリーランスすることで、<br>
-                                    自社プロダクトにリソースを割くことができ、<br>
-                                    更に費用面でも安くする事が出来ました。
+                                    A社はプログラム・キッチン所属の新人フリーランスすることで、自社プロダクトにリソースを割くことができ、更に費用面でも安くする事が出来ました。
                                 </p>
                             </div>
-                            <div class="content-box--width02">
-                                <p class="content-box__detail">
+                            <div class="content__box--width02">
+                                <p class="content__box-detail">
                                     成果物の質は<br>
                                     ベテランエンジニアが<br>
                                     担保してくれるから<br>
                                     安心して任せられる！
                                 </p>
-                                <img src="{{ asset('images/top/high-five.png') }}" alt="#" class="content-box__img">
+                                <img src="{{ asset('images/top/high-five.png') }}" alt="#" class="content__box-img">
                             </div>
                         </div>
                     </div>
                 </li>
             </ul>
-            <div class="content-link">
+            <div class="content__link">
                 <a href="#">企業様ページへ</a>
             </div>
-            <div class="company__content-img">
+            <div class="content__bg-imgs">
                 <img src="{{ asset('images/top/pc.png') }}" alt="#" class="pc">
                 <img src="{{ asset('images/top/pasta.png') }}" alt="#" class="pasta">
             </div>
@@ -372,7 +357,7 @@
                 </ul>
             </div>
         </div>
-        <div class="info__bg-images">
+        <div class="info__bg-imgs">
             <img src="{{ asset('images/top/glass.png') }}" alt="#" class="glass">
             <img src="{{ asset('images/top/carrots.png') }}" alt="#" class="carrots">
         </div>
