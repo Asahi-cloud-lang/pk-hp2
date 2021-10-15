@@ -1,6 +1,4 @@
-
-
-  /* ハンバーガーメニュー */
+/* ハンバーガーメニュー */
 .hamburger-menu {
     display: none;
 }
@@ -14,19 +12,19 @@
     pointer-events: none;
 }
 
-.btn-trigger span{
+.btn-trigger span {
     display: none;
 }
 
-@media screen and (max-width:376px){
-
+@media screen and (max-width: 376px) {
     .hamburger-menu {
         display: block;
+        position: relative;
     }
 
     .hamburger-menu__item {
-        display: block;
-        position: relative;
+        display: inline-block;
+        position: absolute;
         background-color: #fff;
         top: -10px;
         width: 100%;
@@ -69,7 +67,8 @@
         object-fit: cover;
     }
 
-    .btn-trigger, .btn-trigger span {
+    .btn-trigger,
+    .btn-trigger span {
         display: inline-block;
         transition: all 5.5ms;
         box-sizing: border-box;
@@ -121,5 +120,4 @@
     .hamburger-menu__list li:last-child {
         padding: 10px 0 20px;
     }
-
 }
