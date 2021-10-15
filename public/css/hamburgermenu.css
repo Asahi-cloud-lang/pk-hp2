@@ -117,13 +117,24 @@
     }
 
     .hamburger-menu__list {
-        padding: 70px 0 0;
+        padding: 100px 0 0;
     }
 
     .hamburger-menu__list li {
+        padding: 10px;
         list-style: none;
         text-align: center;
-        font-size: 30px;
+        font-size: 1rem;
         line-height: 2.5;
     }
+
+    .hamburger-menu__list li:first-child {
+        padding: 20px 0 10px;
+        border-top: 3px solid;
+    }
+
+    .hamburger-menu__list li:last-child {
+        padding: 10px 0 20px;
+    }
+
 }

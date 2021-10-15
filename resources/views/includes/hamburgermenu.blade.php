@@ -10,13 +10,11 @@
         </div>
         <div class="hamburger-menu__list">
             <ul>
-                <li>ホーム</li>
-                <li>フリーランスの方へ</li>
-                <li>企業の方へ</li>
-                <li>制作実績</li>
-                <li>新着情報</li>
-                <li>問い合わせ</li>
-                <li>会社概要</li>
+                <li><a href="#">ホーム</a></li>
+                <li><a href="#">フリーランスの方へ</a></li>
+                <li><a href="#">企業の方へ</a></li>
+                <li><a href="#">制作実績</a></li>
+                <li><a href="#">新着情報</a></li>
             </ul>
         </div>
     </div>
