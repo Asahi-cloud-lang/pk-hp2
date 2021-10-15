@@ -36,7 +36,6 @@
 
     .hamburger-menu {
         display: block;
-        float: right;
     }
 
     .hamburger-menu__item {
@@ -45,7 +44,7 @@
         background-color: #fff;
         top: -100px;
         right: 0px;
-        width: 375px;
+        width: 100%;
         z-index: 1;
     }
 

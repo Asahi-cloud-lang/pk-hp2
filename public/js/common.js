@@ -6,13 +6,15 @@ $('.content__list').slick({
     dots: true,
     arrows: true,
     slidesToShow: 1,
-		cssEase: 'ease-in-out',
+	cssEase: 'ease-in-out',
     centerMode: true,
     centerPadding: '20%',
     focusOnSelect: true,
     responsive: [{
-        breakpoint: 368,
+        breakpoint: 376,
             settings: {
+                centerMode: false,
+                centerPadding: '0',
                 arrows: false,
                 focusOnSelect: false,
         }
@@ -28,7 +30,7 @@ $('.production__content-list').slick({
     dots: true,
     dotsClass: 'original-dots',
     responsive: [{
-        breakpoint: 368,
+        breakpoint: 376,
             settings: {
                 arrows: false,
         }
