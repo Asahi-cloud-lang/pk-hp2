@@ -38,12 +38,10 @@ $('.production__content-list').slick({
     ]
 });
 
-$('.hamburger-menu__logo').hide();
 $('.hamburger-menu__list').hide();
 
 $('.btn-trigger').on('click', function() {
     $(this).toggleClass('active');
-    $('.hamburger-menu__logo').slideToggle();
     $('.hamburger-menu__list').slideToggle();
     return false;
 });
