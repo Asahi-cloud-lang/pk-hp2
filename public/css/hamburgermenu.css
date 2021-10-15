@@ -18,20 +18,6 @@
     display: none;
 }
 
-.hamburger-menu__list {
-    padding: 70px 0 0;
-}
-
-
-.hamburger-menu__item {
-    position: relative;
-    background-color: #fff;
-    top: -100px;
-    right: 0px;
-    width: 375px;
-    z-index: 1;
-}
-
 @media screen and (max-width:376px){
 
     .hamburger-menu {
@@ -42,8 +28,7 @@
         display: block;
         position: relative;
         background-color: #fff;
-        top: -100px;
-        right: 0px;
+        top: -10px;
         width: 100%;
         z-index: 1;
     }
@@ -117,7 +102,7 @@
     }
 
     .hamburger-menu__list {
-        padding: 100px 0 0;
+        padding: 25px 0 0;
     }
 
     .hamburger-menu__list li {

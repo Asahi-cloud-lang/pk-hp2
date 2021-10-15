@@ -5,9 +5,6 @@
         <span></span>
     </div>
     <div class="hamburger-menu__item">
-        <div class="hamburger-menu__logo">
-            <img src="{{ asset('images/logo.png') }}" alt="logo">
-        </div>
         <div class="hamburger-menu__list">
             <ul>
                 <li><a href="#">ホーム</a></li>
