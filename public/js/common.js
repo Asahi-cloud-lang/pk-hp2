@@ -1,3 +1,6 @@
+
+// スライダー
+
 $('.content__list').slick({
     autoplay: true,
     autoplaySpeed: 4000,
@@ -38,10 +41,21 @@ $('.production__content-list').slick({
     ]
 });
 
+// ハンバーガーメニュー
 $('.hamburger-menu__list').hide();
 
 $('.btn-trigger').on('click', function() {
     $(this).toggleClass('active');
     $('.hamburger-menu__list').slideToggle();
     return false;
+});
+
+// ページネーション
+$(function() {
+    $('.news__content-item-list').pagination({
+        itemElement              : 'li',
+        displayItemCount         : 7,
+        paginationClassName      : 'news__pagination',
+        paginationInnerClassName : 'news__pagination-number',
+    });
 });

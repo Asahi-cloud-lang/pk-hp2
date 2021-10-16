@@ -29,5 +29,6 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
     <script type="text/javascript" src="{{ asset('../../js/slick.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('../../js/common.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('../../js/jquery.pagination.js') }}"></script>
 </body>
 </html>

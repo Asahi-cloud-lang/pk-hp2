@@ -100,10 +100,6 @@
         transform: translateY(-10px) rotate(45deg);
     }
 
-    .hamburger-menu__list {
-        padding: 25px 0 0;
-    }
-
     .hamburger-menu__list li {
         padding: 10px;
         list-style: none;
