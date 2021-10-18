@@ -311,66 +311,66 @@
                     <ul class="news__content-item-list">
                         <li>
                             <div class="news__content-date"><span>NEW</span>2021.01.01</div>
+                            <div class="news__content-item">この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。</div>
+                        </li>
+                        <li>
+                            <div class="news__content-date"><span>NEW</span>2021.01.02</div>
+                            <div class="news__content-item">この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。</div>
+                        </li>
+                        <li>
+                            <div class="news__content-date">2021.01.03</div>
+                            <div class="news__content-item">この文章はダミーです。この文章はダミーです。</div>
+                        </li>
+                        <li>
+                            <div class="news__content-date">2021.01.04</div>
+                            <div class="news__content-item">この文章はダミーです。この文章はダミーです。</div>
+                        </li>
+                        <li>
+                            <div class="news__content-date">2021.01.05</div>
+                            <div class="news__content-item">この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。</div>
+                        </li>
+                        <li>
+                            <div class="news__content-date">2021.01.06</div>
                             <div class="news__content-item">この文章はダミーです。</div>
                         </li>
                         <li>
-                            <div class="news__content-date"><span>NEW</span>2021.01.01</div>
+                            <div class="news__content-date">2021.01.07</div>
                             <div class="news__content-item">この文章はダミーです。</div>
                         </li>
                         <li>
-                            <div class="news__content-date"><span>NEW</span>2021.01.01</div>
+                            <div class="news__content-date">2021.01.08</div>
                             <div class="news__content-item">この文章はダミーです。</div>
                         </li>
                         <li>
-                            <div class="news__content-date"><span>NEW</span>2021.01.01</div>
+                            <div class="news__content-date">2021.01.09</div>
                             <div class="news__content-item">この文章はダミーです。</div>
                         </li>
                         <li>
-                            <div class="news__content-date"><span>NEW</span>2021.01.01</div>
+                            <div class="news__content-date">2021.01.10</div>
                             <div class="news__content-item">この文章はダミーです。</div>
                         </li>
                         <li>
-                            <div class="news__content-date"><span>NEW</span>2021.01.01</div>
+                            <div class="news__content-date">2021.01.11</div>
                             <div class="news__content-item">この文章はダミーです。</div>
                         </li>
                         <li>
-                            <div class="news__content-date"><span>NEW</span>2021.01.01</div>
+                            <div class="news__content-date">2021.01.12</div>
                             <div class="news__content-item">この文章はダミーです。</div>
                         </li>
                         <li>
-                            <div class="news__content-date"><span>NEW</span>2021.01.01</div>
+                            <div class="news__content-date">2021.01.13</div>
                             <div class="news__content-item">この文章はダミーです。</div>
                         </li>
                         <li>
-                            <div class="news__content-date"><span>NEW</span>2021.01.01</div>
+                            <div class="news__content-date">2021.01.14</div>
                             <div class="news__content-item">この文章はダミーです。</div>
                         </li>
                         <li>
-                            <div class="news__content-date"><span>NEW</span>2021.01.01</div>
+                            <div class="news__content-date">2021.01.15</div>
                             <div class="news__content-item">この文章はダミーです。</div>
                         </li>
                         <li>
-                            <div class="news__content-date"><span>NEW</span>2021.01.01</div>
-                            <div class="news__content-item">この文章はダミーです。</div>
-                        </li>
-                        <li>
-                            <div class="news__content-date"><span>NEW</span>2021.01.01</div>
-                            <div class="news__content-item">この文章はダミーです。</div>
-                        </li>
-                        <li>
-                            <div class="news__content-date"><span>NEW</span>2021.01.01</div>
-                            <div class="news__content-item">この文章はダミーです。</div>
-                        </li>
-                        <li>
-                            <div class="news__content-date"><span>NEW</span>2021.01.01</div>
-                            <div class="news__content-item">この文章はダミーです。</div>
-                        </li>
-                        <li>
-                            <div class="news__content-date"><span>NEW</span>2021.01.01</div>
-                            <div class="news__content-item">この文章はダミーです。</div>
-                        </li>
-                        <li>
-                            <div class="news__content-date"><span>NEW</span>2021.01.01</div>
+                            <div class="news__content-date">2021.01.16</div>
                             <div class="news__content-item">この文章はダミーです。</div>
                         </li>
                     </ul>

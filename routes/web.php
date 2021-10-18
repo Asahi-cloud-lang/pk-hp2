@@ -13,7 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/','TopController@index');
+Route::get('/', function () {
+    return view('./pages/top');
+});
 
 Route::get('/freelance', function () {
     return view('./pages/freelance');

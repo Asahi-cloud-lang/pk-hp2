@@ -132,6 +132,12 @@ select {
     display: none;
 }
 
+.contact__btn {
+    text-align: right;
+    width: 90%;
+    margin: 0 auto;
+}
+
 @media screen and (max-width:1024px) {
 
 
@@ -256,14 +262,8 @@ select {
     .contact__img img {
         width: 100%;
     }
+
+    .contact__btn {
+        display: none;
+    }
 }
-
-
-/* レスポンシブ対応(ipad用) */
-
-@media screen and (max-width:1024px){
-
-
-
-}
-/* /.レスポンシブ対応 */

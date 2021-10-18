@@ -37,8 +37,7 @@ $('.production__content-list').slick({
             settings: {
                 arrows: false,
         }
-    }
-    ]
+    }]
 });
 
 // ハンバーガーメニュー
@@ -54,7 +53,7 @@ $('.btn-trigger').on('click', function() {
 $(function() {
     $('.news__content-item-list').pagination({
         itemElement              : 'li',
-        displayItemCount         : 7,
+        displayItemCount         : 6,
         paginationClassName      : 'news__pagination',
         paginationInnerClassName : 'news__pagination-number',
     });
