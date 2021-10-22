@@ -2,11 +2,11 @@
 <section class="contact">
     <div class="contact__bg">
         <div class="content__title">
-            <img src="{{ asset('images/contact/knife-yellow.png') }}" alt="#" class="knife">
+            <img src="{{ asset('images/contact/knife-yellow.png') }}" alt="knife" class="knife">
             <h1>
                 お問い合わせ
             </h1>
-            <img src="{{ asset('images/contact/fork-yellow.png') }}" alt="#" class="fork">
+            <img src="{{ asset('images/contact/fork-yellow.png') }}" alt="fork" class="fork">
         </div>
         <div class="contact__form-frame">
             <table class="contact__form-table">
@@ -54,11 +54,11 @@
                 </tbody>
             </table>
             <div class="contact__img">
-                <img src="{{ asset('images/contact/pasta.png') }}" alt="#">
+                <img src="{{ asset('images/contact/pasta.png') }}" alt="pasta">
             </div>
         </div>
         <div class="contact__btn">
-            <a href="#"><img src="{{ asset('images/contact/contact-btn.png') }}" onmouseover="this.src="{{ asset('../../../public/images/contact/contact-btn-hover.png')}}"" onmouseout="this.src="{{ asset('../../../public/images/contact/contact-btn-hover.png')}}""　alt="#"></a>
+            <a href="#" class="contact__link"><img src="{{ asset('images/contact/contact-btn.png') }}" onmouseover="this.src="{{ asset('../../../public/images/contact/contact-btn-hover.png')}}"" onmouseout="this.src="{{ asset('../../../public/images/contact/contact-btn-hover.png')}}""　alt="#"></a>
         </div>
     </div>
 </section>

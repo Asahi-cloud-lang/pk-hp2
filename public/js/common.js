@@ -1,6 +1,5 @@
 
 // スライダー
-
 $('.content__list').slick({
     autoplay: true,
     autoplaySpeed: 4000,
@@ -57,4 +56,39 @@ $(function() {
         paginationClassName      : 'news__pagination',
         paginationInnerClassName : 'news__pagination-number',
     });
+});
+
+//newsへのスクロール
+$(".gnav-item__news-link").on("click", function () {
+    var news_position = $('.news__content--width').offset().top;
+    $("body,html").animate(
+        {
+            scrollTop: news_position,
+        },
+        1000
+        );
+    return false;
+});
+
+//productionへのスクロール
+$(".gnav-item__production-link").on("click", function () {
+    var production_position = $('.production__content--width').offset().top;
+    $("body,html").animate(
+        {
+            scrollTop: production_position,
+        },
+        1000
+        );
+    return false;
+});
+
+//一番上へスクロール
+$(".contact__link").on("click", function () {
+    $("body,html").animate(
+        {
+            scrollTop: 0,
+        },
+        1000
+        );
+    return false;
 });

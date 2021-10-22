@@ -11,7 +11,7 @@
     </div>
 	<div class="home__bg">
         <div class="home__responsive-bg">
-            <img src="{{ asset('images/top/responsive-home-bg01.png') }}" alt="#" class="home__responsive-bg01">
+            <img src="{{ asset('images/top/responsive-home-bg01.png') }}" alt="home__bg" class="home__responsive-bg01">
         </div>
         <div class="home__content-lead">
             <h1>新人フリーランスが活躍できる未来へ</h1>
@@ -19,7 +19,7 @@
             <p>企業様も安心してお仕事をまかせられます！</p>
         </div>
         <div class="home__responsive-bg">
-            <img src="{{ asset('images/top/responsive-home-bg02.png') }}" alt="#" class="home__responsive-bg02">
+            <img src="{{ asset('images/top/responsive-home-bg02.png') }}" alt="home__bg" class="home__responsive-bg02">
         </div>
     </div>
     @include('includes.gnav')
@@ -31,12 +31,12 @@
     <div class="freelance__bg">
         <div class="content__body">
             <div class="content__title">
-                <img src="{{ asset('images/top/knife-red.png') }}" alt="#" class="knife">
+                <img src="{{ asset('images/top/knife-red.png') }}" alt="knife" class="knife">
                 <h1>
                     FREELANCE<br>
                     <span>フリーランス様へ</span>
                 </h1>
-                <img src="{{ asset('images/top/fork-red.png') }}" alt="#" class="fork">
+                <img src="{{ asset('images/top/fork-red.png') }}" alt="fork" class="fork">
             </div>
             <ul class="content__list">
                 <li>
@@ -55,7 +55,7 @@
                                     サポートのおかげで<br>
                                     スキルアップすることができました！
                                 </p>
-                                <img src="{{ asset('images/top/woman.png') }}" alt="#" class="content__box-img">
+                                <img src="{{ asset('images/top/woman.png') }}" alt="woman" class="content__box-img">
                             </div>
                         </div>
                     </div>
@@ -76,7 +76,7 @@
                                     サポートのおかげで<br>
                                     スキルアップすることができました！
                                 </p>
-                                <img src="{{ asset('images/top/woman.png') }}" alt="#" class="content__box-img">
+                                <img src="{{ asset('images/top/woman.png') }}" alt="woman" class="content__box-img">
                             </div>
                         </div>
                     </div>
@@ -97,7 +97,7 @@
                                     サポートのおかげで<br>
                                     スキルアップすることができました！
                                 </p>
-                                <img src="{{ asset('images/top/woman.png') }}" alt="#" class="content__box-img">
+                                <img src="{{ asset('images/top/woman.png') }}" alt="woman" class="content__box-img">
                             </div>
                         </div>
                     </div>
@@ -118,7 +118,7 @@
                                     サポートのおかげで<br>
                                     スキルアップすることができました！
                                 </p>
-                                <img src="{{ asset('images/top/woman.png') }}" alt="#" class="content__box-img">
+                                <img src="{{ asset('images/top/woman.png') }}" alt="woman" class="content__box-img">
                             </div>
                         </div>
                     </div>
@@ -139,14 +139,14 @@
                                     サポートのおかげで<br>
                                     スキルアップすることができました！
                                 </p>
-                                <img src="{{ asset('images/top/woman.png') }}" alt="#" class="content__box-img">
+                                <img src="{{ asset('images/top/woman.png') }}" alt="woman" class="content__box-img">
                             </div>
                         </div>
                     </div>
                 </li>
             </ul>
             <div class="content__link">
-                <a href="#">フリーランス様ページへ</a>
+                <a href="{{ url('/freelance') }}">フリーランス様ページへ</a>
             </div>
         </div>
     </div>
@@ -158,12 +158,12 @@
     <div class="company__bg">
         <div class="content__body">
             <div class="content__title">
-                <img src="{{ asset('images/top/knife-yellow.png') }}" alt="#" class="knife">
+                <img src="{{ asset('images/top/knife-yellow.png') }}" alt="knife" class="knife">
                 <h1>
                     COMPANY<br>
                     <span>企業様へ</span>
                 </h1>
-                <img src="{{ asset('images/top/fork-yellow.png') }}" alt="#" class="fork">
+                <img src="{{ asset('images/top/fork-yellow.png') }}" alt="fork" class="fork">
             </div>
             <ul class="content__list">
                 <li>
@@ -184,7 +184,7 @@
                                     担保してくれるから<br>
                                     安心して任せられる！
                                 </p>
-                                <img src="{{ asset('images/top/high-five.png') }}" alt="#" class="content__box-img">
+                                <img src="{{ asset('images/top/high-five.png') }}" alt="hive-five" class="content__box-img">
                             </div>
                         </div>
                     </div>
@@ -207,7 +207,7 @@
                                     担保してくれるから<br>
                                     安心して任せられる！
                                 </p>
-                                <img src="{{ asset('images/top/high-five.png') }}" alt="#" class="content__box-img">
+                                <img src="{{ asset('images/top/high-five.png') }}" alt="hive-five" class="content__box-img">
                             </div>
                         </div>
                     </div>
@@ -230,7 +230,7 @@
                                     担保してくれるから<br>
                                     安心して任せられる！
                                 </p>
-                                <img src="{{ asset('images/top/high-five.png') }}" alt="#" class="content__box-img">
+                                <img src="{{ asset('images/top/high-five.png') }}" alt="high-five" class="content__box-img">
                             </div>
                         </div>
                     </div>
@@ -253,7 +253,7 @@
                                     担保してくれるから<br>
                                     安心して任せられる！
                                 </p>
-                                <img src="{{ asset('images/top/high-five.png') }}" alt="#" class="content__box-img">
+                                <img src="{{ asset('images/top/high-five.png') }}" alt="high-five" class="content__box-img">
                             </div>
                         </div>
                     </div>
@@ -276,18 +276,18 @@
                                     担保してくれるから<br>
                                     安心して任せられる！
                                 </p>
-                                <img src="{{ asset('images/top/high-five.png') }}" alt="#" class="content__box-img">
+                                <img src="{{ asset('images/top/high-five.png') }}" alt="high-five" class="content__box-img">
                             </div>
                         </div>
                     </div>
                 </li>
             </ul>
             <div class="content__link">
-                <a href="#">企業様ページへ</a>
+                <a href="{{ url('/company') }}">企業様ページへ</a>
             </div>
             <div class="content__bg-imgs">
-                <img src="{{ asset('images/top/pc.png') }}" alt="#" class="pc">
-                <img src="{{ asset('images/top/pasta.png') }}" alt="#" class="pasta">
+                <img src="{{ asset('images/top/pc.png') }}" alt="pc" class="pc">
+                <img src="{{ asset('images/top/pasta.png') }}" alt="pasta" class="pasta">
             </div>
         </div>
     </div>
@@ -301,11 +301,11 @@
             <!-- news -->
             <div class="news__content--width">
                 <div class="info__content-title">
-                    <img src="{{ asset('images/top/knife-red.png') }}" alt="#" class="knife">
+                    <img src="{{ asset('images/top/knife-red.png') }}" alt="knife" class="knife">
                     <h1 colspan="2">NEWS<br>
                         <span>新着情報</span>
                     </h1>
-                    <img src="{{ asset('images/top/fork-red.png') }}" alt="#" class="fork">
+                    <img src="{{ asset('images/top/fork-red.png') }}" alt="fork" class="fork">
                 </div>
                 <div class="news__content" >
                     <ul class="news__content-item-list">
@@ -380,11 +380,11 @@
             <!-- production -->
             <div class="production__content--width">
                 <div class="info__content-title">
-                    <img src="{{ asset('images/top/knife-red.png') }}" alt="#" class="knife">
+                    <img src="{{ asset('images/top/knife-red.png') }}" alt="knife" class="knife">
                     <h1 colspan="2">PRODUCTION<br>
                         <span>製作実績</span>
                     </h1>
-                    <img src="{{ asset('images/top/fork-red.png') }}" alt="#" class="fork">
+                    <img src="{{ asset('images/top/fork-red.png') }}" alt="fork" class="fork">
                 </div>
                 <ul class="production__content production__content-list">
                     <li><img src="{{ asset('images/top/company-box-bg.png') }}" alt="#"></li>
@@ -396,8 +396,8 @@
             </div>
         </div>
         <div class="info__bg-imgs">
-            <img src="{{ asset('images/top/glass.png') }}" alt="#" class="glass">
-            <img src="{{ asset('images/top/carrots.png') }}" alt="#" class="carrots">
+            <img src="{{ asset('images/top/glass.png') }}" alt="glass" class="glass">
+            <img src="{{ asset('images/top/carrots.png') }}" alt="carrots" class="carrots">
         </div>
     </div>
 </section>
