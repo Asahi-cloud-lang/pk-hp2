@@ -138,6 +138,15 @@ select {
     margin: 0 auto;
 }
 
+
+.contact__btn img {
+    opacity: 0.8;
+}
+
+.contact__btn img:hover {
+    opacity: unset;
+}
+
 @media screen and (max-width:1024px) {
 
 

@@ -60,6 +60,10 @@
     color: #fff;
 }
 
+.home .gnav-item a:hover {
+    color:rgb(170, 170, 170);
+}
+
 /* ============== */
 /* ===company==== */
 /* ============== */
@@ -68,6 +72,9 @@
     color: #fff;
 }
 
+.company .gnav-item a:hover {
+    color:rgb(170, 170, 170);
+}
 
 /* ============== */
 /* ==レスポンシブ===

@@ -58,7 +58,7 @@
             </div>
         </div>
         <div class="contact__btn">
-            <a href="#" class="contact__link"><img src="{{ asset('images/contact/contact-btn.png') }}" onmouseover="this.src="{{ asset('../../../public/images/contact/contact-btn-hover.png')}}"" onmouseout="this.src="{{ asset('../../../public/images/contact/contact-btn-hover.png')}}""　alt="#"></a>
+            <a href="#" class="contact__link"><img src="{{ asset('images/contact/contact-btn-hover.png') }}" alt="page-scroll"></a>
         </div>
     </div>
 </section>
