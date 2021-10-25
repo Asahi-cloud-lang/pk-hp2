@@ -1,0 +1,7 @@
+.message__success {
+    color: #fff;
+    background-color: #00dcff;
+    font-size: 2rem;
+    text-align: center;
+    padding: 20px;
+}

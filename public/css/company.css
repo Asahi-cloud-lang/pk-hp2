@@ -11,11 +11,11 @@
 
 .company__top-img {
     width: 40%;
-    margin-right: 30px;
+    text-align: right;
 }
 
 .company__top-img img {
-    width: 100%;
+    width: 80%;
 }
 
 .company__top-lead {

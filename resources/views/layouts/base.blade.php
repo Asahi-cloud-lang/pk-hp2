@@ -14,10 +14,12 @@
     <link rel="stylesheet" href="{{ asset('css/contact.css') }}">
     <link rel="stylesheet" href="{{ asset('css/hamburgermenu.css') }}">
     <link rel="stylesheet" href="{{ asset('css/gnav.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/message.css') }}">
 </head>
 
 <body>
     <main>
+        @include('includes.message')
         @yield('content')
         @include('includes.contact')
     </main>

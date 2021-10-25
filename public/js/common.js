@@ -70,6 +70,17 @@ $(".gnav-item__news-link").on("click", function () {
     return false;
 });
 
+$(".company .gnav-item__news-link").on("click", function () {
+    var news_position = $('.news__content--width').offset().top;
+    $("body,html").animate(
+        {
+            scrollTop: news_position,
+        },
+        1000
+        );
+    return false;
+});
+
 //productionへのスクロール
 $(".gnav-item__production-link").on("click", function () {
     var production_position = $('.production__content--width').offset().top;

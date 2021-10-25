@@ -1,6 +1,10 @@
-<!-- .contact -->
 <section class="contact">
     <div class="contact__bg">
+        @if (Session::has('success'))
+            <div id="contact__message">
+                <p>{{ Session::get('success') }}</p>
+            </div>
+        @endif
         <div class="content__title">
             <img src="{{ asset('images/contact/knife-yellow.png') }}" alt="knife" class="knife">
             <h1>
@@ -10,6 +14,9 @@
         </div>
         <div class="contact__form-frame">
             <table class="contact__form-table">
+                <form action="{{ url('contact') }}" method="POST">
+                @csrf
+
                 <tbody>
                     <tr>
                         <th class="contact__form-item-first"><span>任意</span>企業名</th>
@@ -41,14 +48,12 @@
                     <tr>
                         <th class="contact__form-item"><span>必須</span>お問い合わせ内容</th>
                         <td>
-                            <textarea name="content" rows="10" class="contact__form-area" valign="top" placeholder="入力してください"></textarea>
+                            <textarea name="content" rows="10" class="contact__form-area" valign="top" placeholder="入力してください" required></textarea>
                         </td>
                     </tr>
                     <tr>
                         <td colspan="2" class="contact__form-btn">
-                            <button>
-                                <a href="#" >問い合わせ内容送信</a>
-                            </button>
+                            <input type="submit" value="問い合わせ内容送信">
                         </td>
                     </tr>
                 </tbody>
@@ -62,4 +67,3 @@
         </div>
     </div>
 </section>
-<!-- /.contact -->

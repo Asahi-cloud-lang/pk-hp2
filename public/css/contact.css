@@ -110,7 +110,7 @@ select {
     text-align: center;
 }
 
-.contact__form-btn button {
+.contact__form-btn input {
     background-color: #d36464;
     color: #fff;
     padding: 20px;
@@ -124,7 +124,7 @@ select {
     width: 300px;
 }
 
-.contact__form-btn button:hover {
+.contact__form-btn input:hover {
 		background-color: #d53636;
 }
 

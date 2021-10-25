@@ -24,3 +24,5 @@ Route::get('/freelance', function () {
 Route::get('/company', function () {
     return view('./pages/company');
 });
+
+Route::post('/contact', 'ContactController@send');

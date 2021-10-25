@@ -14,10 +14,10 @@
                 <a href="{{ url('/company') }}">COMPANY<br><span>企業様へ</span></a>
             </li>
             <li class="gnav-item">
-                <a href="#" class="gnav-item__news-link">NEWS<br><span>新着情報</span></a>
+                <a href="{{ url('/#news') }}" class="gnav-item__news-link">NEWS<br><span>新着情報</span></a>
             </li>
             <li class="gnav-item">
-                <a href="#" class="gnav-item__production-link">PRODUCTION<br><span>制作実績</span></a>
+                <a href="{{ url('/#production') }}" class="gnav-item__production-link">PRODUCTION<br><span>制作実績</span></a>
             </li>
         </ul>
     </nav>

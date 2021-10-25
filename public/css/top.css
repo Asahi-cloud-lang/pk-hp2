@@ -265,7 +265,7 @@ body {
     vertical-align: middle;
 }
 
-.info__bg-images {
+.info__bg-imgs {
     position: relative;
     padding-bottom: 150px;
 }
@@ -684,7 +684,7 @@ body {
         font-size: 20px;
     }
 
-    .info__bg-images {
+    .info__bg-imgs {
         display: none;
     }
 

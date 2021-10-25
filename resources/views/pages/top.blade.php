@@ -299,7 +299,7 @@
     <div class="info__bg">
         <div class="info__content">
             <!-- news -->
-            <div class="news__content--width">
+            <div class="news__content--width" id="news">
                 <div class="info__content-title">
                     <img src="{{ asset('images/top/knife-red.png') }}" alt="knife" class="knife">
                     <h1 colspan="2">NEWS<br>
@@ -386,7 +386,7 @@
             </div>
             <!-- /.news -->
             <!-- production -->
-            <div class="production__content--width">
+            <div class="production__content--width" id="production">
                 <div class="info__content-title">
                     <img src="{{ asset('images/top/knife-red.png') }}" alt="knife" class="knife">
                     <h1 colspan="2">PRODUCTION<br>
