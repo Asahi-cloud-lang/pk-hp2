@@ -60,7 +60,7 @@ $(function() {
 
 //newsへのスクロール
 $(".gnav-item__news-link").on("click", function () {
-    var news_position = $('.news__content--width').offset().top;
+    var news_position = $('#news').offset().top;
     $("body,html").animate(
         {
             scrollTop: news_position,
@@ -71,7 +71,7 @@ $(".gnav-item__news-link").on("click", function () {
 });
 
 $(".company .gnav-item__news-link").on("click", function () {
-    var news_position = $('.news__content--width').offset().top;
+    var news_position = $('#news').offset().top;
     $("body,html").animate(
         {
             scrollTop: news_position,
@@ -81,9 +81,45 @@ $(".company .gnav-item__news-link").on("click", function () {
     return false;
 });
 
+//hamburgermenuのnewsのスクロール
+$(".hamburger-menu__news-link").on("click", function () {
+    var news_position = $('#news').offset().top;
+    $("body,html").animate(
+        {
+            scrollTop: news_position,
+        },
+        1000
+        );
+    return false;
+});
+
+$(".company .hamburger-menu__news-link").on("click", function () {
+    var news_position = $('#news').offset().top;
+    $("body,html").animate(
+        {
+            scrollTop: news_position,
+        },
+        1000
+        );
+    return false;
+});
+
+
 //productionへのスクロール
 $(".gnav-item__production-link").on("click", function () {
-    var production_position = $('.production__content--width').offset().top;
+    var production_position = $('#production').offset().top;
+    $("body,html").animate(
+        {
+            scrollTop: production_position,
+        },
+        1000
+        );
+    return false;
+});
+
+//productionへのスクロール
+$(".hamburger-menu__production-link").on("click", function () {
+    var production_position = $('#production').offset().top;
     $("body,html").animate(
         {
             scrollTop: production_position,
