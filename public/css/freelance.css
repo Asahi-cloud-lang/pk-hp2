@@ -36,8 +36,8 @@
 
 .freelance__top-box h2 {
     font-size: 1.6rem;
-    padding: 10px;
-    line-height: 1.5;
+    padding: 5px;
+    line-height: 1.8;
 }
 
 .freelance__top-img {
@@ -144,33 +144,18 @@
 }
 
 
-
 /* ============== */
-/* ==レスポンシブ=== */
-/* ====スマホ用==== */
+/* ==レスポンシブ===
+/* ====ipad用==== */
 /* ============== */
 
-@media screen and (max-width:768px) {
-
-    .freelance__top-lead {
-        display: block;
-    }
-
-    .freelance__top-box {
-        width: 60%;
-        margin: 30px auto;
-        padding: 0px 20px;
-        border-radius: 30px;
-    }
+@media screen and (max-width:1024px) {
 
     .freelance__top-box h2 {
-        font-size: 1.3rem;
+        font-size: 1rem;
+        padding: 8px;
+        line-height: 2;
     }
-
-    .freelance__catch-box p {
-        font-size: 0.8rem;
-    }
-
 }
 
 
@@ -179,7 +164,7 @@
 /* ====スマホ用==== */
 /* ============== */
 
-@media screen and (max-width:376px){
+@media screen and (max-width:599px){
 
 
     .freelance__top-message {
@@ -200,6 +185,8 @@
 
     .freelance__top-box h2 {
         font-size: 1rem;
+        text-align: center;
+        padding: 6px;
     }
 
     .freelance__top-box h2 span {

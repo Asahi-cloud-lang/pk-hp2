@@ -13,7 +13,7 @@ $('.content__list').slick({
     centerPadding: '20%',
     focusOnSelect: true,
     responsive: [{
-        breakpoint: 376,
+        breakpoint: 599,
             settings: {
                 centerMode: false,
                 centerPadding: '0',
