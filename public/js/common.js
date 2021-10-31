@@ -32,7 +32,7 @@ $('.production__content-list').slick({
     dots: true,
     dotsClass: 'original-dots',
     responsive: [{
-        breakpoint: 376,
+        breakpoint: 599,
             settings: {
                 arrows: false,
         }

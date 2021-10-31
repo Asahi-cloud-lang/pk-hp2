@@ -227,7 +227,7 @@
 @media screen and (max-width:599px){
 
     .company__top {
-        width: 90%;
+        width: 100%;
     }
 
     .company__top-lead h1 {
@@ -237,7 +237,7 @@
 
     .company__top-img {
         order: 2;
-        width: 100%;
+        width: 90%;
         padding: 10px 0 0;
     }
 
